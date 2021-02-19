@@ -1,0 +1,135 @@
+fe2stmm.out
+FE2 analysis of STM-M beam
+StaticStructural nsteps 3 deltat 1.0 constrainednrminiter 5 rtolf 5.0e-3 MaxIter 100 minIter 1 initialguess 1 nmodules 1 lstype 0 smtype 1
+#vtkxml tstep_all domain_all vars 5 1 4 5 12 46 cellvars 1 47 ipvars 4 1 4 5 46
+#matlab tstep_all mesh data specials reactionforces integrationpoints internalvars 4 1 4 5 46
+errorcheck
+domain 2dplanestress
+OutputManager tstep_all dofman_all element_all
+ndofman 73 nelem 18 ncrosssect 6 nmat 6 nbc 3 nic 0 nltf 2 nset 9 nxfemman 0
+node 1     coords 3  0        0.216    0       
+node 2     coords 3  6.66134e-16  0        0       
+node 3     coords 3  0.05     0.216    0       
+rigidarmnode 4     coords 3  0.05     0        0       master 35 dofidmask 3 1 2 6 doftype 3 2 2 2 masterMask 3 1 1 1 
+node 5     coords 3  0.355    0.216    0       
+rigidarmnode 6     coords 3  0.355    0        0       master 35 dofidmask 3 1 2 6 doftype 3 2 2 2 masterMask 3 1 1 1 
+node 7     coords 3  0        0.76     0       
+node 8     coords 3  0.05     0.76     0       
+node 9     coords 3  0.66     0.216    0       
+node 10    coords 3  0.66     0        0       
+node 11    coords 3  0.355    0.76     0       
+node 12    coords 3  6.66134e-16  0.915    0       
+node 13    coords 3  0.05     0.915    0       
+node 14    coords 3  0.965    0.216    0       
+node 15    coords 3  0.965    0        0       
+node 16    coords 3  0.66     0.76     0       
+node 17    coords 3  0.355    0.915    0       
+node 18    coords 3  1.27     0.216    0       
+node 19    coords 3  1.27     0        0       
+node 20    coords 3  0.965    0.76     0       
+node 21    coords 3  0.66     0.915    0       
+node 22    coords 3  2.235    0.216    0       
+node 23    coords 3  2.235    0        0       
+node 24    coords 3  1.27     0.76     0       
+rigidarmnode 25    coords 3  0.965    0.915    0       master 70 dofidmask 3 1 2 6 doftype 3 2 2 2 masterMask 3 1 1 1 
+node 26    coords 3  2.235    0.76     0       
+rigidarmnode 27    coords 3  1.27     0.915    0       master 70 dofidmask 3 1 2 6 doftype 3 2 2 2 masterMask 3 1 1 1 
+node 28    coords 3  2.235    0.915    0       
+node 29    coords 3  6.66134e-16  0.108    0       
+node 30    coords 3  0.025    0.216    0       
+node 31    coords 3  0.05     0.108    0       
+node 32    coords 3  0.025    0        0       
+node 33    coords 3  0.2025   0.216    0       
+node 34    coords 3  0.355    0.108    0       
+node 35    coords 3  0.2025   0        0       dofidmask 3 1 2 6
+node 36    coords 3  6.66134e-16  0.488    0       
+node 37    coords 3  0.025    0.76     0       
+node 38    coords 3  0.05     0.488    0       
+node 39    coords 3  0.5075   0.216    0       
+node 40    coords 3  0.66     0.108    0       
+node 41    coords 3  0.5075   0        0       
+node 42    coords 3  0.2025   0.76     0       
+node 43    coords 3  0.355    0.488    0       
+node 44    coords 3  6.66134e-16  0.8375   0       
+node 45    coords 3  0.025    0.915    0       
+node 46    coords 3  0.05     0.8375   0       
+node 47    coords 3  0.8125   0.216    0       
+node 48    coords 3  0.965    0.108    0       
+node 49    coords 3  0.8125   0        0       
+node 50    coords 3  0.5075   0.76     0       
+node 51    coords 3  0.66     0.488    0       
+node 52    coords 3  0.2025   0.915    0       
+node 53    coords 3  0.355    0.8375   0       
+node 54    coords 3  1.1175   0.216    0       
+node 55    coords 3  1.27     0.108    0       
+node 56    coords 3  1.1175   0        0       
+node 57    coords 3  0.8125   0.76     0       
+node 58    coords 3  0.965    0.488    0       
+node 59    coords 3  0.5075   0.915    0       
+node 60    coords 3  0.66     0.8375   0       
+node 61    coords 3  1.7525   0.216    0       
+node 62    coords 3  2.235    0.108    0       
+node 63    coords 3  1.7525   0        0       
+node 64    coords 3  1.1175   0.76     0       
+node 65    coords 3  1.27     0.488    0       
+node 66    coords 3  0.8125   0.915    0       
+node 67    coords 3  0.965    0.8375   0       
+node 68    coords 3  1.7525   0.76     0       
+node 69    coords 3  2.235    0.488    0       
+node 70    coords 3  1.1175   0.915    0       dofidmask 3 1 2 6
+node 71    coords 3  1.27     0.8375   0       
+node 72    coords 3  1.7525   0.915    0       
+node 73    coords 3  2.235    0.8375   0       
+QPlaneStress2D 46    nodes 8   2   4   3   1   32  31  30  29  
+QPlaneStress2D 47    nodes 8   4   6   5   3   35  34  33  31  
+QPlaneStress2D 48    nodes 8   1   3   8   7   30  38  37  36  
+QPlaneStress2D 49    nodes 8   6   10  9   5   41  40  39  34  
+QPlaneStress2D 50    nodes 8   3   5   11  8   33  43  42  38  
+QPlaneStress2D 51    nodes 8   7   8   13  12  37  46  45  44  
+QPlaneStress2D 52    nodes 8   10  15  14  9   49  48  47  40  
+QPlaneStress2D 53    nodes 8   5   9   16  11  39  51  50  43  nip 9
+QPlaneStress2D 54    nodes 8   8   11  17  13  42  53  52  46  
+QPlaneStress2D 55    nodes 8   15  19  18  14  56  55  54  48  
+QPlaneStress2D 56    nodes 8   9   14  20  16  47  58  57  51  
+QPlaneStress2D 57    nodes 8   11  16  21  17  50  60  59  53  
+QPlaneStress2D 58    nodes 8   19  23  22  18  63  62  61  55  nip 9
+QPlaneStress2D 59    nodes 8   14  18  24  20  54  65  64  58  
+QPlaneStress2D 60    nodes 8   16  20  25  21  57  67  66  60  
+QPlaneStress2D 61    nodes 8   18  22  26  24  61  69  68  65  nip 9
+QPlaneStress2D 62    nodes 8   20  24  27  25  64  71  70  67  
+QPlaneStress2D 63    nodes 8   24  26  28  27  68  73  72  71  nip 9
+SimpleCS 1 thick 0.305 material 1 set 1
+SimpleCS 2 thick 0.305 material 2 set 2
+SimpleCS 3 thick 0.305 material 3 set 3
+SimpleCS 4 thick 0.305 material 4 set 4
+SimpleCS 5 thick 0.305 material 5 set 5
+SimpleCS 6 thick 0.305 material 6 set 6
+structslipfe2material 1 d 1.0 filename rve1.in.rve use_ext_stiffness dSdE 3 3 {3.938717834996313e+10 5.938409266792662e+09 5.331846739615321e+05; 5.938409266730549e+09 3.036831562715764e+10 5.862865423581021e+05; 5.331845753072797e+05 5.862865359323985e+05 1.189694284060306e+10}
+structslipfe2material 2 d 1.0 filename rve2.in.rve use_ext_stiffness dSdE 3 3 {3.144388790451633e+10 6.288777580890779e+09 5.422712194299355e-03; 6.288777580843973e+09 3.212126750914366e+10 -4.236625526968175e-02; -2.415536176145630e-02 -6.485766058599535e-02 1.257766795608792e+10}
+structslipfe2material 3 d 1.0 filename rve3.in.rve use_ext_stiffness dSdE 3 3 {3.499898505113786e+10 6.142116029756340e+09 5.244118652329013e+04; 6.142116029684470e+09 3.138757786340467e+10 5.839247667451547e+04; 5.244125363265947e+04 5.839230758190179e+04 1.228954620992236e+10}
+structslipfe2material 4 d 1.0 filename rve4.in.rve use_ext_stiffness dSdE 3 3 {3.954916258799899e+10 5.970750923540745e+09 -2.129264972619626e-01; 5.970750923130807e+09 2.985375461566274e+10 -1.226543041357980e-02; 8.473110245613026e-03 -9.746446035547459e-03 1.196165661558830e+10}
+structslipfe2material 5 d 1.0 filename rve5.in.rve use_ext_stiffness dSdE 3 3 {3.688541202337877e+10 6.093685440704186e+09 -8.625713561805028e-02; 6.093685440576764e+09 3.046842720294850e+10 -1.357354738990091e-02; 1.588474000688651e-02 9.757135223918175e-02 1.219552776087731e+10}
+structslipfe2material 6 d 1.0 filename rve6.in.rve use_ext_stiffness dSdE 3 3 {3.155208333333487e+10 6.310416666668220e+09 2.071030246826503e-04; 6.310416666666412e+09 3.155208333333419e+10 -7.326088704853180e-04; 2.972586147423740e-04 2.433167827066402e-03 1.262083333334008e+10}
+BoundaryCondition 1 loadTimeFunction 1 dofs 1 1 values 1 0.0 set 9
+BoundaryCondition 2 loadTimeFunction 1 dofs 1 2 values 1 0.0 set 7
+BoundaryCondition 3 loadTimeFunction 2 dofs 1 2 values 1 -1e-4 set 8
+ConstantFunction 1 f(t) 1.0
+PiecewiseLinFunction 2 t 2 1.0 300.0 f(t) 2 1.0 300.0
+Set 1 elements 2 49 58 
+Set 2 elements 2 53 61 
+Set 3 elements 2 57 63 
+Set 4 elements 4 55 52 46 47 
+Set 5 elements 4 51 60 62 54 
+Set 6 elements 4 48 56 50 59 
+Set 7 nodes 1 35 
+Set 8 nodes 1 70 
+Set 9 nodes 7 69 73 22 23 26 28 62 
+
+#%BEGIN_CHECK% tolerance 1.e-1
+#NODE tStep 1 number 70 dof 2 unknown d value -1.00000e-4
+#REACTION tStep 1 number 70 dof 2 value -5.046284e+04
+#NODE tStep 2 number 70 dof 2 unknown d value -2.00000e-4
+#REACTION tStep 2 number 70 dof 2 value -1.009257e+05
+#NODE tStep 3 number 70 dof 2 unknown d value -2.00000e-4
+#REACTION tStep 3 number 70 dof 2 value -1.513885e+05
+#%END_CHECK%

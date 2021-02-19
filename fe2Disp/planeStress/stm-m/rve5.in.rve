@@ -1,0 +1,91 @@
+rvedd.out
+Reinforced concrete RVE - Dirichlet-Dirichelt BCs
+StaticStructural nsteps 1 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-3 MaxIter 100 minIter 1 stiffmode 2 initialguess 1 nmodules 0 lstype 3 smtype 7 suppress_output
+#vtkxml tstep_all domain_all vars 5 1 4 5 12 52 ipvars 6 1 4 5 12 52 90 stype 1 regionsets 1 1
+#vtkxml tstep_all domain_all vars 1 12 ipvars 3 7 8 81 stype 1 regionsets 2 9 10
+#vtkxml tstep_all domain_all vars 2 98 99 stype 0 regionsets 2 11 12
+domain 2dplanestress
+OutputManager
+ndofman 30 nelem 24 ncrosssect 8 nmat 5 nbc 1 nic 0 nltf 1 nset 12 nxfemman 0
+node 1     coords 3 -0.0508  -0.0508   0       
+node 2     coords 3  6.66134e-16 -0.0508   0       
+node 3     coords 3  0.0508  -0.0508   0       
+node 4     coords 3  0.0508   0        0       
+node 5     coords 3  0.0508   0.0508   0       
+node 6     coords 3  6.66134e-16  0.0508   0       
+node 7     coords 3 -0.0508   0.0508   0       
+node 8     coords 3 -0.0508   0        0       
+node 9     coords 3 -0.0254  -0.0508   0       
+node 10    coords 3  0.0254  -0.0508   0       
+node 11    coords 3  0.0508  -0.0254   0       
+node 12    coords 3  0.0508   0.0254   0       
+node 13    coords 3  0.0254   0.0508   0       
+node 14    coords 3 -0.0254   0.0508   0       
+node 15    coords 3 -0.0508   0.0254   0       
+node 16    coords 3 -0.0508  -0.0254   0       
+node 17    coords 3 -0.0254  -0.0254   0       
+node 18    coords 3 -0.0254   2.66782e-19  0       
+node 19    coords 3 -0.0254   0.0254   0       
+node 20    coords 3  6.69089e-16 -0.0254   0       
+node 21    coords 3  6.69089e-16  5.33564e-19  0       
+node 22    coords 3  6.6562e-16  0.0254   0       
+node 23    coords 3  0.0254  -0.0254   0       
+node 24    coords 3  0.0254   2.53507e-18  0       
+node 25    coords 3  0.0254   0.0254   0       
+node 26    coords 3 -0.0508   0        0       
+node 27    coords 3 -0.0254   0        0       
+node 28    coords 3  0        0        0       
+node 29    coords 3  0.0254   0        0       
+node 30    coords 3  0.0508   0        0       
+Truss2D 33    nodes 2   26  27  cs 1
+Truss2D 34    nodes 2   27  28  cs 1
+Truss2D 35    nodes 2   28  29  cs 1
+Truss2D 36    nodes 2   29  30  cs 1
+PlaneStress2D 17    nodes 4   1   9   17  16  
+PlaneStress2D 18    nodes 4   16  17  18  8   
+PlaneStress2D 19    nodes 4   8   18  19  15  
+PlaneStress2D 20    nodes 4   15  19  14  7   
+PlaneStress2D 21    nodes 4   9   2   20  17  
+PlaneStress2D 22    nodes 4   17  20  21  18  
+PlaneStress2D 23    nodes 4   18  21  22  19  
+PlaneStress2D 24    nodes 4   19  22  6   14  
+PlaneStress2D 25    nodes 4   2   10  23  20  
+PlaneStress2D 26    nodes 4   20  23  24  21  
+PlaneStress2D 27    nodes 4   21  24  25  22  
+PlaneStress2D 28    nodes 4   22  25  13  6   
+PlaneStress2D 29    nodes 4   10  3   11  23  
+PlaneStress2D 30    nodes 4   23  11  4   24  
+PlaneStress2D 31    nodes 4   24  4   12  25  
+PlaneStress2D 32    nodes 4   25  12  5   13  
+intelline1 37    nodes 4   8   18  26  27  
+intelline1 38    nodes 4   18  21  27  28  
+intelline1 39    nodes 4   21  24  28  29  
+intelline1 40    nodes 4   24  4   29  30  
+SimpleCS 1 thick 3.0500000000e-01 material 1 set 1
+SimpleCS 2 thick 3.0500000000e-01 material 1 set 2
+SimpleCS 3 thick 2.6634851558e-01 material 1 set 3
+SimpleCS 4 thick 2.6634851558e-01 material 1 set 4
+SimpleCS 5 area 0.0000000000e+00 material 2 set 9
+SimpleCS 6 area 9.8174770425e-04 material 3 set 10
+InterfaceCS 7 thickness 1.5707963268e-01 material 4 set 11
+InterfaceCS 8 thickness 0.0000000000e+00 material 5 set 12
+#MazarsModel 1 d 1.0 E 3.029e+10 n 0.2 version 1 e0 1.2214048487e-04 ac 2.1 bc 850 ef 1.3539930494e-03 tAlpha 1.0 maxOmega 0.9999
+Concrete3 1 d 1.0 E 3.029e+10 n 0.2 Gf 132.99 Ft 3.3400e+06 exp_soft 0 tAlpha 1.0
+MisesMat 2 d 1.0 E 2.000e+11 n 0.3 sig0 4.50e+08 H 5.8189655172e+09 omega_crit 0 a 0 tAlpha 1.0
+MisesMat 3 d 1.0 E 2.000e+11 n 0.3 sig0 4.20e+08 H 6.0215053763e+09 omega_crit 0 a 0 tAlpha 1.0
+bondceb 4 kn 5.27e+12 ks 5.2664628422e+10 s1 0.001 s2 0.002 s3 0.01 taumax 1.3228756555e+07 tauf 5.2915026221e+06
+bondceb 5 kn 5.27e+12 ks 5.2664628422e+10 s1 0.001 s2 0.002 s3 0.005 taumax 1.3228756555e+07 tauf 5.2915026221e+06
+PrescribedGradientBCDirichletRC 1 loadTimeFunction 1 dofs 3 1 2 6 ccoord 3 0.0 0.0 0.0 gradient 2 2 {0 0; 0 0} set 5 conboundset 6 reinfxbound 8 reinfybound 7
+ConstantFunction 1 f(t) 1.0
+set 1 elements 16 32 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 
+set 2 elements 0 
+set 3 elements 4 18 26 22 30 
+set 4 elements 0 
+set 5 nodes 18 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 26 30 
+set 6 elementboundaries 32 17 1 21 1 25 1 29 1 29 2 30 2 31 2 32 2 32 3 28 3 24 3 20 3 20 4 19 4 18 4 17 4 
+set 7 nodes 0 
+set 8 nodes 2 26 30 
+set 9 elements 0 
+set 10 elements 4 33 34 35 36 
+set 11 elements 4 40 37 38 39 
+set 12 elements 0 
