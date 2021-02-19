@@ -1,6 +1,13 @@
-RVE11dnbc.out
-1x1 RVE - nonlinear structural analysis of the RVE - Dirichlet-Neumann BC
-StaticStructural nsteps 1 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-3 MaxIter 30 minIter 1 stiffmode 0 initialguess 1 nmodules 0  suppress_output
+RVE11ddbc.out
+1x1 RVE - nonlinear structural analysis of the RVE - Dirichlet-Dirichlet BC
+StaticStructural nsteps 1 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-3 MaxIter 300 minIter 1 stiffmode 1 initialguess 1 nmodules 0 lstype 3 smtype 7 suppress_output
+#Concrete3 model
+#vtkxml tstep_all domain_all vars 4 1 4 5 12 ipvars 7 1 4 5 12 59 60 61 cellvars 3 59 60 61 stype 1 regionsets 1 1
+#Mazars model
+#vtkxml tstep_all domain_all vars 5 1 4 5 12 52 ipvars 6 1 4 5 12 52 90 stype 1 regionsets 1 1
+#vtkxml tstep_all domain_all vars 1 12 ipvars 3 7 8 81 stype 1 regionsets 2 9 10
+#vtkxml tstep_all domain_all ipvars 2 98 99 regionsets 2 11 12
+#matlab tstep_all mesh data specials reactionforces integrationpoints internalvars 5 1 4 98 99 52
 domain 2dplanestress
 OutputManager
 ndofman 143 nelem 140 ncrosssect 8 nmat 4 nbc 1 nic 0 nltf 1 nset 13
@@ -125,28 +132,28 @@ node 118 coords 3 0.08 -0.08 0.0
 node 119 coords 3 0.08 -0.06 0.0
 node 120 coords 3 0.08 -0.04 0.0
 node 121 coords 3 0.08 -0.02 0.0
-node 122 coords 3 0.0 0.0 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 1 0 0
-node 123 coords 3 0.0 0.1 0.0  dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 5 0 0
-node 124 coords 3 0.0 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 4 0 0
-node 125 coords 3 0.0 -0.08 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 18 0 0
-node 126 coords 3 0.0 -0.06 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 19 0 0
-node 127 coords 3 0.0 -0.04 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 20 0 0
-node 128 coords 3 0.0 -0.02 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 21 0 0
-node 129 coords 3 0.0 0.02 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 22 0 0
-node 130 coords 3 0.0 0.04 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 23 0 0
-node 131 coords 3 0.0 0.06 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 24 0 0
-node 132 coords 3 0.0 0.08 0.0  dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 25 0 0
-node 133 coords 3 0.0 0.0 0.0  dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 1 0
-node 134 coords 3 0.1 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0 mastermask 3 0 3 0
-node 135 coords 3 -0.1 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0 mastermask 3 0 2 0
-node 136 coords 3 -0.08 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 14 0
-node 137 coords 3 -0.06 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 15 0
-node 138 coords 3 -0.04 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 16 0
-node 139 coords 3 -0.02 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 17 0
-node 140 coords 3 0.02 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 10 0
-node 141 coords 3 0.04 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 11 0
-node 142 coords 3 0.06 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 12 0
-node 143 coords 3 0.08 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 13 0
+node 122 coords 3 0.0 0.0 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 1 0 0  
+node 123 coords 3 0.0 0.1 0.0 
+node 124 coords 3 0.0 -0.1 0.0 
+node 125 coords 3 0.0 -0.08 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 18 0 0  
+node 126 coords 3 0.0 -0.06 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 19 0 0  
+node 127 coords 3 0.0 -0.04 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 20 0 0  
+node 128 coords 3 0.0 -0.02 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 21 0 0  
+node 129 coords 3 0.0 0.02 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 22 0 0  
+node 130 coords 3 0.0 0.04 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 23 0 0  
+node 131 coords 3 0.0 0.06 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 24 0 0  
+node 132 coords 3 0.0 0.08 0.0  dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 25 0 0  
+node 133 coords 3 0.0 0.0 0.0  dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 1 0  
+node 134 coords 3 0.1 0.0 0.0 
+node 135 coords 3 -0.1 0.0 0.0 
+node 136 coords 3 -0.08 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 14 0 
+node 137 coords 3 -0.06 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 15 0 
+node 138 coords 3 -0.04 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 16 0 
+node 139 coords 3 -0.02 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 17 0 
+node 140 coords 3 0.02 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 10 0 
+node 141 coords 3 0.04 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 11 0 
+node 142 coords 3 0.06 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 12 0 
+node 143 coords 3 0.08 0.0 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 13 0 
 planestress2d 1 nodes  4 3 46 58 13
 planestress2d 2 nodes  4 13 58 59 12
 planestress2d 3 nodes  4 12 59 60 11
@@ -291,10 +298,10 @@ Set 1 elementranges { (1 100) }
 Set 2 elements 9 5 10 15 20 25 76 77 78 79
 Set 3 elements 9 55 60 65 70 75 85 90 95 100
 Set 4 elements 1 80
-Set 5 elementboundaries 80 51 1 56 1 61 1 66 1 71 1 76 1 81 1 86 1 91 1 96 1 96 2 97 2 98 2 99 2 100 2 1 1 6 1 11 1 16 1 21 1 21 2 22 2 23 2 24 2 25 2 46 2 47 2 48 2 49 2 50 2 50 3 45 3 40 3 35 3 30 3 55 4 54 4 53 4 52 4 51 4
-Set 6 nodes 4 124 134 123 135
+Set 5 nodes 44 8 34 35 36 37 4 38 39 40 41 7 42 43 44 45 3 46 47 48 49 6 50 51 52 53 5 54 55 56 57 9 26 27 28 29 2 30 31 32 33 124 134 123 135
+Set 6 elementboundaries 80 51 1 56 1 61 1 66 1 71 1 76 1 81 1 86 1 91 1 96 1 96 2 97 2 98 2 99 2 100 2 1 1 6 1 11 1 16 1 21 1 21 2 22 2 23 2 24 2 25 2 46 2 47 2 48 2 49 2 50 2 50 3 45 3 40 3 35 3 30 3 55 4 54 4 53 4 52 4 51 4
 Set 7 nodes 2 123 124
-Set 8 nodes 2 134 135
+Set 8 nodes 2 135 134
 Set 9 elementranges { (101 110) }
 Set 10 elementranges { (111 120) }
 Set 11 elementranges { (121 130) }
@@ -307,10 +314,12 @@ SimpleCS 4 thick 1.81779e-1 material 1 set 4
 LayeredCS 5 nLayers 1 LayerMaterials 1 2 Thicks 1 7.08914634e-3 Widths 1 7.08914634e-3 midSurf 3.544573317e-3
 LayeredCS 6 nLayers 1 LayerMaterials 1 2 Thicks 1 17.72455923e-3 Widths 1 17.72455923e-3 midSurf 8.862279616e-3
 InterfaceCS 7 thickness 6.28319e-2 material 3
-InterfaceCS 8 thickness 2.51327e-2 material 4
+InterfaceCS 8 thickness 2.51327e-2 material 4 
 MazarsModel 1 d 1.0 E 3.36e10 n 0.2 version 1 e0 8.63e-5 ac 2.6 bc 800 ef 0.0025 tAlpha 1.0 maxOmega 0.9999
+#Concrete3 1 d 1.0 E 3.36e10 n 0.2 Gf 140.5 Ft 2.9e6 exp_soft 2 tAlpha 1.0
 MisesMat 2 d 1.0 E 2e11 n 0.3 sig0 500e6 H 8.456659619e8 omega_crit 0 a 0 tAlpha 1.0
+#Steel1 2 d 1.0 E 2e11 n 0.3 Ry 500e6 tAlpha 1.0
 bondceb 3 kn 6e12 ks 6.135e10 s1 0.001 s2 0.002 s3 0.0065 taumax 1.541e7 tauf 6.164e6
 bondceb 4 kn 6e12 ks 6.135e10 s1 0.001 s2 0.002 s3 0.004 taumax 1.541e7 tauf 6.164e6
-PrescribedGradientBCDirichletRC 1 loadTimeFunction 1 dofs 2 1 2 ccoord 3 0.0 0.0 0.0 gradient 2 2 {0 0; 0 0} set 5 conboundset 5
+PrescribedGradientBCDirichletRC 1 loadTimeFunction 1 dofs 3 1 2 6 ccoord 3 0.0 0.0 0.0 gradient 2 2 {0 0; 0 0} set 5 conboundset 6 thick 0.2 reinfxbound 8 reinfybound 7
 ConstantFunction 1 f(t) 1.0

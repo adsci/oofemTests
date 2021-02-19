@@ -1,0 +1,44 @@
+fakefe2disp.out
+Prescribing strain history via a fake FE2 analysis
+StaticStructural nsteps 5 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-3 MaxIter 300 minIter  1 initialguess 1 nmodules 1 lstype 3 smtype 7
+#vtkxml tstep_all domain_all vars 2 1 4
+#vtkxml tstep_all domain_all vars 2 1 4 ipvars 2 1 4 
+#matlab tstep_all mesh data specials reactionforces integrationpoints internalvars 2 1 4
+errorcheck
+domain 2dplanestress
+OutputManager tstep_all dofman_all element_all
+ndofman 3 nelem 1 ncrosssect 1 nmat 1 nbc 4 nic 0 nltf 1 nset 4
+node 1 coords 3 0 0 0
+node 2 coords 3 1 0 0 bc 2 3 2
+node 3 coords 3 1 1 0 bc 2 4 4
+trplanestress2d 1 nodes 3 1 2 3
+Set 1 elements 1 1
+#support
+Set 2 nodes 1 1
+Set 3 nodes 1 2
+#prescribed vals
+Set 4 nodes 1 3
+SimpleCS 1 thick 1 material 1 set 1
+structslipfe2material 1 d 1.0 filename fe2disp_rve_1x1_dd.in.rve.beam use_ext_stiffness dSdE 3 3 {36.25072991727858e+09	6.932393425449179e+09	2.950519891639804e+02; 6.932393425449178e+09	34.91362756987094e+09	-2.393673442497785e+03; 2.950519184215688e+02	-2.393673795445178e+03	13.86582968189899e+09} 
+BoundaryCondition 1 loadTimeFunction 1 dofs 2 1 2 values 2 0.0 0.0 set 2
+BoundaryCondition 2 loadTimeFunction 1 dofs 1 2 values 1 0.0 set 3
+UserDefDirichletBC 3 loadTimeFunction 1 filename bcnode2
+UserDefDirichletBC 4 loadTimeFunction 1 filename bcnode3
+ConstantFunction 1 f(t) 1.0
+
+
+#%BEGIN_CHECK% tolerance 1.e-2
+#ELEMENT tStep 1 number 1 gp 1 keyword 4 component 1 value 1.213281e-05
+#ELEMENT tStep 1 number 1 gp 1 keyword 4 component 2 value -2.198418e-06
+#ELEMENT tStep 1 number 1 gp 1 keyword 4 component 6 value 5.480928e-08 
+#ELEMENT tStep 1 number 1 gp 1 keyword 1 component 1 value 4.24582920e+05
+#ELEMENT tStep 1 number 1 gp 1 keyword 1 component 2 value 7.35466485e+03
+#ELEMENT tStep 1 number 1 gp 1 keyword 1 component 6 value 7.59984983e+02
+#ELEMENT tStep 5 number 1 gp 1 keyword 4 component 1 value 6.066407e-05
+#ELEMENT tStep 5 number 1 gp 1 keyword 4 component 2 value -1.099209e-05
+#ELEMENT tStep 5 number 1 gp 1 keyword 4 component 6 value 2.740440e-07 
+#ELEMENT tStep 5 number 1 gp 1 keyword 1 component 1 value 2.12291532e+06
+#ELEMENT tStep 5 number 1 gp 1 keyword 1 component 2 value 3.67734629e+04
+#ELEMENT tStep 5 number 1 gp 1 keyword 1 component 6 value 3.79989164e+03
+#%END_CHECK%
+
