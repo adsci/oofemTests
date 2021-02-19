@@ -2,3 +2,4 @@
 *.vtu
 *.pvd
 *.m
+__pycache__/
