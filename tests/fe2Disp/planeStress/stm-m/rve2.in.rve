@@ -125,7 +125,7 @@ MisesMat 2 d 1.0 E 2.000e+11 n 0.3 sig0 4.50e+08 H 5.8189655172e+09 omega_crit 0
 MisesMat 3 d 1.0 E 2.000e+11 n 0.3 sig0 4.20e+08 H 6.0215053763e+09 omega_crit 0 a 0 tAlpha 1.0
 bondceb 4 kn 5.27e+12 ks 5.2664628422e+10 s1 0.001 s2 0.002 s3 0.01 taumax 1.3228756555e+07 tauf 5.2915026221e+06
 bondceb 5 kn 5.27e+12 ks 5.2664628422e+10 s1 0.001 s2 0.002 s3 0.005 taumax 1.3228756555e+07 tauf 5.2915026221e+06
-PrescribedGradientBCDirichletRC 1 loadTimeFunction 1 dofs 3 1 2 6 ccoord 3 0.0 0.0 0.0 gradient 2 2 {0 0; 0 0} set 5 conboundset 6 reinfxbound 8 reinfybound 7
+PrescribedDispSlipBCDirichletRC 1 loadTimeFunction 1 dofs 3 1 2 6 ccoord 3 0.0 0.0 0.0 dispGrad 2 2 {0 0; 0 0} set 5 conboundset 6 reinfxbound 8 reinfybound 7
 ConstantFunction 1 f(t) 1.0
 set 1 elements 36 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 
 set 2 elements 6 43 44 45 46 47 48 
