@@ -1,0 +1,104 @@
+prescribeddispbcneumann04.out
+Small RVE for test of Neumann BC.
+StaticStructural nsteps 1 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-3  MaxIter 10 minIter 1 initialguess 1 nmodules 1
+errorcheck
+#vtkxml tstep_all domain_all primvars 1 1 vars 2 1 4 stype 2
+#matlab tstep_all mesh data specials reactionforces
+domain 2dPlaneStress
+OutputManager tstep_all dofman_all element_all
+ndofman 25 nelem 8 ncrosssect 2 nmat 2 nbc 3 nic 0 nltf 1 nset 5 nxfemman 0
+node 1 coords 3 -0.1 -0.1 0
+node 2 coords 3 0 -0.1 0
+node 3 coords 3 0.1 -0.1 0
+node 4 coords 3 -0.1 0 0
+node 5 coords 3 0 0 0
+node 6 coords 3 0.1 0 0
+node 7 coords 3 -0.1 0.1 0
+node 8 coords 3 0 0.1 0
+node 9 coords 3 0.1 0.1 0
+node 10 coords 3 -0.05 -0.1 0
+node 11 coords 3 0.05 -0.1 0
+node 12 coords 3 -0.1 -0.05 0
+node 13 coords 3 0 -0.05 0
+node 14 coords 3 0.1 -0.05 0
+node 15 coords 3 -0.05 0 0
+node 16 coords 3 0.05 0 0
+node 17 coords 3 -0.1 0.05 0
+node 18 coords 3 0 0.05 0
+node 19 coords 3 0.1 0.05 0
+node 20 coords 3 -0.05 0.1 0
+node 21 coords 3 0.05 0.1 0
+node 22 coords 3 -0.05 -0.05 0
+node 23 coords 3 0.05 -0.05 0
+node 24 coords 3 -0.05 0.05 0
+node 25 coords 3 0.05 0.05 0
+qtrplstr 1 nodes 6 1 2 5 10 13 22 crossSect 1
+qtrplstr 2 nodes 6 2 3 6 11 14 23 crossSect 1
+qtrplstr 3 nodes 6 5 6 9 16 19 25 crossSect 1
+qtrplstr 4 nodes 6 4 5 8 15 18 24 crossSect 1
+qtrplstr 5 nodes 6 1 5 4 22 15 12 crossSect 1
+qtrplstr 6 nodes 6 2 6 5 23 16 13 crossSect 1
+qtrplstr 7 nodes 6 5 9 8 25 21 18 crossSect 1
+qtrplstr 8 nodes 6 4 8 7 24 20 17 crossSect 1
+SimpleCS 1 thick 1.0 material 1 set 3
+SimpleCS 2 thick 1.0 material 2 set 4
+IsoLE 1 d 1.0 E 210e9 n 0.3 tAlpha 0.0
+IsoLE 2 d 1.0 E 50e9 n 0.2 tAlpha 0.0
+PrescribedDispSlipBCNeumannRC 1 dofs 2 1 2 set 1 loadTimeFunction 1 dispgrad 2 2 {0.3 0.4; 0.4 -0.5}
+BoundaryCondition 2 dofs 2 1 2 set 2 loadTimeFunction 1 values 2 0.0 0.0
+BoundaryCondition 3 dofs 1 1 set 5 loadTimeFunction 1 values 1 0.0
+ConstantFunction 1 f(t) 1.0
+set 1 elementboundaries 16 1 1 2 1 2 2 3 2 7 2 8 2 8 3 5 3
+set 2 nodes 1 7
+set 3 elements 3 1 3 4
+set 4 elements 1 2
+set 5 nodes 1 1
+
+#%BEGIN_CHECK% tolerance 1.e-3
+#NODE tStep 1 number 3 dof 1 unknown d value 3.09120722e-03
+#NODE tStep 1 number 3 dof 2 unknown d value 2.46233124e-01
+#NODE tStep 1 number 9 dof 1 unknown d value 1.04849018e-01
+#NODE tStep 1 number 9 dof 2 unknown d value 5.35594190e-02
+
+#ELEMENT tStep 1 number 1 gp 1 keyword 4 component 1 value 3.39119310e-02
+#ELEMENT tStep 1 number 1 gp 2 keyword 4 component 1 value -1.61606889e-02
+#ELEMENT tStep 1 number 1 gp 3 keyword 4 component 1 value 2.38106940e-01
+#ELEMENT tStep 1 number 1 gp 4 keyword 4 component 1 value -1.20210458e-01
+
+#ELEMENT tStep 1 number 2 gp 1 keyword 4 component 1 value 5.80141352e-01
+#ELEMENT tStep 1 number 2 gp 2 keyword 4 component 1 value 6.95925713e-01
+#ELEMENT tStep 1 number 2 gp 3 keyword 4 component 1 value 8.42459312e-01
+#ELEMENT tStep 1 number 2 gp 4 keyword 4 component 1 value 2.02039031e-01
+
+#ELEMENT tStep 1 number 3 gp 1 keyword 4 component 1 value 2.74179635e-01
+#ELEMENT tStep 1 number 3 gp 2 keyword 4 component 1 value 2.82985461e-01
+#ELEMENT tStep 1 number 3 gp 3 keyword 4 component 1 value 2.75503321e-01
+#ELEMENT tStep 1 number 3 gp 4 keyword 4 component 1 value 2.64050124e-01
+
+#ELEMENT tStep 1 number 4 gp 1 keyword 4 component 1 value 3.09251580e-01
+#ELEMENT tStep 1 number 4 gp 2 keyword 4 component 1 value 2.98866438e-01
+#ELEMENT tStep 1 number 4 gp 3 keyword 4 component 1 value 3.49320727e-01
+#ELEMENT tStep 1 number 4 gp 4 keyword 4 component 1 value 2.79567577e-01
+
+#ELEMENT tStep 1 number 5 gp 1 keyword 4 component 1 value 2.08091538e-01
+#ELEMENT tStep 1 number 5 gp 2 keyword 4 component 1 value 2.38170412e-01
+#ELEMENT tStep 1 number 5 gp 3 keyword 4 component 1 value 2.18871551e-01
+#ELEMENT tStep 1 number 5 gp 4 keyword 4 component 1 value 1.67232650e-01
+
+#ELEMENT tStep 1 number 6 gp 1 keyword 4 component 1 value 2.30074386e-01
+#ELEMENT tStep 1 number 6 gp 2 keyword 4 component 1 value 2.56522311e-01
+#ELEMENT tStep 1 number 6 gp 3 keyword 4 component 1 value 2.37586975e-01
+#ELEMENT tStep 1 number 6 gp 4 keyword 4 component 1 value 1.96113871e-01
+
+#ELEMENT tStep 1 number 7 gp 1 keyword 4 component 1 value 3.19287891e-01
+#ELEMENT tStep 1 number 7 gp 2 keyword 4 component 1 value 3.00607005e-01
+#ELEMENT tStep 1 number 7 gp 3 keyword 4 component 1 value 3.64428760e-01
+#ELEMENT tStep 1 number 7 gp 4 keyword 4 component 1 value 2.92827908e-01
+
+#ELEMENT tStep 1 number 8 gp 1 keyword 4 component 1 value 4.45061687e-01
+#ELEMENT tStep 1 number 8 gp 2 keyword 4 component 1 value 4.59362687e-01
+#ELEMENT tStep 1 number 8 gp 3 keyword 4 component 1 value 6.31613182e-01
+#ELEMENT tStep 1 number 8 gp 4 keyword 4 component 1 value 2.44209192e-01
+
+#%END_CHECK%
+
