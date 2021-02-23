@@ -3,3 +3,9 @@
 *.pvd
 *.m
 __pycache__/
+CMakeCache.txt
+CMakeFiles/
+CTestTestfile.cmake
+Makefile
+Testing/
+cmake_install.cmake
