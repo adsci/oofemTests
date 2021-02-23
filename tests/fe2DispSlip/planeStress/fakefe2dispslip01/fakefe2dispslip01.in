@@ -1,0 +1,47 @@
+fakefe2dispslip01.out
+Prescribing strain, slip and slip gradient history as a fake FE^2 analysis - Dirichlet-Dirichlet BC
+StaticStructural nsteps 2 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-3 MaxIter 300 minIter  1 initialguess 1 nmodules 1 lstype 3 smtype 7
+#vtkxml tstep_all domain_all vars 2 1 4
+#vtkxml tstep_all domain_all vars 2 1 4 ipvars 2 1 4 
+#matlab tstep_all mesh data specials reactionforces integrationpoints internalvars 6 4 1 141 142 143 144
+errorcheck
+domain 2dplanestress
+OutputManager tstep_all dofman_all element_all
+ndofman 6 nelem 1 ncrosssect 1 nmat 1 nbc 4 nic 0 nltf 1 nset 2
+node 1 coords 3 0 0 0 dofidmask 4 1 2 51 52 bc 4 1 1 1 1
+node 2 coords 3 1 0 0 dofidmask 4 1 2 51 52 bc 4 2 2 2 2
+node 3 coords 3 1 1 0 dofidmask 4 1 2 51 52 bc 4 3 3 3 3 
+node 4 coords 3 0.5 0 0 dofidmask 4 1 2 51 52 
+node 5 coords 3 1 0.5 0 dofidmask 4 1 2 51 52
+node 6 coords 3 0.5 0.5 0 dofidmask 4 1 2 51 52
+qtrplstrslip 2 nodes 6 1 2 3 4 5 6 
+Set 1 elements 1 2
+Set 2 nodes 3 4 5 6
+SimpleCS 1 thick 1 material 1 set 1
+structslipfe2material 1 d 1.0 filename fe2dispslip_rve_1x1_dd.in.rve.beam use_ext_stiffness dSdE 3 3 { 3.62507E+10 6.93239E+09 2.95548E+02; 6.93239E+09 3.49136E+10 -2.39433E+03; 2.95071E+02 -2.39368E+03 1.38658E+10} dBSdE 2 3 { 7.55643E+05 1.49175E+05 -4.60649E+07; -2.72732E+05 -1.36498E+06 2.25067E+06 } dRSdE 4 3 { 1.57069E+09 3.46070E+05 -9.67476E+02; -6.89202E+04 2.50831E+08 -3.17713E+02; 0.00000E+00 0.00000E+00 0.00000E+00; 0.00000E+00 0.00000E+00 0.00000E+00 } dSdS 3 2 { 7.55643E+05 -2.72732E+05; 1.49175E+05 -1.36498E+06; -4.60649E+07 2.25068E+06 } dBSdS 2 2 {  7.91772E+10 4.78268E+03; 4.78268E+03 2.62490E+10  } dRSdS 4 2 { -5.45486E+03 1.24229E+05;-2.29202E+04 4.03328E+03; 0.00000E+00 0.00000E+00; 0.00000E+00 0.00000E+00 } dSdG 3 4 {  1.57069E+09 -6.89202E+04 0.00000E+00 0.00000E+00; 3.46070E+05 2.50831E+08 0.00000E+00 0.00000E+00; -9.68196E+02 -3.17680E+02 0.00000E+00 0.00000E+00  } dBSdG 2 4 { -5.45485E+03 -2.29202E+04 0.00000E+00 0.00000E+00; 1.24229E+05 4.03329E+03 0.00000E+00 0.00000E+00 } dRSdG 4 4 { 1.87737E+09 9.67661E+04 0.00000E+00 0.00000E+00; 9.67661E+04 3.68453E+08 0.00000E+00 0.00000E+00; 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00; 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00 } output_selected_el_gps 2 2 1
+UserDefDirichletBC 1 loadTimeFunction 1 filename bcnode1
+UserDefDirichletBC 2 loadTimeFunction 1 filename bcnode2
+UserDefDirichletBC 3 loadTimeFunction 1 filename bcnode3
+BoundaryCondition 4 loadTimeFunction 1 dofs 4 1 2 51 52 values 4 0 0 0 0 set 2
+ConstantFunction 1 f(t) 1.0
+
+
+#%BEGIN_CHECK% tolerance 1.e-1
+#ELEMENT tStep 2 number 2 gp 1 keyword 4 component 1 value 1.846585e-05
+#ELEMENT tStep 2 number 2 gp 1 keyword 4 component 2 value -4.024891e-06
+#ELEMENT tStep 2 number 2 gp 1 keyword 4 component 6 value -2.185183e-06
+#ELEMENT tStep 2 number 2 gp 1 keyword 1 component 1 value 6.414222e+05
+#ELEMENT tStep 2 number 2 gp 1 keyword 1 component 2 value -1.245701e+04
+#ELEMENT tStep 2 number 2 gp 1 keyword 1 component 6 value -3.029932e+04
+#ELEMENT tStep 2 number 2 gp 1 keyword 141 component 1 value 2.647493e-08
+#ELEMENT tStep 2 number 2 gp 1 keyword 141 component 2 value 5.602018e-07
+#ELEMENT tStep 2 number 2 gp 1 keyword 142 component 1 value 2.210223e+03
+#ELEMENT tStep 2 number 2 gp 1 keyword 142 component 2 value 1.470029e+04
+#ELEMENT tStep 2 number 2 gp 1 keyword 143 component 1 value -4.842061e-08
+#ELEMENT tStep 2 number 2 gp 1 keyword 143 component 2 value  2.183488e-07
+#ELEMENT tStep 2 number 2 gp 1 keyword 143 component 3 value -2.624711e-08
+#ELEMENT tStep 2 number 2 gp 1 keyword 143 component 4 value 1.099520e-07
+#ELEMENT tStep 2 number 2 gp 1 keyword 144 component 1 value 2.891187e+04
+#ELEMENT tStep 2 number 2 gp 1 keyword 144 component 2 value -9.303901e+02
+#%END_CHECK%
+

@@ -1,0 +1,47 @@
+fakefe2dispslip02.out
+Prescribing strain, slip and slip gradient history as a fake FE^2 analysis - Dirichlet-Neumann BC
+StaticStructural nsteps 2 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-3 MaxIter 300 minIter  1 initialguess 1 nmodules 1 lstype 3 smtype 7
+#vtkxml tstep_all domain_all vars 2 1 4
+#vtkxml tstep_all domain_all vars 2 1 4 ipvars 2 1 4 
+#matlab tstep_all mesh data specials reactionforces integrationpoints internalvars 6 4 1 141 142 143 144
+errorcheck
+domain 2dplanestress
+OutputManager tstep_all dofman_all element_all
+ndofman 6 nelem 1 ncrosssect 1 nmat 1 nbc 4 nic 0 nltf 1 nset 2
+node 1 coords 3 0 0 0 dofidmask 4 1 2 51 52 bc 4 1 1 1 1
+node 2 coords 3 1 0 0 dofidmask 4 1 2 51 52 bc 4 2 2 2 2
+node 3 coords 3 1 1 0 dofidmask 4 1 2 51 52 bc 4 3 3 3 3 
+node 4 coords 3 0.5 0 0 dofidmask 4 1 2 51 52 
+node 5 coords 3 1 0.5 0 dofidmask 4 1 2 51 52
+node 6 coords 3 0.5 0.5 0 dofidmask 4 1 2 51 52
+qtrplstrslip 2 nodes 6 1 2 3 4 5 6 
+Set 1 elements 1 2
+Set 2 nodes 3 4 5 6
+SimpleCS 1 thick 1 material 1 set 1
+structslipfe2material 1 d 1.0 filename fe2dispslip_rve_1x1_dn.in.rve.beam use_ext_stiffness dSdE 3 3 { 3.625072854e+10  6.932387321e+09  2.478283263e+03; 6.932387321e+09  3.491359717e+10  2.676657141e+03; 2.478291261e+03  2.676696988e+03  1.386582848e+10 } dBSdE 2 3 { 3.485012427e+05  6.817881375e+04  -5.563683208e+07 ; -1.865205408e+05  -9.346605365e+05  3.438454415e+06 } dRSdE 4 3 { 1.570687371e+09  3.459786861e+05  -9.526410637e+02 ; -6.892008470e+04  2.508307283e+08  -3.217854254e+02  ; 0.000000000e+00  0.000000000e+00  0.000000000e+00 ; 0.000000000e+00  0.000000000e+00  0.000000000e+00  } dSdS 3 2 { 3.485012467e+05  -1.865201516e+05 ; 6.817861902e+04  -9.346586604e+05 ; -5.563683208e+07  3.438454415e+06  } dBSdS 2 2 { 9.505472466e+10  1.218832062e+04 ; 1.218832062e+04  3.833883338e+10   } dRSdS 4 2 { -1.007790820e+04  9.520378631e+04 ; -1.321829308e+04  8.899387085e+03 ; 0.000000000e+00  0.000000000e+00 ; 0.000000000e+00  0.000000000e+00 } dSdG 3 4 {  1.570687371e+09  -6.892007767e+04  0.000000000e+00  0.000000000e+00; 3.459786860e+05  2.508307283e+08  0.000000000e+00  0.000000000e+00; -9.526413249e+02  -3.218302754e+02  0.000000000e+00  0.000000000e+00  } dBSdG 2 4 { -1.007790820e+04  -1.321829308e+04  0.000000000e+00  0.000000000e+00  ; 9.520378631e+04  8.899387085e+03  0.000000000e+00  0.000000000e+00   } dRSdG 4 4 { 1.877373715e+09  9.676611980e+04  0.000000000e+00  0.000000000e+00 ; 9.676611980e+04  3.684530567e+08  0.000000000e+00  0.000000000e+00  ; 0.000000000e+00  0.000000000e+00  0.000000000e+00  0.000000000e+00 ; 0.000000000e+00  0.000000000e+00  0.000000000e+00  0.000000000e+00  }
+UserDefDirichletBC 1 loadTimeFunction 1 filename bcnode1
+UserDefDirichletBC 2 loadTimeFunction 1 filename bcnode2
+UserDefDirichletBC 3 loadTimeFunction 1 filename bcnode3
+BoundaryCondition 4 loadTimeFunction 1 dofs 4 1 2 51 52 values 4 0 0 0 0 set 2
+ConstantFunction 1 f(t) 1.0
+
+
+#%BEGIN_CHECK% tolerance 1.e-1
+#ELEMENT tStep 2 number 2 gp 1 keyword 4 component 1 value 1.846585e-05
+#ELEMENT tStep 2 number 2 gp 1 keyword 4 component 2 value -4.024891e-06
+#ELEMENT tStep 2 number 2 gp 1 keyword 4 component 6 value -2.185183e-06
+#ELEMENT tStep 2 number 2 gp 1 keyword 1 component 1 value 6.41422243e+05
+#ELEMENT tStep 2 number 2 gp 1 keyword 1 component 2 value -1.24567744e+04
+#ELEMENT tStep 2 number 2 gp 1 keyword 1 component 6 value -3.02988845e+04
+#ELEMENT tStep 2 number 2 gp 1 keyword 141 component 1 value 2.647493e-08
+#ELEMENT tStep 2 number 2 gp 1 keyword 141 component 2 value 5.602018e-07
+#ELEMENT tStep 2 number 2 gp 1 keyword 142 component 1 value 2.64430923e+03
+#ELEMENT tStep 2 number 2 gp 1 keyword 142 component 2 value 2.14702851e+04
+#ELEMENT tStep 2 number 2 gp 1 keyword 143 component 1 value -4.842061e-08
+#ELEMENT tStep 2 number 2 gp 1 keyword 143 component 2 value  2.183488e-07
+#ELEMENT tStep 2 number 2 gp 1 keyword 143 component 3 value -2.624711e-08
+#ELEMENT tStep 2 number 2 gp 1 keyword 143 component 4 value 1.099520e-07
+#ELEMENT tStep 2 number 2 gp 1 keyword 144 component 1 value 2.89118576e+04
+#ELEMENT tStep 2 number 2 gp 1 keyword 144 component 2 value -9.30387073e+02
+#%END_CHECK%
+

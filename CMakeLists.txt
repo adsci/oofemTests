@@ -9,7 +9,7 @@ file (GLOB_RECURSE testCase RELATIVE "${CMAKE_SOURCE_DIR}/tests/" "${CMAKE_SOURC
 foreach (case ${testCase})
     get_filename_component(dir ${case} DIRECTORY)
     get_filename_component(name ${case} NAME)
-    if (${name} STREQUAL "deepbeamFE2disp04.in")
+    if (${name} STREQUAL "deepbeamFE2disp04.in" OR ${name} STREQUAL "deepbeamFE2dispslip02.in")
             add_test(NAME "${case}" WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}/tests/${dir}" COMMAND ${OOFEM_PATH} "-f" ${name} -ksp_type preonly -pc_type lu -pc_factor_mat_solver_type mumps )
     else ()
         add_test(NAME "${case}" WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}/tests/${dir}" COMMAND ${OOFEM_PATH} "-f" ${name} )
