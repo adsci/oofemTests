@@ -1,5 +1,5 @@
-rveDispSlip08.out
-2x2 RVE - prescribing strain, slip field and slip gradient with Neumann-Neumann BC
+rveDispSlip09.out
+2x2 RVE - prescribing strain, slip field and slip gradient with Dirichlet-Neumann BC
 StaticStructural nsteps 1 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-6 MaxIter 30 minIter 1 stiffmode 2 initialguess 1 nmodules 1
 errorcheck
 #vtkxml tstep_all domain_all vars 5 1 4 5 12 52 ipvars 6 1 4 5 12 52 90 stype 1 regionsets 1 1
@@ -8,7 +8,7 @@ errorcheck
 #matlab tstep_all specials reactionforces integrationpoints internalvars 5 1 4 98 99 7
 domain 2dplanestress
 OutputManager
-ndofman 525 nelem 560 ncrosssect 8 nmat 4 nbc 1 nic 0 nltf 1 nset 13
+ndofman 525 nelem 560 ncrosssect 8 nmat 4 nbc 2 nic 0 nltf 1 nset 14
 node 1 coords 3 -0.1 0.1 0.0
 node 2 coords 3 0.1 0.1 0.0
 node 3 coords 3 -0.2 0.1 0.0
@@ -1107,6 +1107,7 @@ Set 10 elementranges { (441 480) }
 Set 11 elementranges { (481 520) }
 Set 12 elementranges { (521 560) }
 Set 13 nodes 1 333
+Set 14 nodes 8 444 445 465 466 486 487 507 508
 SimpleCS 1 thick 0.2 material 1 set 1
 SimpleCS 2 thick 1.97487e-1 material 1 set 2
 SimpleCS 3 thick 1.84292e-1 material 1 set 3
@@ -1119,10 +1120,11 @@ MazarsModel 1 d 1.0 E 3.36e10 n 0.2 version 1 e0 8.63e-5 ac 2.6 bc 800 ef 0.0025
 MisesMat 2 d 1.0 E 2e11 n 0.3 sig0 500e6 H 8.456659619e8 omega_crit 0 a 0 tAlpha 1.0
 bondceb 3 kn 6e12 ks 6.135e10 s1 0.001 s2 0.002 s3 0.0065 taumax 1.541e7 tauf 6.164e6
 bondceb 4 kn 6e12 ks 6.135e10 s1 0.001 s2 0.002 s3 0.004 taumax 1.541e7 tauf 6.164e6
-PrescribedDispSlipBCNeumannRC 1 loadTimeFunction 1 dofs 2 1 2 ccoord 3 0.0 0.0 0.0 dispGrad 2 2 {0.3e-6 0.4e-6; 0.4e-6 -0.5e-6} slip 2 1e-5 -2e-5 slipGrad 2 2 {0.3e-6 0.4e-6; 0.4e-6 -0.5e-6} set 6 concretevolset 1 rebarsets 2 9 10
+PrescribedDispSlipBCDirichletRC 1 loadTimeFunction 1 dofs 2 1 2 ccoord 3 0.0 0.0 0.0 dispGrad 2 2 {0.3e-6 0.4e-6; 0.4e-6 -0.5e-6} set 6 conboundset 6
+PrescribedDispSlipBCNeumannRC 2 loadTimeFunction 1 dofs 2 1 2 ccoord 3 0.0 0.0 0.0 slip 2 1e-5 -2e-5 slipGrad 2 2 {0.3e-6 0.4e-6; 0.4e-6 -0.5e-6} set 6 concretevolset 1 rebarsets 2 9 10
 ConstantFunction 1 f(t) 1.0
 
 #%BEGIN_CHECK% tolerance 1.e-6
-#ELEMENT tStep 1 number 560 gp 4 keyword 98 component 2 value 9.78464851e-06
-#ELEMENT tStep 1 number 520 gp 4 keyword 98 component 2 value -1.98324707e-05
+#ELEMENT tStep 1 number 560 gp 4 keyword 98 component 2 value 1.00661728e-05
+#ELEMENT tStep 1 number 520 gp 4 keyword 98 component 2 value -1.98569240e-05
 #%END_CHECK%

@@ -1,5 +1,5 @@
 rveDispSlip07.out
-2x2 RVE - prescribing strain, slip field and slip gradient with Dirichlet BC
+2x2 RVE - prescribing strain, slip field and slip gradient with Dirichlet-Dirichlet BC
 StaticStructural nsteps 1 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-6 MaxIter 30 minIter 1 stiffmode 2 initialguess 1 nmodules 1
 errorcheck
 #vtkxml tstep_all domain_all vars 5 1 4 5 12 52 ipvars 6 1 4 5 12 52 90 stype 1 regionsets 1 1
