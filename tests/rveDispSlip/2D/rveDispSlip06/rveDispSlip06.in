@@ -1,0 +1,1128 @@
+rveDispSlip06.out
+2x2 RVE - prescribing slip field and slip gradient with Neumann BC
+StaticStructural nsteps 1 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-6 MaxIter 30 minIter 1 stiffmode 2 initialguess 1 nmodules 1
+errorcheck
+#vtkxml tstep_all domain_all vars 5 1 4 5 12 52 ipvars 6 1 4 5 12 52 90 stype 1 regionsets 1 1
+#vtkxml tstep_all domain_all vars 1 12 ipvars 3 7 8 81 stype 1 regionsets 2 9 10
+#vtkxml tstep_all domain_all vars 2 98 99 ipvars 2 98 99 stype 0 regionsets 2 11 12
+#matlab tstep_all specials reactionforces integrationpoints internalvars 5 1 4 98 99 7
+domain 2dplanestress
+OutputManager
+ndofman 525 nelem 560 ncrosssect 8 nmat 4 nbc 1 nic 0 nltf 1 nset 13
+node 1 coords 3 -0.1 0.1 0.0
+node 2 coords 3 0.1 0.1 0.0
+node 3 coords 3 -0.2 0.1 0.0
+node 4 coords 3 0.2 0.1 0.0
+node 5 coords 3 0.1 -0.1 0.0
+node 6 coords 3 -0.1 -0.1 0.0
+node 7 coords 3 -0.2 -0.1 0.0
+node 8 coords 3 0.2 -0.1 0.0
+node 9 coords 3 0.1 -0.2 0.0
+node 10 coords 3 0.1 0.2 0.0
+node 11 coords 3 -0.1 -0.2 0.0
+node 12 coords 3 -0.1 0.2 0.0
+node 13 coords 3 0.2 0.2 0.0
+node 14 coords 3 0.2 -0.2 0.0
+node 15 coords 3 -0.2 -0.2 0.0
+node 16 coords 3 -0.2 0.2 0.0
+node 17 coords 3 -0.08 0.1 0.0
+node 18 coords 3 -0.06 0.1 0.0
+node 19 coords 3 -0.04 0.1 0.0
+node 20 coords 3 -0.02 0.1 0.0
+node 21 coords 3 2.84217e-17 0.1 0.0
+node 22 coords 3 0.02 0.1 0.0
+node 23 coords 3 0.04 0.1 0.0
+node 24 coords 3 0.06 0.1 0.0
+node 25 coords 3 0.08 0.1 0.0
+node 26 coords 3 -0.18 0.1 0.0
+node 27 coords 3 -0.16 0.1 0.0
+node 28 coords 3 -0.14 0.1 0.0
+node 29 coords 3 -0.12 0.1 0.0
+node 30 coords 3 0.12 0.1 0.0
+node 31 coords 3 0.14 0.1 0.0
+node 32 coords 3 0.16 0.1 0.0
+node 33 coords 3 0.18 0.1 0.0
+node 34 coords 3 0.12 -0.1 0.0
+node 35 coords 3 0.14 -0.1 0.0
+node 36 coords 3 0.16 -0.1 0.0
+node 37 coords 3 0.18 -0.1 0.0
+node 38 coords 3 -0.18 -0.1 0.0
+node 39 coords 3 -0.16 -0.1 0.0
+node 40 coords 3 -0.14 -0.1 0.0
+node 41 coords 3 -0.12 -0.1 0.0
+node 42 coords 3 -0.08 -0.1 0.0
+node 43 coords 3 -0.06 -0.1 0.0
+node 44 coords 3 -0.04 -0.1 0.0
+node 45 coords 3 -0.02 -0.1 0.0
+node 46 coords 3 2.84217e-17 -0.1 0.0
+node 47 coords 3 0.02 -0.1 0.0
+node 48 coords 3 0.04 -0.1 0.0
+node 49 coords 3 0.06 -0.1 0.0
+node 50 coords 3 0.08 -0.1 0.0
+node 51 coords 3 0.1 -0.18 0.0
+node 52 coords 3 0.1 -0.16 0.0
+node 53 coords 3 0.1 -0.14 0.0
+node 54 coords 3 0.1 -0.12 0.0
+node 55 coords 3 0.1 -0.08 0.0
+node 56 coords 3 0.1 -0.06 0.0
+node 57 coords 3 0.1 -0.04 0.0
+node 58 coords 3 0.1 -0.02 0.0
+node 59 coords 3 0.1 2.84217e-17 0.0
+node 60 coords 3 0.1 0.02 0.0
+node 61 coords 3 0.1 0.04 0.0
+node 62 coords 3 0.1 0.06 0.0
+node 63 coords 3 0.1 0.08 0.0
+node 64 coords 3 0.1 0.12 0.0
+node 65 coords 3 0.1 0.14 0.0
+node 66 coords 3 0.1 0.16 0.0
+node 67 coords 3 0.1 0.18 0.0
+node 68 coords 3 -0.1 -0.18 0.0
+node 69 coords 3 -0.1 -0.16 0.0
+node 70 coords 3 -0.1 -0.14 0.0
+node 71 coords 3 -0.1 -0.12 0.0
+node 72 coords 3 -0.1 -0.08 0.0
+node 73 coords 3 -0.1 -0.06 0.0
+node 74 coords 3 -0.1 -0.04 0.0
+node 75 coords 3 -0.1 -0.02 0.0
+node 76 coords 3 -0.1 2.84217e-17 0.0
+node 77 coords 3 -0.1 0.02 0.0
+node 78 coords 3 -0.1 0.04 0.0
+node 79 coords 3 -0.1 0.06 0.0
+node 80 coords 3 -0.1 0.08 0.0
+node 81 coords 3 -0.1 0.12 0.0
+node 82 coords 3 -0.1 0.14 0.0
+node 83 coords 3 -0.1 0.16 0.0
+node 84 coords 3 -0.1 0.18 0.0
+node 85 coords 3 -0.2 0.18 0.0
+node 86 coords 3 -0.2 0.16 0.0
+node 87 coords 3 -0.2 0.14 0.0
+node 88 coords 3 -0.2 0.12 0.0
+node 89 coords 3 -0.2 0.08 0.0
+node 90 coords 3 -0.2 0.06 0.0
+node 91 coords 3 -0.2 0.04 0.0
+node 92 coords 3 -0.2 0.02 0.0
+node 93 coords 3 -0.2 2.84217e-17 0.0
+node 94 coords 3 -0.2 -0.02 0.0
+node 95 coords 3 -0.2 -0.04 0.0
+node 96 coords 3 -0.2 -0.06 0.0
+node 97 coords 3 -0.2 -0.08 0.0
+node 98 coords 3 -0.2 -0.12 0.0
+node 99 coords 3 -0.2 -0.14 0.0
+node 100 coords 3 -0.2 -0.16 0.0
+node 101 coords 3 -0.2 -0.18 0.0
+node 102 coords 3 -0.18 -0.2 0.0
+node 103 coords 3 -0.16 -0.2 0.0
+node 104 coords 3 -0.14 -0.2 0.0
+node 105 coords 3 -0.12 -0.2 0.0
+node 106 coords 3 -0.08 -0.2 0.0
+node 107 coords 3 -0.06 -0.2 0.0
+node 108 coords 3 -0.04 -0.2 0.0
+node 109 coords 3 -0.02 -0.2 0.0
+node 110 coords 3 2.84217e-17 -0.2 0.0
+node 111 coords 3 0.02 -0.2 0.0
+node 112 coords 3 0.04 -0.2 0.0
+node 113 coords 3 0.06 -0.2 0.0
+node 114 coords 3 0.08 -0.2 0.0
+node 115 coords 3 0.12 -0.2 0.0
+node 116 coords 3 0.14 -0.2 0.0
+node 117 coords 3 0.16 -0.2 0.0
+node 118 coords 3 0.18 -0.2 0.0
+node 119 coords 3 0.2 -0.18 0.0
+node 120 coords 3 0.2 -0.16 0.0
+node 121 coords 3 0.2 -0.14 0.0
+node 122 coords 3 0.2 -0.12 0.0
+node 123 coords 3 0.2 -0.08 0.0
+node 124 coords 3 0.2 -0.06 0.0
+node 125 coords 3 0.2 -0.04 0.0
+node 126 coords 3 0.2 -0.02 0.0
+node 127 coords 3 0.2 2.84217e-17 0.0
+node 128 coords 3 0.2 0.02 0.0
+node 129 coords 3 0.2 0.04 0.0
+node 130 coords 3 0.2 0.06 0.0
+node 131 coords 3 0.2 0.08 0.0
+node 132 coords 3 0.2 0.12 0.0
+node 133 coords 3 0.2 0.14 0.0
+node 134 coords 3 0.2 0.16 0.0
+node 135 coords 3 0.2 0.18 0.0
+node 136 coords 3 0.18 0.2 0.0
+node 137 coords 3 0.16 0.2 0.0
+node 138 coords 3 0.14 0.2 0.0
+node 139 coords 3 0.12 0.2 0.0
+node 140 coords 3 0.08 0.2 0.0
+node 141 coords 3 0.06 0.2 0.0
+node 142 coords 3 0.04 0.2 0.0
+node 143 coords 3 0.02 0.2 0.0
+node 144 coords 3 2.84217e-17 0.2 0.0
+node 145 coords 3 -0.02 0.2 0.0
+node 146 coords 3 -0.04 0.2 0.0
+node 147 coords 3 -0.06 0.2 0.0
+node 148 coords 3 -0.08 0.2 0.0
+node 149 coords 3 -0.12 0.2 0.0
+node 150 coords 3 -0.14 0.2 0.0
+node 151 coords 3 -0.16 0.2 0.0
+node 152 coords 3 -0.18 0.2 0.0
+node 153 coords 3 0.08 0.12 0.0
+node 154 coords 3 0.06 0.12 0.0
+node 155 coords 3 0.04 0.12 0.0
+node 156 coords 3 0.02 0.12 0.0
+node 157 coords 3 0.0 0.12 0.0
+node 158 coords 3 -0.02 0.12 0.0
+node 159 coords 3 -0.04 0.12 0.0
+node 160 coords 3 -0.06 0.12 0.0
+node 161 coords 3 -0.08 0.12 0.0
+node 162 coords 3 0.08 0.14 0.0
+node 163 coords 3 0.06 0.14 0.0
+node 164 coords 3 0.04 0.14 0.0
+node 165 coords 3 0.02 0.14 0.0
+node 166 coords 3 5.68434e-17 0.14 0.0
+node 167 coords 3 -0.02 0.14 0.0
+node 168 coords 3 -0.04 0.14 0.0
+node 169 coords 3 -0.06 0.14 0.0
+node 170 coords 3 -0.08 0.14 0.0
+node 171 coords 3 0.08 0.16 0.0
+node 172 coords 3 0.06 0.16 0.0
+node 173 coords 3 0.04 0.16 0.0
+node 174 coords 3 0.02 0.16 0.0
+node 175 coords 3 5.68434e-17 0.16 0.0
+node 176 coords 3 -0.02 0.16 0.0
+node 177 coords 3 -0.04 0.16 0.0
+node 178 coords 3 -0.06 0.16 0.0
+node 179 coords 3 -0.08 0.16 0.0
+node 180 coords 3 0.08 0.18 0.0
+node 181 coords 3 0.06 0.18 0.0
+node 182 coords 3 0.04 0.18 0.0
+node 183 coords 3 0.02 0.18 0.0
+node 184 coords 3 2.84217e-17 0.18 0.0
+node 185 coords 3 -0.02 0.18 0.0
+node 186 coords 3 -0.04 0.18 0.0
+node 187 coords 3 -0.06 0.18 0.0
+node 188 coords 3 -0.08 0.18 0.0
+node 189 coords 3 -0.12 0.12 0.0
+node 190 coords 3 -0.14 0.12 0.0
+node 191 coords 3 -0.16 0.12 0.0
+node 192 coords 3 -0.18 0.12 0.0
+node 193 coords 3 -0.12 0.14 0.0
+node 194 coords 3 -0.14 0.14 0.0
+node 195 coords 3 -0.16 0.14 0.0
+node 196 coords 3 -0.18 0.14 0.0
+node 197 coords 3 -0.12 0.16 0.0
+node 198 coords 3 -0.14 0.16 0.0
+node 199 coords 3 -0.16 0.16 0.0
+node 200 coords 3 -0.18 0.16 0.0
+node 201 coords 3 -0.12 0.18 0.0
+node 202 coords 3 -0.14 0.18 0.0
+node 203 coords 3 -0.16 0.18 0.0
+node 204 coords 3 -0.18 0.18 0.0
+node 205 coords 3 0.18 0.12 0.0
+node 206 coords 3 0.16 0.12 0.0
+node 207 coords 3 0.14 0.12 0.0
+node 208 coords 3 0.12 0.12 0.0
+node 209 coords 3 0.18 0.14 0.0
+node 210 coords 3 0.16 0.14 0.0
+node 211 coords 3 0.14 0.14 0.0
+node 212 coords 3 0.12 0.14 0.0
+node 213 coords 3 0.18 0.16 0.0
+node 214 coords 3 0.16 0.16 0.0
+node 215 coords 3 0.14 0.16 0.0
+node 216 coords 3 0.12 0.16 0.0
+node 217 coords 3 0.18 0.18 0.0
+node 218 coords 3 0.16 0.18 0.0
+node 219 coords 3 0.14 0.18 0.0
+node 220 coords 3 0.12 0.18 0.0
+node 221 coords 3 0.12 -0.08 0.0
+node 222 coords 3 0.12 -0.06 0.0
+node 223 coords 3 0.12 -0.04 0.0
+node 224 coords 3 0.12 -0.02 0.0
+node 225 coords 3 0.12 2.84217e-17 0.0
+node 226 coords 3 0.12 0.02 0.0
+node 227 coords 3 0.12 0.04 0.0
+node 228 coords 3 0.12 0.06 0.0
+node 229 coords 3 0.12 0.08 0.0
+node 230 coords 3 0.14 -0.08 0.0
+node 231 coords 3 0.14 -0.06 0.0
+node 232 coords 3 0.14 -0.04 0.0
+node 233 coords 3 0.14 -0.02 0.0
+node 234 coords 3 0.14 0.0 0.0
+node 235 coords 3 0.14 0.02 0.0
+node 236 coords 3 0.14 0.04 0.0
+node 237 coords 3 0.14 0.06 0.0
+node 238 coords 3 0.14 0.08 0.0
+node 239 coords 3 0.16 -0.08 0.0
+node 240 coords 3 0.16 -0.06 0.0
+node 241 coords 3 0.16 -0.04 0.0
+node 242 coords 3 0.16 -0.02 0.0
+node 243 coords 3 0.16 0.0 0.0
+node 244 coords 3 0.16 0.02 0.0
+node 245 coords 3 0.16 0.04 0.0
+node 246 coords 3 0.16 0.06 0.0
+node 247 coords 3 0.16 0.08 0.0
+node 248 coords 3 0.18 -0.08 0.0
+node 249 coords 3 0.18 -0.06 0.0
+node 250 coords 3 0.18 -0.04 0.0
+node 251 coords 3 0.18 -0.02 0.0
+node 252 coords 3 0.18 2.84217e-17 0.0
+node 253 coords 3 0.18 0.02 0.0
+node 254 coords 3 0.18 0.04 0.0
+node 255 coords 3 0.18 0.06 0.0
+node 256 coords 3 0.18 0.08 0.0
+node 257 coords 3 -0.18 -0.08 0.0
+node 258 coords 3 -0.18 -0.06 0.0
+node 259 coords 3 -0.18 -0.04 0.0
+node 260 coords 3 -0.18 -0.02 0.0
+node 261 coords 3 -0.18 2.84217e-17 0.0
+node 262 coords 3 -0.18 0.02 0.0
+node 263 coords 3 -0.18 0.04 0.0
+node 264 coords 3 -0.18 0.06 0.0
+node 265 coords 3 -0.18 0.08 0.0
+node 266 coords 3 -0.16 -0.08 0.0
+node 267 coords 3 -0.16 -0.06 0.0
+node 268 coords 3 -0.16 -0.04 0.0
+node 269 coords 3 -0.16 -0.02 0.0
+node 270 coords 3 -0.16 0.0 0.0
+node 271 coords 3 -0.16 0.02 0.0
+node 272 coords 3 -0.16 0.04 0.0
+node 273 coords 3 -0.16 0.06 0.0
+node 274 coords 3 -0.16 0.08 0.0
+node 275 coords 3 -0.14 -0.08 0.0
+node 276 coords 3 -0.14 -0.06 0.0
+node 277 coords 3 -0.14 -0.04 0.0
+node 278 coords 3 -0.14 -0.02 0.0
+node 279 coords 3 -0.14 0.0 0.0
+node 280 coords 3 -0.14 0.02 0.0
+node 281 coords 3 -0.14 0.04 0.0
+node 282 coords 3 -0.14 0.06 0.0
+node 283 coords 3 -0.14 0.08 0.0
+node 284 coords 3 -0.12 -0.08 0.0
+node 285 coords 3 -0.12 -0.06 0.0
+node 286 coords 3 -0.12 -0.04 0.0
+node 287 coords 3 -0.12 -0.02 0.0
+node 288 coords 3 -0.12 2.84217e-17 0.0
+node 289 coords 3 -0.12 0.02 0.0
+node 290 coords 3 -0.12 0.04 0.0
+node 291 coords 3 -0.12 0.06 0.0
+node 292 coords 3 -0.12 0.08 0.0
+node 293 coords 3 -0.08 -0.08 0.0
+node 294 coords 3 -0.08 -0.06 0.0
+node 295 coords 3 -0.08 -0.04 0.0
+node 296 coords 3 -0.08 -0.02 0.0
+node 297 coords 3 -0.08 2.84217e-17 0.0
+node 298 coords 3 -0.08 0.02 0.0
+node 299 coords 3 -0.08 0.04 0.0
+node 300 coords 3 -0.08 0.06 0.0
+node 301 coords 3 -0.08 0.08 0.0
+node 302 coords 3 -0.06 -0.08 0.0
+node 303 coords 3 -0.06 -0.06 0.0
+node 304 coords 3 -0.06 -0.04 0.0
+node 305 coords 3 -0.06 -0.02 0.0
+node 306 coords 3 -0.06 2.84217e-17 0.0
+node 307 coords 3 -0.06 0.02 0.0
+node 308 coords 3 -0.06 0.04 0.0
+node 309 coords 3 -0.06 0.06 0.0
+node 310 coords 3 -0.06 0.08 0.0
+node 311 coords 3 -0.04 -0.08 0.0
+node 312 coords 3 -0.04 -0.06 0.0
+node 313 coords 3 -0.04 -0.04 0.0
+node 314 coords 3 -0.04 -0.02 0.0
+node 315 coords 3 -0.04 0.0 0.0
+node 316 coords 3 -0.04 0.02 0.0
+node 317 coords 3 -0.04 0.04 0.0
+node 318 coords 3 -0.04 0.06 0.0
+node 319 coords 3 -0.04 0.08 0.0
+node 320 coords 3 -0.02 -0.08 0.0
+node 321 coords 3 -0.02 -0.06 0.0
+node 322 coords 3 -0.02 -0.04 0.0
+node 323 coords 3 -0.02 -0.02 0.0
+node 324 coords 3 -0.02 0.0 0.0
+node 325 coords 3 -0.02 0.02 0.0
+node 326 coords 3 -0.02 0.04 0.0
+node 327 coords 3 -0.02 0.06 0.0
+node 328 coords 3 -0.02 0.08 0.0
+node 329 coords 3 2.84217e-17 -0.08 0.0
+node 330 coords 3 2.84217e-17 -0.06 0.0
+node 331 coords 3 0.0 -0.04 0.0
+node 332 coords 3 5.68434e-17 -0.02 0.0
+node 333 coords 3 5.68434e-17 0.0 0.0
+node 334 coords 3 5.68434e-17 0.02 0.0
+node 335 coords 3 5.68434e-17 0.04 0.0
+node 336 coords 3 2.84217e-17 0.06 0.0
+node 337 coords 3 2.84217e-17 0.08 0.0
+node 338 coords 3 0.02 -0.08 0.0
+node 339 coords 3 0.02 -0.06 0.0
+node 340 coords 3 0.02 -0.04 0.0
+node 341 coords 3 0.02 -0.02 0.0
+node 342 coords 3 0.02 0.0 0.0
+node 343 coords 3 0.02 0.02 0.0
+node 344 coords 3 0.02 0.04 0.0
+node 345 coords 3 0.02 0.06 0.0
+node 346 coords 3 0.02 0.08 0.0
+node 347 coords 3 0.04 -0.08 0.0
+node 348 coords 3 0.04 -0.06 0.0
+node 349 coords 3 0.04 -0.04 0.0
+node 350 coords 3 0.04 -0.02 0.0
+node 351 coords 3 0.04 0.0 0.0
+node 352 coords 3 0.04 0.02 0.0
+node 353 coords 3 0.04 0.04 0.0
+node 354 coords 3 0.04 0.06 0.0
+node 355 coords 3 0.04 0.08 0.0
+node 356 coords 3 0.06 -0.08 0.0
+node 357 coords 3 0.06 -0.06 0.0
+node 358 coords 3 0.06 -0.04 0.0
+node 359 coords 3 0.06 -0.02 0.0
+node 360 coords 3 0.06 2.84217e-17 0.0
+node 361 coords 3 0.06 0.02 0.0
+node 362 coords 3 0.06 0.04 0.0
+node 363 coords 3 0.06 0.06 0.0
+node 364 coords 3 0.06 0.08 0.0
+node 365 coords 3 0.08 -0.08 0.0
+node 366 coords 3 0.08 -0.06 0.0
+node 367 coords 3 0.08 -0.04 0.0
+node 368 coords 3 0.08 -0.02 0.0
+node 369 coords 3 0.08 2.84217e-17 0.0
+node 370 coords 3 0.08 0.02 0.0
+node 371 coords 3 0.08 0.04 0.0
+node 372 coords 3 0.08 0.06 0.0
+node 373 coords 3 0.08 0.08 0.0
+node 374 coords 3 -0.08 -0.18 0.0
+node 375 coords 3 -0.08 -0.16 0.0
+node 376 coords 3 -0.08 -0.14 0.0
+node 377 coords 3 -0.08 -0.12 0.0
+node 378 coords 3 -0.06 -0.18 0.0
+node 379 coords 3 -0.06 -0.16 0.0
+node 380 coords 3 -0.06 -0.14 0.0
+node 381 coords 3 -0.06 -0.12 0.0
+node 382 coords 3 -0.04 -0.18 0.0
+node 383 coords 3 -0.04 -0.16 0.0
+node 384 coords 3 -0.04 -0.14 0.0
+node 385 coords 3 -0.04 -0.12 0.0
+node 386 coords 3 -0.02 -0.18 0.0
+node 387 coords 3 -0.02 -0.16 0.0
+node 388 coords 3 -0.02 -0.14 0.0
+node 389 coords 3 -0.02 -0.12 0.0
+node 390 coords 3 2.84217e-17 -0.18 0.0
+node 391 coords 3 5.68434e-17 -0.16 0.0
+node 392 coords 3 5.68434e-17 -0.14 0.0
+node 393 coords 3 2.84217e-17 -0.12 0.0
+node 394 coords 3 0.02 -0.18 0.0
+node 395 coords 3 0.02 -0.16 0.0
+node 396 coords 3 0.02 -0.14 0.0
+node 397 coords 3 0.02 -0.12 0.0
+node 398 coords 3 0.04 -0.18 0.0
+node 399 coords 3 0.04 -0.16 0.0
+node 400 coords 3 0.04 -0.14 0.0
+node 401 coords 3 0.04 -0.12 0.0
+node 402 coords 3 0.06 -0.18 0.0
+node 403 coords 3 0.06 -0.16 0.0
+node 404 coords 3 0.06 -0.14 0.0
+node 405 coords 3 0.06 -0.12 0.0
+node 406 coords 3 0.08 -0.18 0.0
+node 407 coords 3 0.08 -0.16 0.0
+node 408 coords 3 0.08 -0.14 0.0
+node 409 coords 3 0.08 -0.12 0.0
+node 410 coords 3 -0.18 -0.18 0.0
+node 411 coords 3 -0.18 -0.16 0.0
+node 412 coords 3 -0.18 -0.14 0.0
+node 413 coords 3 -0.18 -0.12 0.0
+node 414 coords 3 -0.16 -0.18 0.0
+node 415 coords 3 -0.16 -0.16 0.0
+node 416 coords 3 -0.16 -0.14 0.0
+node 417 coords 3 -0.16 -0.12 0.0
+node 418 coords 3 -0.14 -0.18 0.0
+node 419 coords 3 -0.14 -0.16 0.0
+node 420 coords 3 -0.14 -0.14 0.0
+node 421 coords 3 -0.14 -0.12 0.0
+node 422 coords 3 -0.12 -0.18 0.0
+node 423 coords 3 -0.12 -0.16 0.0
+node 424 coords 3 -0.12 -0.14 0.0
+node 425 coords 3 -0.12 -0.12 0.0
+node 426 coords 3 0.12 -0.18 0.0
+node 427 coords 3 0.12 -0.16 0.0
+node 428 coords 3 0.12 -0.14 0.0
+node 429 coords 3 0.12 -0.12 0.0
+node 430 coords 3 0.14 -0.18 0.0
+node 431 coords 3 0.14 -0.16 0.0
+node 432 coords 3 0.14 -0.14 0.0
+node 433 coords 3 0.14 -0.12 0.0
+node 434 coords 3 0.16 -0.18 0.0
+node 435 coords 3 0.16 -0.16 0.0
+node 436 coords 3 0.16 -0.14 0.0
+node 437 coords 3 0.16 -0.12 0.0
+node 438 coords 3 0.18 -0.18 0.0
+node 439 coords 3 0.18 -0.16 0.0
+node 440 coords 3 0.18 -0.14 0.0
+node 441 coords 3 0.18 -0.12 0.0
+node 442 coords 3 -0.1 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 6 0 0 
+node 443 coords 3 -0.1 0.1 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 1 0 0 
+node 444 coords 3 -0.1 0.2 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 12 0 0
+node 445 coords 3 -0.1 -0.2 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 11 0 0
+node 446 coords 3 -0.1 -0.18 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 68 0 0 
+node 447 coords 3 -0.1 -0.16 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 69 0 0 
+node 448 coords 3 -0.1 -0.14 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 70 0 0 
+node 449 coords 3 -0.1 -0.12 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 71 0 0 
+node 450 coords 3 -0.1 -0.08 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 72 0 0 
+node 451 coords 3 -0.1 -0.06 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 73 0 0 
+node 452 coords 3 -0.1 -0.04 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 74 0 0 
+node 453 coords 3 -0.1 -0.02 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 75 0 0 
+node 454 coords 3 -0.1 2.84217e-17 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 76 0 0 
+node 455 coords 3 -0.1 0.02 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 77 0 0 
+node 456 coords 3 -0.1 0.04 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 78 0 0 
+node 457 coords 3 -0.1 0.06 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 79 0 0 
+node 458 coords 3 -0.1 0.08 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 80 0 0 
+node 459 coords 3 -0.1 0.12 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 81 0 0 
+node 460 coords 3 -0.1 0.14 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 82 0 0 
+node 461 coords 3 -0.1 0.16 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 83 0 0 
+node 462 coords 3 -0.1 0.18 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 84 0 0 
+node 463 coords 3 0.1 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 5 0 0 
+node 464 coords 3 0.1 0.1 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 2 0 0 
+node 465 coords 3 0.1 0.2 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 10 0 0
+node 466 coords 3 0.1 -0.2 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 9 0 0
+node 467 coords 3 0.1 -0.18 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 51 0 0 
+node 468 coords 3 0.1 -0.16 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 52 0 0 
+node 469 coords 3 0.1 -0.14 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 53 0 0 
+node 470 coords 3 0.1 -0.12 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 54 0 0 
+node 471 coords 3 0.1 -0.08 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 55 0 0 
+node 472 coords 3 0.1 -0.06 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 56 0 0 
+node 473 coords 3 0.1 -0.04 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 57 0 0 
+node 474 coords 3 0.1 -0.02 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 58 0 0 
+node 475 coords 3 0.1 2.84217e-17 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 59 0 0 
+node 476 coords 3 0.1 0.02 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 60 0 0 
+node 477 coords 3 0.1 0.04 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 61 0 0 
+node 478 coords 3 0.1 0.06 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 62 0 0 
+node 479 coords 3 0.1 0.08 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 63 0 0 
+node 480 coords 3 0.1 0.12 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 64 0 0 
+node 481 coords 3 0.1 0.14 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 65 0 0 
+node 482 coords 3 0.1 0.16 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 66 0 0 
+node 483 coords 3 0.1 0.18 0.0 dofidmask 3 1 2 6 doftype 3 1 0 0 mastermask 3 67 0 0 
+node 484 coords 3 -0.1 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 6 0 
+node 485 coords 3 0.1 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 5 0 
+node 486 coords 3 0.2 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0 mastermask 3 0 8 0
+node 487 coords 3 -0.2 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0 mastermask 3 0 7 0
+node 488 coords 3 -0.18 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 38 0 
+node 489 coords 3 -0.16 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 39 0 
+node 490 coords 3 -0.14 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 40 0 
+node 491 coords 3 -0.12 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 41 0 
+node 492 coords 3 -0.08 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 42 0 
+node 493 coords 3 -0.06 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 43 0 
+node 494 coords 3 -0.04 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 44 0 
+node 495 coords 3 -0.02 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 45 0 
+node 496 coords 3 2.84217e-17 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 46 0 
+node 497 coords 3 0.02 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 47 0 
+node 498 coords 3 0.04 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 48 0 
+node 499 coords 3 0.06 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 49 0 
+node 500 coords 3 0.08 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 50 0 
+node 501 coords 3 0.12 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 34 0 
+node 502 coords 3 0.14 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 35 0 
+node 503 coords 3 0.16 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 36 0 
+node 504 coords 3 0.18 -0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 37 0 
+node 505 coords 3 0.1 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 2 0 
+node 506 coords 3 -0.1 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 1 0 
+node 507 coords 3 0.2 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0 mastermask 3 0 4 0
+node 508 coords 3 -0.2 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0 mastermask 3 0 3 0
+node 509 coords 3 -0.18 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 26 0 
+node 510 coords 3 -0.16 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 27 0 
+node 511 coords 3 -0.14 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 28 0 
+node 512 coords 3 -0.12 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 29 0 
+node 513 coords 3 -0.08 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 17 0 
+node 514 coords 3 -0.06 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 18 0 
+node 515 coords 3 -0.04 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 19 0 
+node 516 coords 3 -0.02 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 20 0 
+node 517 coords 3 2.84217e-17 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 21 0 
+node 518 coords 3 0.02 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 22 0 
+node 519 coords 3 0.04 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 23 0 
+node 520 coords 3 0.06 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 24 0 
+node 521 coords 3 0.08 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 25 0 
+node 522 coords 3 0.12 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 30 0 
+node 523 coords 3 0.14 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 31 0 
+node 524 coords 3 0.16 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 32 0 
+node 525 coords 3 0.18 0.1 0.0 dofidmask 3 1 2 6 doftype 3 0 1 0  mastermask 3 0 33 0 
+planestress2d 1 nodes 4 2 64 153 25
+planestress2d 2 nodes 4 25 153 154 24
+planestress2d 3 nodes 4 24 154 155 23
+planestress2d 4 nodes 4 23 155 156 22
+planestress2d 5 nodes 4 22 156 157 21
+planestress2d 6 nodes 4 21 157 158 20
+planestress2d 7 nodes 4 20 158 159 19
+planestress2d 8 nodes 4 19 159 160 18
+planestress2d 9 nodes 4 18 160 161 17
+planestress2d 10 nodes 4 17 161 81 1
+planestress2d 11 nodes 4 64 65 162 153
+planestress2d 12 nodes 4 153 162 163 154
+planestress2d 13 nodes 4 154 163 164 155
+planestress2d 14 nodes 4 155 164 165 156
+planestress2d 15 nodes 4 156 165 166 157
+planestress2d 16 nodes 4 157 166 167 158
+planestress2d 17 nodes 4 158 167 168 159
+planestress2d 18 nodes 4 159 168 169 160
+planestress2d 19 nodes 4 160 169 170 161
+planestress2d 20 nodes 4 161 170 82 81
+planestress2d 21 nodes 4 65 66 171 162
+planestress2d 22 nodes 4 162 171 172 163
+planestress2d 23 nodes 4 163 172 173 164
+planestress2d 24 nodes 4 164 173 174 165
+planestress2d 25 nodes 4 165 174 175 166
+planestress2d 26 nodes 4 166 175 176 167
+planestress2d 27 nodes 4 167 176 177 168
+planestress2d 28 nodes 4 168 177 178 169
+planestress2d 29 nodes 4 169 178 179 170
+planestress2d 30 nodes 4 170 179 83 82
+planestress2d 31 nodes 4 66 67 180 171
+planestress2d 32 nodes 4 171 180 181 172
+planestress2d 33 nodes 4 172 181 182 173
+planestress2d 34 nodes 4 173 182 183 174
+planestress2d 35 nodes 4 174 183 184 175
+planestress2d 36 nodes 4 175 184 185 176
+planestress2d 37 nodes 4 176 185 186 177
+planestress2d 38 nodes 4 177 186 187 178
+planestress2d 39 nodes 4 178 187 188 179
+planestress2d 40 nodes 4 179 188 84 83
+planestress2d 41 nodes 4 67 10 140 180
+planestress2d 42 nodes 4 180 140 141 181
+planestress2d 43 nodes 4 181 141 142 182
+planestress2d 44 nodes 4 182 142 143 183
+planestress2d 45 nodes 4 183 143 144 184
+planestress2d 46 nodes 4 184 144 145 185
+planestress2d 47 nodes 4 185 145 146 186
+planestress2d 48 nodes 4 186 146 147 187
+planestress2d 49 nodes 4 187 147 148 188
+planestress2d 50 nodes 4 188 148 12 84
+planestress2d 51 nodes 4 1 81 189 29
+planestress2d 52 nodes 4 29 189 190 28
+planestress2d 53 nodes 4 28 190 191 27
+planestress2d 54 nodes 4 27 191 192 26
+planestress2d 55 nodes 4 26 192 88 3
+planestress2d 56 nodes 4 81 82 193 189
+planestress2d 57 nodes 4 189 193 194 190
+planestress2d 58 nodes 4 190 194 195 191
+planestress2d 59 nodes 4 191 195 196 192
+planestress2d 60 nodes 4 192 196 87 88
+planestress2d 61 nodes 4 82 83 197 193
+planestress2d 62 nodes 4 193 197 198 194
+planestress2d 63 nodes 4 194 198 199 195
+planestress2d 64 nodes 4 195 199 200 196
+planestress2d 65 nodes 4 196 200 86 87
+planestress2d 66 nodes 4 83 84 201 197
+planestress2d 67 nodes 4 197 201 202 198
+planestress2d 68 nodes 4 198 202 203 199
+planestress2d 69 nodes 4 199 203 204 200
+planestress2d 70 nodes 4 200 204 85 86
+planestress2d 71 nodes 4 84 12 149 201
+planestress2d 72 nodes 4 201 149 150 202
+planestress2d 73 nodes 4 202 150 151 203
+planestress2d 74 nodes 4 203 151 152 204
+planestress2d 75 nodes 4 204 152 16 85
+planestress2d 76 nodes 4 4 132 205 33
+planestress2d 77 nodes 4 33 205 206 32
+planestress2d 78 nodes 4 32 206 207 31
+planestress2d 79 nodes 4 31 207 208 30
+planestress2d 80 nodes 4 30 208 64 2
+planestress2d 81 nodes 4 132 133 209 205
+planestress2d 82 nodes 4 205 209 210 206
+planestress2d 83 nodes 4 206 210 211 207
+planestress2d 84 nodes 4 207 211 212 208
+planestress2d 85 nodes 4 208 212 65 64
+planestress2d 86 nodes 4 133 134 213 209
+planestress2d 87 nodes 4 209 213 214 210
+planestress2d 88 nodes 4 210 214 215 211
+planestress2d 89 nodes 4 211 215 216 212
+planestress2d 90 nodes 4 212 216 66 65
+planestress2d 91 nodes 4 134 135 217 213
+planestress2d 92 nodes 4 213 217 218 214
+planestress2d 93 nodes 4 214 218 219 215
+planestress2d 94 nodes 4 215 219 220 216
+planestress2d 95 nodes 4 216 220 67 66
+planestress2d 96 nodes 4 135 13 136 217
+planestress2d 97 nodes 4 217 136 137 218
+planestress2d 98 nodes 4 218 137 138 219
+planestress2d 99 nodes 4 219 138 139 220
+planestress2d 100 nodes 4 220 139 10 67
+planestress2d 101 nodes 4 5 34 221 55
+planestress2d 102 nodes 4 55 221 222 56
+planestress2d 103 nodes 4 56 222 223 57
+planestress2d 104 nodes 4 57 223 224 58
+planestress2d 105 nodes 4 58 224 225 59
+planestress2d 106 nodes 4 59 225 226 60
+planestress2d 107 nodes 4 60 226 227 61
+planestress2d 108 nodes 4 61 227 228 62
+planestress2d 109 nodes 4 62 228 229 63
+planestress2d 110 nodes 4 63 229 30 2
+planestress2d 111 nodes 4 34 35 230 221
+planestress2d 112 nodes 4 221 230 231 222
+planestress2d 113 nodes 4 222 231 232 223
+planestress2d 114 nodes 4 223 232 233 224
+planestress2d 115 nodes 4 224 233 234 225
+planestress2d 116 nodes 4 225 234 235 226
+planestress2d 117 nodes 4 226 235 236 227
+planestress2d 118 nodes 4 227 236 237 228
+planestress2d 119 nodes 4 228 237 238 229
+planestress2d 120 nodes 4 229 238 31 30
+planestress2d 121 nodes 4 35 36 239 230
+planestress2d 122 nodes 4 230 239 240 231
+planestress2d 123 nodes 4 231 240 241 232
+planestress2d 124 nodes 4 232 241 242 233
+planestress2d 125 nodes 4 233 242 243 234
+planestress2d 126 nodes 4 234 243 244 235
+planestress2d 127 nodes 4 235 244 245 236
+planestress2d 128 nodes 4 236 245 246 237
+planestress2d 129 nodes 4 237 246 247 238
+planestress2d 130 nodes 4 238 247 32 31
+planestress2d 131 nodes 4 36 37 248 239
+planestress2d 132 nodes 4 239 248 249 240
+planestress2d 133 nodes 4 240 249 250 241
+planestress2d 134 nodes 4 241 250 251 242
+planestress2d 135 nodes 4 242 251 252 243
+planestress2d 136 nodes 4 243 252 253 244
+planestress2d 137 nodes 4 244 253 254 245
+planestress2d 138 nodes 4 245 254 255 246
+planestress2d 139 nodes 4 246 255 256 247
+planestress2d 140 nodes 4 247 256 33 32
+planestress2d 141 nodes 4 37 8 123 248
+planestress2d 142 nodes 4 248 123 124 249
+planestress2d 143 nodes 4 249 124 125 250
+planestress2d 144 nodes 4 250 125 126 251
+planestress2d 145 nodes 4 251 126 127 252
+planestress2d 146 nodes 4 252 127 128 253
+planestress2d 147 nodes 4 253 128 129 254
+planestress2d 148 nodes 4 254 129 130 255
+planestress2d 149 nodes 4 255 130 131 256
+planestress2d 150 nodes 4 256 131 4 33
+planestress2d 151 nodes 4 7 38 257 97
+planestress2d 152 nodes 4 97 257 258 96
+planestress2d 153 nodes 4 96 258 259 95
+planestress2d 154 nodes 4 95 259 260 94
+planestress2d 155 nodes 4 94 260 261 93
+planestress2d 156 nodes 4 93 261 262 92
+planestress2d 157 nodes 4 92 262 263 91
+planestress2d 158 nodes 4 91 263 264 90
+planestress2d 159 nodes 4 90 264 265 89
+planestress2d 160 nodes 4 89 265 26 3
+planestress2d 161 nodes 4 38 39 266 257
+planestress2d 162 nodes 4 257 266 267 258
+planestress2d 163 nodes 4 258 267 268 259
+planestress2d 164 nodes 4 259 268 269 260
+planestress2d 165 nodes 4 260 269 270 261
+planestress2d 166 nodes 4 261 270 271 262
+planestress2d 167 nodes 4 262 271 272 263
+planestress2d 168 nodes 4 263 272 273 264
+planestress2d 169 nodes 4 264 273 274 265
+planestress2d 170 nodes 4 265 274 27 26
+planestress2d 171 nodes 4 39 40 275 266
+planestress2d 172 nodes 4 266 275 276 267
+planestress2d 173 nodes 4 267 276 277 268
+planestress2d 174 nodes 4 268 277 278 269
+planestress2d 175 nodes 4 269 278 279 270
+planestress2d 176 nodes 4 270 279 280 271
+planestress2d 177 nodes 4 271 280 281 272
+planestress2d 178 nodes 4 272 281 282 273
+planestress2d 179 nodes 4 273 282 283 274
+planestress2d 180 nodes 4 274 283 28 27
+planestress2d 181 nodes 4 40 41 284 275
+planestress2d 182 nodes 4 275 284 285 276
+planestress2d 183 nodes 4 276 285 286 277
+planestress2d 184 nodes 4 277 286 287 278
+planestress2d 185 nodes 4 278 287 288 279
+planestress2d 186 nodes 4 279 288 289 280
+planestress2d 187 nodes 4 280 289 290 281
+planestress2d 188 nodes 4 281 290 291 282
+planestress2d 189 nodes 4 282 291 292 283
+planestress2d 190 nodes 4 283 292 29 28
+planestress2d 191 nodes 4 41 6 72 284
+planestress2d 192 nodes 4 284 72 73 285
+planestress2d 193 nodes 4 285 73 74 286
+planestress2d 194 nodes 4 286 74 75 287
+planestress2d 195 nodes 4 287 75 76 288
+planestress2d 196 nodes 4 288 76 77 289
+planestress2d 197 nodes 4 289 77 78 290
+planestress2d 198 nodes 4 290 78 79 291
+planestress2d 199 nodes 4 291 79 80 292
+planestress2d 200 nodes 4 292 80 1 29
+planestress2d 201 nodes 4 6 42 293 72
+planestress2d 202 nodes 4 72 293 294 73
+planestress2d 203 nodes 4 73 294 295 74
+planestress2d 204 nodes 4 74 295 296 75
+planestress2d 205 nodes 4 75 296 297 76
+planestress2d 206 nodes 4 76 297 298 77
+planestress2d 207 nodes 4 77 298 299 78
+planestress2d 208 nodes 4 78 299 300 79
+planestress2d 209 nodes 4 79 300 301 80
+planestress2d 210 nodes 4 80 301 17 1
+planestress2d 211 nodes 4 42 43 302 293
+planestress2d 212 nodes 4 293 302 303 294
+planestress2d 213 nodes 4 294 303 304 295
+planestress2d 214 nodes 4 295 304 305 296
+planestress2d 215 nodes 4 296 305 306 297
+planestress2d 216 nodes 4 297 306 307 298
+planestress2d 217 nodes 4 298 307 308 299
+planestress2d 218 nodes 4 299 308 309 300
+planestress2d 219 nodes 4 300 309 310 301
+planestress2d 220 nodes 4 301 310 18 17
+planestress2d 221 nodes 4 43 44 311 302
+planestress2d 222 nodes 4 302 311 312 303
+planestress2d 223 nodes 4 303 312 313 304
+planestress2d 224 nodes 4 304 313 314 305
+planestress2d 225 nodes 4 305 314 315 306
+planestress2d 226 nodes 4 306 315 316 307
+planestress2d 227 nodes 4 307 316 317 308
+planestress2d 228 nodes 4 308 317 318 309
+planestress2d 229 nodes 4 309 318 319 310
+planestress2d 230 nodes 4 310 319 19 18
+planestress2d 231 nodes 4 44 45 320 311
+planestress2d 232 nodes 4 311 320 321 312
+planestress2d 233 nodes 4 312 321 322 313
+planestress2d 234 nodes 4 313 322 323 314
+planestress2d 235 nodes 4 314 323 324 315
+planestress2d 236 nodes 4 315 324 325 316
+planestress2d 237 nodes 4 316 325 326 317
+planestress2d 238 nodes 4 317 326 327 318
+planestress2d 239 nodes 4 318 327 328 319
+planestress2d 240 nodes 4 319 328 20 19
+planestress2d 241 nodes 4 45 46 329 320
+planestress2d 242 nodes 4 320 329 330 321
+planestress2d 243 nodes 4 321 330 331 322
+planestress2d 244 nodes 4 322 331 332 323
+planestress2d 245 nodes 4 323 332 333 324
+planestress2d 246 nodes 4 324 333 334 325
+planestress2d 247 nodes 4 325 334 335 326
+planestress2d 248 nodes 4 326 335 336 327
+planestress2d 249 nodes 4 327 336 337 328
+planestress2d 250 nodes 4 328 337 21 20
+planestress2d 251 nodes 4 46 47 338 329
+planestress2d 252 nodes 4 329 338 339 330
+planestress2d 253 nodes 4 330 339 340 331
+planestress2d 254 nodes 4 331 340 341 332
+planestress2d 255 nodes 4 332 341 342 333
+planestress2d 256 nodes 4 333 342 343 334
+planestress2d 257 nodes 4 334 343 344 335
+planestress2d 258 nodes 4 335 344 345 336
+planestress2d 259 nodes 4 336 345 346 337
+planestress2d 260 nodes 4 337 346 22 21
+planestress2d 261 nodes 4 47 48 347 338
+planestress2d 262 nodes 4 338 347 348 339
+planestress2d 263 nodes 4 339 348 349 340
+planestress2d 264 nodes 4 340 349 350 341
+planestress2d 265 nodes 4 341 350 351 342
+planestress2d 266 nodes 4 342 351 352 343
+planestress2d 267 nodes 4 343 352 353 344
+planestress2d 268 nodes 4 344 353 354 345
+planestress2d 269 nodes 4 345 354 355 346
+planestress2d 270 nodes 4 346 355 23 22
+planestress2d 271 nodes 4 48 49 356 347
+planestress2d 272 nodes 4 347 356 357 348
+planestress2d 273 nodes 4 348 357 358 349
+planestress2d 274 nodes 4 349 358 359 350
+planestress2d 275 nodes 4 350 359 360 351
+planestress2d 276 nodes 4 351 360 361 352
+planestress2d 277 nodes 4 352 361 362 353
+planestress2d 278 nodes 4 353 362 363 354
+planestress2d 279 nodes 4 354 363 364 355
+planestress2d 280 nodes 4 355 364 24 23
+planestress2d 281 nodes 4 49 50 365 356
+planestress2d 282 nodes 4 356 365 366 357
+planestress2d 283 nodes 4 357 366 367 358
+planestress2d 284 nodes 4 358 367 368 359
+planestress2d 285 nodes 4 359 368 369 360
+planestress2d 286 nodes 4 360 369 370 361
+planestress2d 287 nodes 4 361 370 371 362
+planestress2d 288 nodes 4 362 371 372 363
+planestress2d 289 nodes 4 363 372 373 364
+planestress2d 290 nodes 4 364 373 25 24
+planestress2d 291 nodes 4 50 5 55 365
+planestress2d 292 nodes 4 365 55 56 366
+planestress2d 293 nodes 4 366 56 57 367
+planestress2d 294 nodes 4 367 57 58 368
+planestress2d 295 nodes 4 368 58 59 369
+planestress2d 296 nodes 4 369 59 60 370
+planestress2d 297 nodes 4 370 60 61 371
+planestress2d 298 nodes 4 371 61 62 372
+planestress2d 299 nodes 4 372 62 63 373
+planestress2d 300 nodes 4 373 63 2 25
+planestress2d 301 nodes 4 11 106 374 68
+planestress2d 302 nodes 4 68 374 375 69
+planestress2d 303 nodes 4 69 375 376 70
+planestress2d 304 nodes 4 70 376 377 71
+planestress2d 305 nodes 4 71 377 42 6
+planestress2d 306 nodes 4 106 107 378 374
+planestress2d 307 nodes 4 374 378 379 375
+planestress2d 308 nodes 4 375 379 380 376
+planestress2d 309 nodes 4 376 380 381 377
+planestress2d 310 nodes 4 377 381 43 42
+planestress2d 311 nodes 4 107 108 382 378
+planestress2d 312 nodes 4 378 382 383 379
+planestress2d 313 nodes 4 379 383 384 380
+planestress2d 314 nodes 4 380 384 385 381
+planestress2d 315 nodes 4 381 385 44 43
+planestress2d 316 nodes 4 108 109 386 382
+planestress2d 317 nodes 4 382 386 387 383
+planestress2d 318 nodes 4 383 387 388 384
+planestress2d 319 nodes 4 384 388 389 385
+planestress2d 320 nodes 4 385 389 45 44
+planestress2d 321 nodes 4 109 110 390 386
+planestress2d 322 nodes 4 386 390 391 387
+planestress2d 323 nodes 4 387 391 392 388
+planestress2d 324 nodes 4 388 392 393 389
+planestress2d 325 nodes 4 389 393 46 45
+planestress2d 326 nodes 4 110 111 394 390
+planestress2d 327 nodes 4 390 394 395 391
+planestress2d 328 nodes 4 391 395 396 392
+planestress2d 329 nodes 4 392 396 397 393
+planestress2d 330 nodes 4 393 397 47 46
+planestress2d 331 nodes 4 111 112 398 394
+planestress2d 332 nodes 4 394 398 399 395
+planestress2d 333 nodes 4 395 399 400 396
+planestress2d 334 nodes 4 396 400 401 397
+planestress2d 335 nodes 4 397 401 48 47
+planestress2d 336 nodes 4 112 113 402 398
+planestress2d 337 nodes 4 398 402 403 399
+planestress2d 338 nodes 4 399 403 404 400
+planestress2d 339 nodes 4 400 404 405 401
+planestress2d 340 nodes 4 401 405 49 48
+planestress2d 341 nodes 4 113 114 406 402
+planestress2d 342 nodes 4 402 406 407 403
+planestress2d 343 nodes 4 403 407 408 404
+planestress2d 344 nodes 4 404 408 409 405
+planestress2d 345 nodes 4 405 409 50 49
+planestress2d 346 nodes 4 114 9 51 406
+planestress2d 347 nodes 4 406 51 52 407
+planestress2d 348 nodes 4 407 52 53 408
+planestress2d 349 nodes 4 408 53 54 409
+planestress2d 350 nodes 4 409 54 5 50
+planestress2d 351 nodes 4 15 102 410 101
+planestress2d 352 nodes 4 101 410 411 100
+planestress2d 353 nodes 4 100 411 412 99
+planestress2d 354 nodes 4 99 412 413 98
+planestress2d 355 nodes 4 98 413 38 7
+planestress2d 356 nodes 4 102 103 414 410
+planestress2d 357 nodes 4 410 414 415 411
+planestress2d 358 nodes 4 411 415 416 412
+planestress2d 359 nodes 4 412 416 417 413
+planestress2d 360 nodes 4 413 417 39 38
+planestress2d 361 nodes 4 103 104 418 414
+planestress2d 362 nodes 4 414 418 419 415
+planestress2d 363 nodes 4 415 419 420 416
+planestress2d 364 nodes 4 416 420 421 417
+planestress2d 365 nodes 4 417 421 40 39
+planestress2d 366 nodes 4 104 105 422 418
+planestress2d 367 nodes 4 418 422 423 419
+planestress2d 368 nodes 4 419 423 424 420
+planestress2d 369 nodes 4 420 424 425 421
+planestress2d 370 nodes 4 421 425 41 40
+planestress2d 371 nodes 4 105 11 68 422
+planestress2d 372 nodes 4 422 68 69 423
+planestress2d 373 nodes 4 423 69 70 424
+planestress2d 374 nodes 4 424 70 71 425
+planestress2d 375 nodes 4 425 71 6 41
+planestress2d 376 nodes 4 9 115 426 51
+planestress2d 377 nodes 4 51 426 427 52
+planestress2d 378 nodes 4 52 427 428 53
+planestress2d 379 nodes 4 53 428 429 54
+planestress2d 380 nodes 4 54 429 34 5
+planestress2d 381 nodes 4 115 116 430 426
+planestress2d 382 nodes 4 426 430 431 427
+planestress2d 383 nodes 4 427 431 432 428
+planestress2d 384 nodes 4 428 432 433 429
+planestress2d 385 nodes 4 429 433 35 34
+planestress2d 386 nodes 4 116 117 434 430
+planestress2d 387 nodes 4 430 434 435 431
+planestress2d 388 nodes 4 431 435 436 432
+planestress2d 389 nodes 4 432 436 437 433
+planestress2d 390 nodes 4 433 437 36 35
+planestress2d 391 nodes 4 117 118 438 434
+planestress2d 392 nodes 4 434 438 439 435
+planestress2d 393 nodes 4 435 439 440 436
+planestress2d 394 nodes 4 436 440 441 437
+planestress2d 395 nodes 4 437 441 37 36
+planestress2d 396 nodes 4 118 14 119 438
+planestress2d 397 nodes 4 438 119 120 439
+planestress2d 398 nodes 4 439 120 121 440
+planestress2d 399 nodes 4 440 121 122 441
+planestress2d 400 nodes 4 441 122 8 37
+libeam2d 401 nodes 2 445 446 crossSect 5 xy
+libeam2d 402 nodes 2 446 447 crossSect 5 xy
+libeam2d 403 nodes 2 447 448 crossSect 5 xy
+libeam2d 404 nodes 2 448 449 crossSect 5 xy
+libeam2d 405 nodes 2 449 442 crossSect 5 xy
+libeam2d 406 nodes 2 442 450 crossSect 5 xy
+libeam2d 407 nodes 2 450 451 crossSect 5 xy
+libeam2d 408 nodes 2 451 452 crossSect 5 xy
+libeam2d 409 nodes 2 452 453 crossSect 5 xy
+libeam2d 410 nodes 2 453 454 crossSect 5 xy
+libeam2d 411 nodes 2 454 455 crossSect 5 xy
+libeam2d 412 nodes 2 455 456 crossSect 5 xy
+libeam2d 413 nodes 2 456 457 crossSect 5 xy
+libeam2d 414 nodes 2 457 458 crossSect 5 xy
+libeam2d 415 nodes 2 458 443 crossSect 5 xy
+libeam2d 416 nodes 2 443 459 crossSect 5 xy
+libeam2d 417 nodes 2 459 460 crossSect 5 xy
+libeam2d 418 nodes 2 460 461 crossSect 5 xy
+libeam2d 419 nodes 2 461 462 crossSect 5 xy
+libeam2d 420 nodes 2 462 444 crossSect 5 xy
+libeam2d 421 nodes 2 466 467 crossSect 5 xy
+libeam2d 422 nodes 2 467 468 crossSect 5 xy
+libeam2d 423 nodes 2 468 469 crossSect 5 xy
+libeam2d 424 nodes 2 469 470 crossSect 5 xy
+libeam2d 425 nodes 2 470 463 crossSect 5 xy
+libeam2d 426 nodes 2 463 471 crossSect 5 xy
+libeam2d 427 nodes 2 471 472 crossSect 5 xy
+libeam2d 428 nodes 2 472 473 crossSect 5 xy
+libeam2d 429 nodes 2 473 474 crossSect 5 xy
+libeam2d 430 nodes 2 474 475 crossSect 5 xy
+libeam2d 431 nodes 2 475 476 crossSect 5 xy
+libeam2d 432 nodes 2 476 477 crossSect 5 xy 
+libeam2d 433 nodes 2 477 478 crossSect 5 xy
+libeam2d 434 nodes 2 478 479 crossSect 5 xy
+libeam2d 435 nodes 2 479 464 crossSect 5 xy
+libeam2d 436 nodes 2 464 480 crossSect 5 xy
+libeam2d 437 nodes 2 480 481 crossSect 5 xy
+libeam2d 438 nodes 2 481 482 crossSect 5 xy
+libeam2d 439 nodes 2 482 483 crossSect 5 xy
+libeam2d 440 nodes 2 483 465 crossSect 5 xy
+libeam2d 441 nodes 2 487 488 crossSect 6 xy
+libeam2d 442 nodes 2 488 489 crossSect 6 xy
+libeam2d 443 nodes 2 489 490 crossSect 6 xy
+libeam2d 444 nodes 2 490 491 crossSect 6 xy
+libeam2d 445 nodes 2 491 484 crossSect 6 xy
+libeam2d 446 nodes 2 484 492 crossSect 6 xy
+libeam2d 447 nodes 2 492 493 crossSect 6 xy
+libeam2d 448 nodes 2 493 494 crossSect 6 xy
+libeam2d 449 nodes 2 494 495 crossSect 6 xy
+libeam2d 450 nodes 2 495 496 crossSect 6 xy
+libeam2d 451 nodes 2 496 497 crossSect 6 xy
+libeam2d 452 nodes 2 497 498 crossSect 6 xy
+libeam2d 453 nodes 2 498 499 crossSect 6 xy
+libeam2d 454 nodes 2 499 500 crossSect 6 xy
+libeam2d 455 nodes 2 500 485 crossSect 6 xy
+libeam2d 456 nodes 2 485 501 crossSect 6 xy
+libeam2d 457 nodes 2 501 502 crossSect 6 xy
+libeam2d 458 nodes 2 502 503 crossSect 6 xy
+libeam2d 459 nodes 2 503 504 crossSect 6 xy
+libeam2d 460 nodes 2 504 486 crossSect 6 xy
+libeam2d 461 nodes 2 508 509 crossSect 6 xy
+libeam2d 462 nodes 2 509 510 crossSect 6 xy
+libeam2d 463 nodes 2 510 511 crossSect 6 xy
+libeam2d 464 nodes 2 511 512 crossSect 6 xy
+libeam2d 465 nodes 2 512 506 crossSect 6 xy
+libeam2d 466 nodes 2 506 513 crossSect 6 xy
+libeam2d 467 nodes 2 513 514 crossSect 6 xy
+libeam2d 468 nodes 2 514 515 crossSect 6 xy
+libeam2d 469 nodes 2 515 516 crossSect 6 xy
+libeam2d 470 nodes 2 516 517 crossSect 6 xy
+libeam2d 471 nodes 2 517 518 crossSect 6 xy
+libeam2d 472 nodes 2 518 519 crossSect 6 xy
+libeam2d 473 nodes 2 519 520 crossSect 6 xy
+libeam2d 474 nodes 2 520 521 crossSect 6 xy
+libeam2d 475 nodes 2 521 505 crossSect 6 xy
+libeam2d 476 nodes 2 505 522 crossSect 6 xy
+libeam2d 477 nodes 2 522 523 crossSect 6 xy
+libeam2d 478 nodes 2 523 524 crossSect 6 xy
+libeam2d 479 nodes 2 524 525 crossSect 6 xy
+libeam2d 480 nodes 2 525 507 crossSect 6 xy
+IntElLine1 481 nodes 4 11 68 445 446 crossSect 8
+IntElLine1 482 nodes 4 68 69 446 447 crossSect 8
+IntElLine1 483 nodes 4 69 70 447 448 crossSect 8
+IntElLine1 484 nodes 4 70 71 448 449 crossSect 8
+IntElLine1 485 nodes 4 71 6 449 442 crossSect 8
+IntElLine1 486 nodes 4 9 51 466 467 crossSect 8
+IntElLine1 487 nodes 4 51 52 467 468 crossSect 8
+IntElLine1 488 nodes 4 52 53 468 469 crossSect 8
+IntElLine1 489 nodes 4 53 54 469 470 crossSect 8
+IntElLine1 490 nodes 4 54 5 470 463 crossSect 8
+IntElLine1 491 nodes 4 1 81 443 459 crossSect 8
+IntElLine1 492 nodes 4 81 82 459 460 crossSect 8
+IntElLine1 493 nodes 4 82 83 460 461 crossSect 8
+IntElLine1 494 nodes 4 83 84 461 462 crossSect 8
+IntElLine1 495 nodes 4 84 12 462 444 crossSect 8
+IntElLine1 496 nodes 4 6 72 442 450 crossSect 8
+IntElLine1 497 nodes 4 72 73 450 451 crossSect 8
+IntElLine1 498 nodes 4 73 74 451 452 crossSect 8
+IntElLine1 499 nodes 4 74 75 452 453 crossSect 8
+IntElLine1 500 nodes 4 75 76 453 454 crossSect 8
+IntElLine1 501 nodes 4 76 77 454 455 crossSect 8
+IntElLine1 502 nodes 4 77 78 455 456 crossSect 8
+IntElLine1 503 nodes 4 78 79 456 457 crossSect 8
+IntElLine1 504 nodes 4 79 80 457 458 crossSect 8
+IntElLine1 505 nodes 4 80 1 458 443 crossSect 8
+IntElLine1 506 nodes 4 2 64 464 480 crossSect 8
+IntElLine1 507 nodes 4 64 65 480 481 crossSect 8
+IntElLine1 508 nodes 4 65 66 481 482 crossSect 8
+IntElLine1 509 nodes 4 66 67 482 483 crossSect 8
+IntElLine1 510 nodes 4 67 10 483 465 crossSect 8
+IntElLine1 511 nodes 4 5 55 463 471 crossSect 8
+IntElLine1 512 nodes 4 55 56 471 472 crossSect 8
+IntElLine1 513 nodes 4 56 57 472 473 crossSect 8
+IntElLine1 514 nodes 4 57 58 473 474 crossSect 8
+IntElLine1 515 nodes 4 58 59 474 475 crossSect 8
+IntElLine1 516 nodes 4 59 60 475 476 crossSect 8
+IntElLine1 517 nodes 4 60 61 476 477 crossSect 8
+IntElLine1 518 nodes 4 61 62 477 478 crossSect 8
+IntElLine1 519 nodes 4 62 63 478 479 crossSect 8
+IntElLine1 520 nodes 4 63 2 479 464 crossSect 8
+IntElLine1 521 nodes 4 7 38 487 488 crossSect 7
+IntElLine1 522 nodes 4 38 39 488 489 crossSect 7
+IntElLine1 523 nodes 4 39 40 489 490 crossSect 7
+IntElLine1 524 nodes 4 40 41 490 491 crossSect 7
+IntElLine1 525 nodes 4 41 6 491 484 crossSect 7
+IntElLine1 526 nodes 4 5 34 485 501 crossSect 7
+IntElLine1 527 nodes 4 34 35 501 502 crossSect 7
+IntElLine1 528 nodes 4 35 36 502 503 crossSect 7
+IntElLine1 529 nodes 4 36 37 503 504 crossSect 7
+IntElLine1 530 nodes 4 37 8 504 486 crossSect 7
+IntElLine1 531 nodes 4 6 42 484 492 crossSect 7
+IntElLine1 532 nodes 4 42 43 492 493 crossSect 7
+IntElLine1 533 nodes 4 43 44 493 494 crossSect 7
+IntElLine1 534 nodes 4 44 45 494 495 crossSect 7
+IntElLine1 535 nodes 4 45 46 495 496 crossSect 7
+IntElLine1 536 nodes 4 46 47 496 497 crossSect 7
+IntElLine1 537 nodes 4 47 48 497 498 crossSect 7
+IntElLine1 538 nodes 4 48 49 498 499 crossSect 7
+IntElLine1 539 nodes 4 49 50 499 500 crossSect 7
+IntElLine1 540 nodes 4 50 5 500 485 crossSect 7
+IntElLine1 541 nodes 4 3 26 508 509 crossSect 7
+IntElLine1 542 nodes 4 26 27 509 510 crossSect 7
+IntElLine1 543 nodes 4 27 28 510 511 crossSect 7
+IntElLine1 544 nodes 4 28 29 511 512 crossSect 7
+IntElLine1 545 nodes 4 29 1 512 506 crossSect 7
+IntElLine1 546 nodes 4 1 17 506 513 crossSect 7
+IntElLine1 547 nodes 4 17 18 513 514 crossSect 7
+IntElLine1 548 nodes 4 18 19 514 515 crossSect 7
+IntElLine1 549 nodes 4 19 20 515 516 crossSect 7
+IntElLine1 550 nodes 4 20 21 516 517 crossSect 7
+IntElLine1 551 nodes 4 21 22 517 518 crossSect 7
+IntElLine1 552 nodes 4 22 23 518 519 crossSect 7
+IntElLine1 553 nodes 4 23 24 519 520 crossSect 7
+IntElLine1 554 nodes 4 24 25 520 521 crossSect 7
+IntElLine1 555 nodes 4 25 2 521 505 crossSect 7
+IntElLine1 556 nodes 4 2 30 505 522 crossSect 7
+IntElLine1 557 nodes 4 30 31 522 523 crossSect 7
+IntElLine1 558 nodes 4 31 32 523 524 crossSect 7
+IntElLine1 559 nodes 4 32 33 524 525 crossSect 7
+IntElLine1 560 nodes 4 33 4 525 507 crossSect 7
+Set 1 elementranges { (1 400) }
+Set 2 elementranges { 10 20 30 40 50 80 85 90 95 (100 109) (201 209) (301 304) (376 379)} 
+Set 3 elements 36 120 130 140 150 160 170 180 190 200 220 230 240 250 260 270 280 290 300 310 315 320 325 330 335 340 345 350 355 360 365 370 375 385 390 395 400
+Set 4 elements 4 110 210 305 380
+Set 5 nodes 88  92 95 94 85 87 86 121 120 123 122 125 124 127 126 113 112 115 114 117 116 119 118 105 104 107 106 109 108 111 110 97 96 99 98 101 100 103 102 152 145 144 147 146 16 149 148 151 150 137 136 139 9 138 8 141 140 11 143 10 142 13 129 12 128 15 131 14 130 133 132 3 135 134 4 7 89 88 91 90 93 444 445 465 466 486 487 507 508
+Set 6 elementboundaries 160 351 1 356 1 361 1 366 1 371 1 301 1 306 1 311 1 316 1 321 1 326 1 331 1 336 1 341 1 346 1 376 1 381 1 386 1 391 1 396 1 396 2 397 2 398 2 399 2 400 2 141 2 142 2 143 2 144 2 145 2 146 2 147 2 148 2 149 2 150 2 76 1 81 1 86 1 91 1 96 1 96 2 97 2 98 2 99 2 100 2 41 2 42 2 43 2 44 2 45 2 46 2 47 2 48 2 49 2 50 2 71 2 72 2 73 2 74 2 75 2 75 3 70 3 65 3 60 3 55 3 160 4 159 4 158 4 157 4 156 4 155 4 154 4 153 4 152 4 151 4 355 4 354 4 353 4 352 4 351 4
+Set 7 nodes 4 444 445 465 466
+Set 8 nodes 4 486 487 507 508
+Set 9 elementranges { (401 440) }
+Set 10 elementranges { (441 480) }
+Set 11 elementranges { (481 520) }
+Set 12 elementranges { (521 560) }
+Set 13 nodes 1 333
+SimpleCS 1 thick 0.2 material 1 set 1
+SimpleCS 2 thick 1.97487e-1 material 1 set 2
+SimpleCS 3 thick 1.84292e-1 material 1 set 3
+SimpleCS 4 thick 1.81779e-1 material 1 set 4
+LayeredCS 5 nLayers 1 LayerMaterials 1 2 Thicks 1 7.08914634e-3 Widths 1 7.08914634e-3 midSurf 3.544573317e-3
+LayeredCS 6 nLayers 1 LayerMaterials 1 2 Thicks 1 17.72455923e-3 Widths 1 17.72455923e-3 midSurf 8.862279616e-3
+InterfaceCS 7 thickness 6.28319e-2 material 3
+InterfaceCS 8 thickness 2.51327e-2 material 4 
+MazarsModel 1 d 1.0 E 3.36e10 n 0.2 version 1 e0 8.63e-5 ac 2.6 bc 800 ef 0.0025 tAlpha 1.0 maxOmega 0.9999
+MisesMat 2 d 1.0 E 2e11 n 0.3 sig0 500e6 H 8.456659619e8 omega_crit 0 a 0 tAlpha 1.0
+bondceb 3 kn 6e12 ks 6.135e10 s1 0.001 s2 0.002 s3 0.0065 taumax 1.541e7 tauf 6.164e6
+bondceb 4 kn 6e12 ks 6.135e10 s1 0.001 s2 0.002 s3 0.004 taumax 1.541e7 tauf 6.164e6
+PrescribedDispSlipBCNeumannRC 1 loadTimeFunction 1 dofs 2 1 2 ccoord 3 0.0 0.0 0.0 slip 2 1e-5 -2e-5 slipGrad 2 2 {0.3e-6 0.4e-6; 0.4e-6 -0.5e-6} set 6 concretevolset 1 rebarsets 2 9 10
+ConstantFunction 1 f(t) 1.0
+
+#%BEGIN_CHECK% tolerance 1.e-6
+#ELEMENT tStep 1 number 560 gp 4 keyword 98 component 2 value 9.78603609e-06
+#ELEMENT tStep 1 number 520 gp 4 keyword 98 component 2 value -1.98329139e-05
+#%END_CHECK%
