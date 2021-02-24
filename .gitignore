@@ -2,6 +2,7 @@
 *.vtu
 *.pvd
 *.m
+*.gp
 __pycache__/
 CMakeCache.txt
 CMakeFiles/
