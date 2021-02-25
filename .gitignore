@@ -3,6 +3,7 @@
 *.pvd
 *.m
 *.gp
+*dat
 __pycache__/
 CMakeCache.txt
 CMakeFiles/

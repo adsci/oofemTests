@@ -1,0 +1,1133 @@
+macroPlate02.out
+3D RVE - periodic boundary conditions with LTRSpaceBoundary elements
+StaticStructural nsteps 1 nmodules 1 lstype 3 smtype 7
+#vtkxmlperiodic primvars 1 1 vars 3 4 1 12 cellvars 1 46 tstep_all domain_all stype 0
+#vtkxmlperiodic ipvars 3 4 1 12 tstep_all domain_all
+#gpexportmodule vars 3 4 1 12 tstep_all domain_all
+#matlab tstep_all mesh data specials reactionforces integrationpoints internalvars 3 4 1 12
+errorcheck
+domain 3d
+OutputManager tstep_all dofman_all element_all
+ndofman 218 nelem 892 ncrosssect 1 nmat 1 nbc 2 nic 0 nltf 1 nset 1
+node 1 coords 3 -3.000000e-01 -2.000000e-01 -5.000000e-02 bc 3 1 1 1
+node 5 coords 3 -3.000000e-01 -2.000000e-01 5.000000e-02
+node 9 coords 3 -1.459797e-01 -2.000000e-01 -5.000000e-02
+node 15 coords 3 -1.459797e-01 -2.000000e-01 5.000000e-02
+node 21 coords 3 1.542853e-01 -2.000000e-01 -5.000000e-02
+node 27 coords 3 1.542853e-01 -2.000000e-01 5.000000e-02
+node 33 coords 3 1.000032e-01 -2.000000e-01 -5.000000e-02
+node 39 coords 3 1.000032e-01 -2.000000e-01 5.000000e-02
+node 45 coords 3 -2.191681e-01 -2.000000e-01 -5.000000e-02
+node 51 coords 3 -2.191681e-01 -2.000000e-01 5.000000e-02
+node 57 coords 3 2.064810e-01 -2.000000e-01 -5.000000e-02
+node 63 coords 3 2.064810e-01 -2.000000e-01 5.000000e-02
+node 69 coords 3 -7.036420e-02 -2.000000e-01 -5.000000e-02
+node 75 coords 3 -7.036420e-02 -2.000000e-01 5.000000e-02
+node 81 coords 3 -3.475696e-03 -2.000000e-01 -5.000000e-02
+node 87 coords 3 -3.475696e-03 -2.000000e-01 5.000000e-02
+node 93 coords 3 5.804286e-02 -2.000000e-01 -5.000000e-02
+node 99 coords 3 5.804286e-02 -2.000000e-01 5.000000e-02
+node 105 coords 3 2.593182e-01 -2.000000e-01 -5.000000e-02
+node 111 coords 3 2.593182e-01 -2.000000e-01 5.000000e-02
+node 117 coords 3 -2.591822e-01 -2.000000e-01 -5.000000e-02
+node 123 coords 3 -2.591822e-01 -2.000000e-01 5.000000e-02
+node 132 coords 3 -3.000000e-01 1.393778e-01 -5.000000e-02
+node 138 coords 3 -3.000000e-01 1.393778e-01 5.000000e-02
+node 144 coords 3 -3.000000e-01 4.832525e-02 -5.000000e-02
+node 150 coords 3 -3.000000e-01 4.832525e-02 5.000000e-02
+node 156 coords 3 -3.000000e-01 -4.591475e-02 -5.000000e-02
+node 162 coords 3 -3.000000e-01 -4.591475e-02 5.000000e-02
+node 168 coords 3 -3.000000e-01 -1.420832e-01 -5.000000e-02
+node 174 coords 3 -3.000000e-01 -1.420832e-01 5.000000e-02
+node 180 coords 3 -3.000000e-01 -4.256845e-03 -5.000000e-02
+node 186 coords 3 -3.000000e-01 -4.256845e-03 5.000000e-02
+node 192 coords 3 -3.000000e-01 9.230917e-02 -5.000000e-02
+node 198 coords 3 -3.000000e-01 9.230917e-02 5.000000e-02
+node 204 coords 3 -3.000000e-01 -8.708497e-02 -5.000000e-02
+node 210 coords 3 -3.000000e-01 -8.708497e-02 5.000000e-02
+node 213 coords 3 -3.000000e-01 -2.000000e-01 2.737880e-03
+node 225 coords 3 -3.548050e-02 -5.133242e-02 -5.000000e-02
+node 234 coords 3 -3.548050e-02 -5.133242e-02 5.000000e-02
+node 243 coords 3 -1.974727e-01 -2.905861e-03 -5.000000e-02
+node 252 coords 3 -1.974727e-01 -2.905861e-03 5.000000e-02
+node 261 coords 3 1.875337e-01 1.476113e-01 -5.000000e-02
+node 270 coords 3 1.875337e-01 1.476113e-01 5.000000e-02
+node 279 coords 3 -2.233303e-01 -1.163177e-01 -5.000000e-02
+node 288 coords 3 -2.233303e-01 -1.163177e-01 5.000000e-02
+node 297 coords 3 -4.566966e-02 -1.467225e-01 -5.000000e-02
+node 306 coords 3 -4.566966e-02 -1.467225e-01 5.000000e-02
+node 315 coords 3 2.472944e-01 -1.456917e-01 -5.000000e-02
+node 324 coords 3 2.472944e-01 -1.456917e-01 5.000000e-02
+node 333 coords 3 5.532125e-02 8.509528e-02 -5.000000e-02
+node 342 coords 3 5.532125e-02 8.509528e-02 5.000000e-02
+node 351 coords 3 8.713740e-02 -6.749289e-02 -5.000000e-02
+node 360 coords 3 8.713740e-02 -6.749289e-02 5.000000e-02
+node 369 coords 3 1.114534e-01 4.774101e-02 -5.000000e-02
+node 378 coords 3 1.114534e-01 4.774101e-02 5.000000e-02
+node 387 coords 3 2.023497e-01 -4.199118e-02 -5.000000e-02
+node 396 coords 3 2.023497e-01 -4.199118e-02 5.000000e-02
+node 405 coords 3 -4.427902e-02 6.404411e-02 -5.000000e-02
+node 414 coords 3 -4.427902e-02 6.404411e-02 5.000000e-02
+node 423 coords 3 -1.947470e-01 1.218691e-01 -5.000000e-02
+node 432 coords 3 -1.947470e-01 1.218691e-01 5.000000e-02
+node 441 coords 3 1.021230e-01 -1.402616e-01 -5.000000e-02
+node 450 coords 3 1.021230e-01 -1.402616e-01 5.000000e-02
+node 459 coords 3 -1.090419e-01 4.616132e-02 -5.000000e-02
+node 468 coords 3 -1.090419e-01 4.616132e-02 5.000000e-02
+node 477 coords 3 -8.822860e-02 1.087211e-01 -5.000000e-02
+node 486 coords 3 -8.822860e-02 1.087211e-01 5.000000e-02
+node 495 coords 3 -1.623618e-01 -6.369818e-02 -5.000000e-02
+node 504 coords 3 -1.623618e-01 -6.369818e-02 5.000000e-02
+node 513 coords 3 -2.194080e-01 4.364977e-02 -5.000000e-02
+node 522 coords 3 -2.194080e-01 4.364977e-02 5.000000e-02
+node 531 coords 3 1.791605e-01 -1.051841e-01 -5.000000e-02
+node 540 coords 3 1.791605e-01 -1.051841e-01 5.000000e-02
+node 549 coords 3 2.077108e-01 9.016764e-02 -5.000000e-02
+node 558 coords 3 2.077108e-01 9.016764e-02 5.000000e-02
+node 567 coords 3 3.585106e-02 -6.981899e-02 -5.000000e-02
+node 576 coords 3 3.585106e-02 -6.981899e-02 5.000000e-02
+node 585 coords 3 1.625333e-01 -1.478375e-01 -5.000000e-02
+node 594 coords 3 1.625333e-01 -1.478375e-01 5.000000e-02
+node 603 coords 3 1.144341e-02 1.187965e-01 -5.000000e-02
+node 612 coords 3 1.144341e-02 1.187965e-01 5.000000e-02
+node 621 coords 3 4.287040e-02 -5.310836e-03 -5.000000e-02
+node 630 coords 3 4.287040e-02 -5.310836e-03 5.000000e-02
+node 639 coords 3 2.444045e-01 -5.909554e-02 -5.000000e-02
+node 648 coords 3 2.444045e-01 -5.909554e-02 5.000000e-02
+node 657 coords 3 1.397394e-01 1.021272e-01 -5.000000e-02
+node 666 coords 3 1.397394e-01 1.021272e-01 5.000000e-02
+node 675 coords 3 2.228228e-01 2.940329e-02 -5.000000e-02
+node 684 coords 3 2.228228e-01 2.940329e-02 5.000000e-02
+node 693 coords 3 -9.519862e-02 -1.424296e-01 -5.000000e-02
+node 702 coords 3 -9.519862e-02 -1.424296e-01 5.000000e-02
+node 711 coords 3 -1.458150e-01 1.067553e-01 -5.000000e-02
+node 720 coords 3 -1.458150e-01 1.067553e-01 5.000000e-02
+node 729 coords 3 -3.703399e-02 1.330331e-02 -5.000000e-02
+node 738 coords 3 -3.703399e-02 1.330331e-02 5.000000e-02
+node 747 coords 3 -1.705501e-01 -1.203287e-01 -5.000000e-02
+node 756 coords 3 -1.705501e-01 -1.203287e-01 5.000000e-02
+node 765 coords 3 -1.692934e-01 5.683386e-02 -5.000000e-02
+node 774 coords 3 -1.692934e-01 5.683386e-02 5.000000e-02
+node 783 coords 3 1.480467e-01 -7.675686e-03 -5.000000e-02
+node 792 coords 3 1.480467e-01 -7.675686e-03 5.000000e-02
+node 801 coords 3 -5.306423e-03 -9.286763e-02 -5.000000e-02
+node 810 coords 3 -5.306423e-03 -9.286763e-02 5.000000e-02
+node 819 coords 3 -2.452954e-01 -5.915784e-02 -5.000000e-02
+node 828 coords 3 -2.452954e-01 -5.915784e-02 5.000000e-02
+node 837 coords 3 -8.302817e-02 -6.570933e-02 -5.000000e-02
+node 846 coords 3 -8.302817e-02 -6.570933e-02 5.000000e-02
+node 855 coords 3 -1.429130e-01 -5.342585e-03 -5.000000e-02
+node 864 coords 3 -1.429130e-01 -5.342585e-03 5.000000e-02
+node 873 coords 3 -7.899362e-02 -8.146378e-03 -5.000000e-02
+node 882 coords 3 -7.899362e-02 -8.146378e-03 5.000000e-02
+node 891 coords 3 8.579761e-03 2.781428e-02 -5.000000e-02
+node 900 coords 3 8.579761e-03 2.781428e-02 5.000000e-02
+node 909 coords 3 2.357485e-01 1.349719e-01 -5.000000e-02
+node 918 coords 3 2.357485e-01 1.349719e-01 5.000000e-02
+node 927 coords 3 -4.117140e-02 1.488646e-01 -5.000000e-02
+node 936 coords 3 -4.117140e-02 1.488646e-01 5.000000e-02
+node 945 coords 3 4.656735e-02 -1.373643e-01 -5.000000e-02
+node 954 coords 3 4.656735e-02 -1.373643e-01 5.000000e-02
+node 963 coords 3 -2.495391e-01 9.590585e-02 -5.000000e-02
+node 972 coords 3 -2.495391e-01 9.590585e-02 5.000000e-02
+node 981 coords 3 4.496723e-03 7.345358e-02 -5.000000e-02
+node 990 coords 3 4.496723e-03 7.345358e-02 5.000000e-02
+node 999 coords 3 1.347238e-01 -8.807265e-02 -5.000000e-02
+node 1008 coords 3 1.347238e-01 -8.807265e-02 5.000000e-02
+node 1017 coords 3 1.720250e-01 5.863296e-02 -5.000000e-02
+node 1026 coords 3 1.720250e-01 5.863296e-02 5.000000e-02
+node 1035 coords 3 -1.200577e-01 -9.605309e-02 -5.000000e-02
+node 1044 coords 3 -1.200577e-01 -9.605309e-02 5.000000e-02
+node 1053 coords 3 9.978157e-02 -6.603017e-03 -5.000000e-02
+node 1062 coords 3 9.978157e-02 -6.603017e-03 5.000000e-02
+node 1071 coords 3 6.996089e-02 1.441815e-01 -5.000000e-02
+node 1080 coords 3 6.996089e-02 1.441815e-01 5.000000e-02
+node 1089 coords 3 -2.438018e-01 -1.502028e-03 -5.000000e-02
+node 1098 coords 3 -2.438018e-01 -1.502028e-03 5.000000e-02
+node 1107 coords 3 1.094043e-04 -1.956979e-02 -5.000000e-02
+node 1116 coords 3 1.094043e-04 -1.956979e-02 5.000000e-02
+node 1125 coords 3 1.163450e-01 1.428535e-01 -5.000000e-02
+node 1134 coords 3 1.163450e-01 1.428535e-01 5.000000e-02
+node 1143 coords 3 -1.128352e-01 1.488754e-01 -5.000000e-02
+node 1152 coords 3 -1.128352e-01 1.488754e-01 5.000000e-02
+node 1161 coords 3 -2.391238e-01 1.398244e-01 -5.000000e-02
+node 1170 coords 3 -2.391238e-01 1.398244e-01 5.000000e-02
+node 1179 coords 3 2.377192e-01 -1.413738e-02 -5.000000e-02
+node 1188 coords 3 2.377192e-01 -1.413738e-02 5.000000e-02
+node 1197 coords 3 1.760781e-03 -1.452811e-01 -5.000000e-02
+node 1206 coords 3 1.760781e-03 -1.452811e-01 5.000000e-02
+node 1215 coords 3 -5.053784e-02 -9.989575e-02 -5.000000e-02
+node 1224 coords 3 -5.053784e-02 -9.989575e-02 5.000000e-02
+node 1233 coords 3 2.471005e-01 6.775512e-02 -5.000000e-02
+node 1242 coords 3 2.471005e-01 6.775512e-02 5.000000e-02
+node 1251 coords 3 6.305155e-02 3.644931e-02 -5.000000e-02
+node 1260 coords 3 6.305155e-02 3.644931e-02 5.000000e-02
+node 1269 coords 3 2.262352e-01 -1.036315e-01 -5.000000e-02
+node 1278 coords 3 2.262352e-01 -1.036315e-01 5.000000e-02
+node 1287 coords 3 -3.548050e-02 -2.000000e-01 0.000000e+00
+node 1305 coords 3 2.018572e-01 -2.000000e-01 0.000000e+00
+node 1323 coords 3 1.106171e-01 -2.000000e-01 0.000000e+00
+node 1341 coords 3 -1.633081e-01 -2.000000e-01 0.000000e+00
+node 1359 coords 3 3.209594e-02 -2.000000e-01 0.000000e+00
+node 1377 coords 3 -2.428195e-01 -2.000000e-01 0.000000e+00
+node 1395 coords 3 -8.468485e-02 -2.000000e-01 0.000000e+00
+node 1413 coords 3 2.479253e-01 -2.000000e-01 0.000000e+00
+node 1431 coords 3 1.567307e-01 -2.000000e-01 0.000000e+00
+node 1458 coords 3 -3.000000e-01 -2.128830e-02 0.000000e+00
+node 1476 coords 3 -3.000000e-01 1.211143e-01 0.000000e+00
+node 1494 coords 3 -3.000000e-01 6.637026e-02 0.000000e+00
+node 1512 coords 3 -3.000000e-01 -9.798489e-02 0.000000e+00
+node 1530 coords 3 -3.000000e-01 -1.456917e-01 0.000000e+00
+node 1539 coords 3 -1.216497e-01 -2.128830e-02 0.000000e+00
+node 1566 coords 3 2.018572e-01 3.436178e-03 0.000000e+00
+node 1593 coords 3 -2.896413e-03 6.637026e-02 0.000000e+00
+node 1620 coords 3 1.531226e-01 6.832092e-02 0.000000e+00
+node 1647 coords 3 4.132628e-03 -1.220768e-02 0.000000e+00
+node 1674 coords 3 -2.169682e-01 -1.189499e-02 0.000000e+00
+node 1701 coords 3 -1.983441e-01 -1.131143e-01 0.000000e+00
+node 1728 coords 3 -7.003628e-02 -3.518210e-02 0.000000e+00
+node 1755 coords 3 8.333603e-02 4.753180e-02 0.000000e+00
+node 1782 coords 3 -6.357974e-02 3.538193e-02 0.000000e+00
+node 1809 coords 3 -1.633081e-01 6.052975e-02 0.000000e+00
+node 1836 coords 3 6.676012e-02 -7.908315e-02 0.000000e+00
+node 1863 coords 3 -9.849256e-02 -1.456917e-01 0.000000e+00
+node 1890 coords 3 -1.567154e-01 1.188334e-01 0.000000e+00
+node 1917 coords 3 1.468838e-01 -3.443606e-02 0.000000e+00
+node 1944 coords 3 2.298666e-01 -1.164064e-01 0.000000e+00
+node 1971 coords 3 -2.337693e-01 1.032405e-01 0.000000e+00
+node 1998 coords 3 -9.129122e-03 -1.467225e-01 0.000000e+00
+node 2025 coords 3 7.274961e-02 -8.306453e-03 0.000000e+00
+node 2052 coords 3 1.675254e-02 -6.632777e-02 0.000000e+00
+node 2079 coords 3 1.675128e-01 -1.366287e-01 0.000000e+00
+node 2106 coords 3 -1.493772e-01 -7.762195e-02 0.000000e+00
+node 2133 coords 3 8.183432e-02 1.021272e-01 0.000000e+00
+node 2160 coords 3 -1.157681e-01 3.824015e-02 0.000000e+00
+node 2187 coords 3 2.345672e-01 1.326476e-01 0.000000e+00
+node 2214 coords 3 1.243622e-01 -8.637824e-02 0.000000e+00
+node 2241 coords 3 -9.303568e-02 9.739158e-02 0.000000e+00
+node 2268 coords 3 2.068267e-01 8.384364e-02 0.000000e+00
+node 2295 coords 3 1.988413e-01 -4.864819e-02 0.000000e+00
+node 2322 coords 3 7.097837e-02 -1.497619e-01 0.000000e+00
+node 2349 coords 3 -1.687504e-02 1.296591e-01 0.000000e+00
+node 2376 coords 3 -7.899362e-02 -9.270583e-02 0.000000e+00
+node 2403 coords 3 1.715326e-01 1.449646e-01 0.000000e+00
+node 2430 coords 3 -2.480891e-01 5.427643e-02 0.000000e+00
+node 2457 coords 3 1.063660e-01 1.489959e-01 0.000000e+00
+node 2484 coords 3 -2.178203e-01 -6.570933e-02 0.000000e+00
+node 2511 coords 3 -1.561934e-01 -1.430742e-01 0.000000e+00
+node 2538 coords 3 2.470986e-01 4.281002e-02 0.000000e+00
+node 2565 coords 3 -6.666788e-02 1.485595e-01 0.000000e+00
+node 2592 coords 3 3.784084e-02 1.468909e-01 0.000000e+00
+node 2619 coords 3 1.362314e-01 1.757421e-02 0.000000e+00
+node 2646 coords 3 -2.478844e-01 -1.335917e-01 0.000000e+00
+node 2673 coords 3 -1.982063e-01 1.481689e-01 0.000000e+00
+node 2700 coords 3 3.200030e-02 -1.172540e-01 0.000000e+00
+node 2727 coords 3 2.452666e-01 -2.299725e-02 0.000000e+00
+node 2754 coords 3 -2.665383e-02 -9.911183e-02 0.000000e+00
+node 2781 coords 3 -1.717989e-01 9.620655e-03 0.000000e+00
+node 2808 coords 3 3.487894e-02 3.294218e-02 0.000000e+00
+node 2835 coords 3 6.000000e-01 4.000000e-01 1.000000e-01
+ltrspace 186 nodes 4 2133 369 1620 1755 crossSect 1 mat 1
+ltrspace 617 nodes 4 2241 468 1809 2160 crossSect 1 mat 1
+ltrspace 621 nodes 4 2592 342 2133 1080 crossSect 1 mat 1
+ltrspace 622 nodes 4 342 2592 2133 1593 crossSect 1 mat 1
+ltrspace 630 nodes 4 333 369 2133 1755 crossSect 1 mat 1
+ltrspace 633 nodes 4 2592 333 2133 1593 crossSect 1 mat 1
+ltrspace 1091 nodes 4 279 2646 45 1701 crossSect 1 mat 1
+ltrspace 1752 nodes 4 351 783 1053 1917 crossSect 1 mat 1
+ltrspace 1753 nodes 4 2025 351 1053 1917 crossSect 1 mat 1
+ltrspace 1758 nodes 4 2241 1782 468 2160 crossSect 1 mat 1
+ltrspace 1759 nodes 4 459 2241 1809 2160 crossSect 1 mat 1
+ltrspace 1760 nodes 4 765 459 1809 2160 crossSect 1 mat 1
+ltrspace 1761 nodes 4 459 1782 2241 2160 crossSect 1 mat 1
+ltrspace 1764 nodes 4 765 711 423 1809 crossSect 1 mat 1
+ltrspace 1765 nodes 4 459 711 2241 477 crossSect 1 mat 1
+ltrspace 1766 nodes 4 711 459 2241 1809 crossSect 1 mat 1
+ltrspace 1767 nodes 4 459 711 765 1809 crossSect 1 mat 1
+ltrspace 1769 nodes 4 603 333 2592 1593 crossSect 1 mat 1
+ltrspace 1777 nodes 4 891 405 729 1593 crossSect 1 mat 1
+ltrspace 1779 nodes 4 405 1782 729 1593 crossSect 1 mat 1
+ltrspace 1781 nodes 4 1782 405 2241 1593 crossSect 1 mat 1
+ltrspace 1782 nodes 4 459 405 1782 729 crossSect 1 mat 1
+ltrspace 1783 nodes 4 405 459 2241 477 crossSect 1 mat 1
+ltrspace 1784 nodes 4 405 459 1782 2241 crossSect 1 mat 1
+ltrspace 1792 nodes 4 2214 2025 360 1917 crossSect 1 mat 1
+ltrspace 1793 nodes 4 1836 2214 2025 360 crossSect 1 mat 1
+ltrspace 1794 nodes 4 2214 1836 450 360 crossSect 1 mat 1
+ltrspace 1795 nodes 4 2214 351 2025 1917 crossSect 1 mat 1
+ltrspace 1796 nodes 4 2214 351 1836 2025 crossSect 1 mat 1
+ltrspace 1807 nodes 4 468 774 1809 2160 crossSect 1 mat 1
+ltrspace 1815 nodes 4 2457 666 1620 2403 crossSect 1 mat 1
+ltrspace 1816 nodes 4 2457 666 2133 1620 crossSect 1 mat 1
+ltrspaceboundaryplate 1817 nodes 5 2457 1125 1431 2403 2835 crossSect 1 mat 1 location 4 0 0 16 0
+ltrspace 1818 nodes 4 2457 2592 2133 1080 crossSect 1 mat 1
+ltrspace 1827 nodes 4 2781 765 1809 2160 crossSect 1 mat 1
+ltrspace 1828 nodes 4 2781 252 1674 504 crossSect 1 mat 1
+ltrspace 1829 nodes 4 2106 2781 1674 504 crossSect 1 mat 1
+ltrspace 1830 nodes 4 774 2781 1809 2160 crossSect 1 mat 1
+ltrspace 1831 nodes 4 252 2781 1674 522 crossSect 1 mat 1
+ltrspace 1832 nodes 4 2781 522 1809 2430 crossSect 1 mat 1
+ltrspace 1833 nodes 4 2781 1674 522 2430 crossSect 1 mat 1
+ltrspace 1834 nodes 4 774 2781 522 1809 crossSect 1 mat 1
+ltrspace 1835 nodes 4 774 2781 252 522 crossSect 1 mat 1
+ltrspace 1836 nodes 4 864 774 468 2160 crossSect 1 mat 1
+ltrspace 1837 nodes 4 864 2781 774 2160 crossSect 1 mat 1
+ltrspace 1838 nodes 4 2781 864 252 504 crossSect 1 mat 1
+ltrspace 1839 nodes 4 2781 864 774 252 crossSect 1 mat 1
+ltrspace 1844 nodes 4 2484 2106 504 1701 crossSect 1 mat 1
+ltrspace 1845 nodes 4 2484 2106 1674 504 crossSect 1 mat 1
+ltrspace 1846 nodes 4 252 2484 1674 504 crossSect 1 mat 1
+ltrspace 1847 nodes 4 2484 243 819 1674 crossSect 1 mat 1
+ltrspace 1848 nodes 4 279 2484 2646 1701 crossSect 1 mat 1
+ltrspace 1849 nodes 4 279 2484 819 2646 crossSect 1 mat 1
+ltrspace 1850 nodes 4 1458 2484 819 1674 crossSect 1 mat 1
+ltrspace 1852 nodes 4 783 2619 1053 1917 crossSect 1 mat 1
+ltrspace 1853 nodes 4 369 2619 1620 1755 crossSect 1 mat 1
+ltrspace 1854 nodes 4 369 2619 1017 1620 crossSect 1 mat 1
+ltrspace 1855 nodes 4 2619 783 369 1017 crossSect 1 mat 1
+ltrspace 1856 nodes 4 2619 2025 1053 1917 crossSect 1 mat 1
+ltrspace 1857 nodes 4 2025 2619 1053 1755 crossSect 1 mat 1
+ltrspace 1858 nodes 4 2619 369 1053 1755 crossSect 1 mat 1
+ltrspace 1859 nodes 4 783 2619 369 1053 crossSect 1 mat 1
+ltrspaceboundaryplate 1864 nodes 5 192 909 1476 132 2835 crossSect 1 mat 1 location 4 22 0 22 22
+ltrspaceboundaryplate 1879 nodes 5 432 2673 51 15 2835 crossSect 1 mat 1 location 4 0 0 16 16
+ltrspace 1951 nodes 4 117 279 2646 45 crossSect 1 mat 1
+ltrspace 1952 nodes 4 168 117 279 2646 crossSect 1 mat 1
+ltrspace 1953 nodes 4 117 168 1530 2646 crossSect 1 mat 1
+ltrspace 1954 nodes 4 117 168 1 1530 crossSect 1 mat 1
+ltrspaceboundaryplate 2129 nodes 5 2673 1341 51 15 2835 crossSect 1 mat 1 location 4 0 16 16 16
+ltrspace 2326 nodes 4 747 2511 2106 1701 crossSect 1 mat 1
+ltrspace 2327 nodes 4 2511 747 45 1701 crossSect 1 mat 1
+ltrspace 2328 nodes 4 747 279 45 1701 crossSect 1 mat 1
+ltrspace 2330 nodes 4 2511 747 9 45 crossSect 1 mat 1
+ltrspace 2361 nodes 4 204 279 819 2646 crossSect 1 mat 1
+ltrspace 2362 nodes 4 204 168 279 2646 crossSect 1 mat 1
+ltrspace 2626 nodes 4 1305 21 1431 585 crossSect 1 mat 1
+ltrspace 2627 nodes 4 1305 57 21 585 crossSect 1 mat 1
+ltrspace 2628 nodes 4 315 1305 57 1413 crossSect 1 mat 1
+ltrspace 2631 nodes 4 105 315 57 1413 crossSect 1 mat 1
+ltrspaceboundaryplate 2691 nodes 5 1413 1476 132 213 2835 crossSect 1 mat 1 location 4 16 22 22 25
+ltrspace 3817 nodes 4 1305 324 63 1413 crossSect 1 mat 1
+ltrspace 3823 nodes 4 351 621 2025 1053 crossSect 1 mat 1
+ltrspace 3838 nodes 4 1152 486 2241 2565 crossSect 1 mat 1
+ltrspace 3844 nodes 4 414 1782 738 468 crossSect 1 mat 1
+ltrspace 3845 nodes 4 1782 414 738 1593 crossSect 1 mat 1
+ltrspace 3846 nodes 4 1782 414 2241 468 crossSect 1 mat 1
+ltrspace 3847 nodes 4 414 486 2241 468 crossSect 1 mat 1
+ltrspace 3848 nodes 4 414 1782 2241 1593 crossSect 1 mat 1
+ltrspace 3860 nodes 4 1143 2241 477 2565 crossSect 1 mat 1
+ltrspace 3861 nodes 4 711 1143 2241 477 crossSect 1 mat 1
+ltrspaceboundaryplate 3867 nodes 5 927 1287 69 2565 2835 crossSect 1 mat 1 location 4 0 16 16 0
+ltrspaceboundaryplate 3868 nodes 5 1287 927 69 81 2835 crossSect 1 mat 1 location 4 16 0 16 16
+ltrspace 3871 nodes 4 927 1143 477 2565 crossSect 1 mat 1
+ltrspaceboundaryplate 3872 nodes 5 1143 927 69 2565 2835 crossSect 1 mat 1 location 4 0 0 16 0
+ltrspace 3882 nodes 4 981 405 891 1593 crossSect 1 mat 1
+ltrspace 3885 nodes 4 603 981 333 1593 crossSect 1 mat 1
+ltrspace 3906 nodes 4 441 2214 351 1836 crossSect 1 mat 1
+ltrspace 3910 nodes 4 999 441 2214 351 crossSect 1 mat 1
+ltrspace 3911 nodes 4 351 999 783 1917 crossSect 1 mat 1
+ltrspace 3912 nodes 4 2214 999 351 1917 crossSect 1 mat 1
+ltrspace 3913 nodes 4 2295 999 2214 1917 crossSect 1 mat 1
+ltrspace 3920 nodes 4 441 1323 33 21 crossSect 1 mat 1
+ltrspace 3925 nodes 4 21 1323 1431 585 crossSect 1 mat 1
+ltrspace 3926 nodes 4 441 1323 21 585 crossSect 1 mat 1
+ltrspace 3958 nodes 4 486 720 2241 468 crossSect 1 mat 1
+ltrspace 3962 nodes 4 720 2241 468 1809 crossSect 1 mat 1
+ltrspace 3963 nodes 4 774 720 468 1809 crossSect 1 mat 1
+ltrspace 3964 nodes 4 432 720 774 1809 crossSect 1 mat 1
+ltrspace 3965 nodes 4 720 1152 486 2241 crossSect 1 mat 1
+ltrspace 3969 nodes 4 657 2457 2133 1620 crossSect 1 mat 1
+ltrspace 3970 nodes 4 657 2457 1125 2133 crossSect 1 mat 1
+ltrspace 3971 nodes 4 369 657 2133 1620 crossSect 1 mat 1
+ltrspace 3972 nodes 4 657 2457 1620 2403 crossSect 1 mat 1
+ltrspace 3973 nodes 4 2457 657 1125 2403 crossSect 1 mat 1
+ltrspace 3974 nodes 4 657 369 1017 1620 crossSect 1 mat 1
+ltrspace 3975 nodes 4 657 333 369 2133 crossSect 1 mat 1
+ltrspace 3976 nodes 4 657 1125 333 2133 crossSect 1 mat 1
+ltrspace 3977 nodes 4 657 261 1125 2403 crossSect 1 mat 1
+ltrspace 3981 nodes 4 261 657 549 2403 crossSect 1 mat 1
+ltrspace 3982 nodes 4 549 657 1017 1620 crossSect 1 mat 1
+ltrspace 3991 nodes 4 342 1134 2133 1080 crossSect 1 mat 1
+ltrspace 3992 nodes 4 1134 666 342 2133 crossSect 1 mat 1
+ltrspace 3993 nodes 4 1134 2457 2133 1080 crossSect 1 mat 1
+ltrspace 3994 nodes 4 1134 2457 666 2133 crossSect 1 mat 1
+ltrspace 3995 nodes 4 2457 1134 666 2403 crossSect 1 mat 1
+ltrspaceboundaryplate 3997 nodes 5 1134 2457 1431 2403 2835 crossSect 1 mat 1 location 4 0 0 16 0
+ltrspaceboundaryplate 3999 nodes 5 2457 99 2592 1080 2835 crossSect 1 mat 1 location 4 0 16 0 0
+ltrspaceboundaryplate 4000 nodes 5 99 1359 2457 2592 2835 crossSect 1 mat 1 location 4 16 16 0 0
+ltrspaceboundaryplate 4119 nodes 5 111 138 213 5 2835 crossSect 1 mat 1 location 4 16 22 25 25
+ltrspaceboundaryplate 4124 nodes 5 1413 138 1476 213 2835 crossSect 1 mat 1 location 4 16 22 22 25
+ltrspaceboundaryplate 4125 nodes 5 138 1413 111 213 2835 crossSect 1 mat 1 location 4 22 16 16 25
+ltrspaceboundaryplate 4126 nodes 5 261 1305 1431 2403 2835 crossSect 1 mat 1 location 4 0 16 16 0
+ltrspaceboundaryplate 4134 nodes 5 1413 63 918 111 2835 crossSect 1 mat 1 location 4 16 16 0 16
+ltrspace 4140 nodes 4 1044 1539 2106 504 crossSect 1 mat 1
+ltrspace 4141 nodes 4 864 1539 2781 2160 crossSect 1 mat 1
+ltrspace 4142 nodes 4 1539 2781 2106 504 crossSect 1 mat 1
+ltrspace 4143 nodes 4 1539 864 2781 504 crossSect 1 mat 1
+ltrspace 4144 nodes 4 2106 756 504 1701 crossSect 1 mat 1
+ltrspace 4145 nodes 4 2511 756 2106 1701 crossSect 1 mat 1
+ltrspace 4146 nodes 4 756 1044 2106 504 crossSect 1 mat 1
+ltrspace 4147 nodes 4 756 1044 2511 2106 crossSect 1 mat 1
+ltrspace 4148 nodes 4 756 2511 51 1701 crossSect 1 mat 1
+ltrspace 4149 nodes 4 15 756 2511 51 crossSect 1 mat 1
+ltrspace 4150 nodes 4 2754 1197 1998 297 crossSect 1 mat 1
+ltrspace 4155 nodes 4 2619 1566 1017 1620 crossSect 1 mat 1
+ltrspace 4156 nodes 4 2619 1566 783 1017 crossSect 1 mat 1
+ltrspace 4157 nodes 4 2619 1566 792 1917 crossSect 1 mat 1
+ltrspace 4158 nodes 4 1566 1188 2727 684 crossSect 1 mat 1
+ltrspace 4159 nodes 4 1566 2619 783 1917 crossSect 1 mat 1
+ltrspace 4178 nodes 4 873 459 1782 729 crossSect 1 mat 1
+ltrspace 4180 nodes 4 459 873 1782 2160 crossSect 1 mat 1
+ltrspace 4181 nodes 4 873 1539 1782 2160 crossSect 1 mat 1
+ltrspaceboundaryplate 4182 nodes 5 1125 21 1431 2403 2835 crossSect 1 mat 1 location 4 0 16 16 0
+ltrspaceboundaryplate 4183 nodes 5 21 261 1431 2403 2835 crossSect 1 mat 1 location 4 16 0 16 0
+ltrspaceboundaryplate 4184 nodes 5 261 21 1125 2403 2835 crossSect 1 mat 1 location 4 0 16 0 0
+ltrspaceboundaryplate 4186 nodes 5 1305 21 261 1431 2835 crossSect 1 mat 1 location 4 16 16 0 16
+ltrspaceboundaryplate 4187 nodes 5 21 1305 261 57 2835 crossSect 1 mat 1 location 4 16 16 0 16
+ltrspace 4194 nodes 4 1071 603 333 2592 crossSect 1 mat 1
+ltrspaceboundaryplate 4196 nodes 5 1071 603 2592 81 2835 crossSect 1 mat 1 location 4 0 0 0 16
+ltrspace 4197 nodes 4 333 1071 2592 2133 crossSect 1 mat 1
+ltrspace 4198 nodes 4 1125 1071 333 2133 crossSect 1 mat 1
+ltrspace 4199 nodes 4 1071 2457 2592 2133 crossSect 1 mat 1
+ltrspace 4200 nodes 4 2457 1071 1125 2133 crossSect 1 mat 1
+ltrspaceboundaryplate 4201 nodes 5 1287 1395 69 2565 2835 crossSect 1 mat 1 location 4 16 16 16 0
+ltrspaceboundaryplate 4203 nodes 5 1152 1395 1341 15 2835 crossSect 1 mat 1 location 4 0 16 16 16
+ltrspaceboundaryplate 4204 nodes 5 1143 1395 1152 2565 2835 crossSect 1 mat 1 location 4 0 16 0 0
+ltrspaceboundaryplate 4205 nodes 5 1395 1143 1152 1341 2835 crossSect 1 mat 1 location 4 16 0 0 16
+ltrspaceboundaryplate 4206 nodes 5 1395 1143 69 2565 2835 crossSect 1 mat 1 location 4 16 0 16 0
+ltrspace 4243 nodes 4 213 117 1 1530 crossSect 1 mat 1
+ltrspaceboundaryplate 4367 nodes 5 1161 45 2673 423 2835 crossSect 1 mat 1 location 4 0 16 0 0
+ltrspaceboundaryplate 4377 nodes 5 45 9 2673 423 2835 crossSect 1 mat 1 location 4 16 16 0 0
+ltrspaceboundaryplate 4378 nodes 5 45 9 1341 2673 2835 crossSect 1 mat 1 location 4 16 16 16 0
+ltrspaceboundaryplate 4381 nodes 5 9 1395 1143 69 2835 crossSect 1 mat 1 location 4 16 16 0 16
+ltrspaceboundaryplate 4382 nodes 5 1395 9 1143 1341 2835 crossSect 1 mat 1 location 4 16 16 0 16
+ltrspace 4538 nodes 4 5 213 1530 123 crossSect 1 mat 1
+ltrspace 4553 nodes 4 702 756 1044 2511 crossSect 1 mat 1
+ltrspace 4554 nodes 4 756 702 15 2511 crossSect 1 mat 1
+ltrspace 4561 nodes 4 1377 51 2646 123 crossSect 1 mat 1
+ltrspace 4562 nodes 4 1377 117 2646 45 crossSect 1 mat 1
+ltrspace 4563 nodes 4 2646 1377 45 1701 crossSect 1 mat 1
+ltrspace 4564 nodes 4 1377 2511 45 1701 crossSect 1 mat 1
+ltrspace 4565 nodes 4 51 1377 2646 1701 crossSect 1 mat 1
+ltrspace 4566 nodes 4 2511 1377 51 1701 crossSect 1 mat 1
+ltrspace 4567 nodes 4 1530 1377 2646 123 crossSect 1 mat 1
+ltrspace 4568 nodes 4 213 1377 1530 123 crossSect 1 mat 1
+ltrspace 4569 nodes 4 1377 117 1530 2646 crossSect 1 mat 1
+ltrspace 4570 nodes 4 213 1377 117 1530 crossSect 1 mat 1
+ltrspace 4574 nodes 4 747 693 2511 9 crossSect 1 mat 1
+ltrspace 4577 nodes 4 495 2484 243 819 crossSect 1 mat 1
+ltrspace 4578 nodes 4 2484 495 243 1674 crossSect 1 mat 1
+ltrspace 4579 nodes 4 495 2484 2106 1674 crossSect 1 mat 1
+ltrspace 4580 nodes 4 2484 495 2106 1701 crossSect 1 mat 1
+ltrspace 4581 nodes 4 495 747 2106 1701 crossSect 1 mat 1
+ltrspace 4583 nodes 4 2484 495 279 819 crossSect 1 mat 1
+ltrspace 4586 nodes 4 495 2781 243 1674 crossSect 1 mat 1
+ltrspace 4587 nodes 4 2781 495 2106 1674 crossSect 1 mat 1
+ltrspace 4588 nodes 4 495 2484 279 1701 crossSect 1 mat 1
+ltrspace 4589 nodes 4 747 495 279 1701 crossSect 1 mat 1
+ltrspace 4590 nodes 4 495 1539 2781 2106 crossSect 1 mat 1
+ltrspace 4608 nodes 4 1341 2511 9 45 crossSect 1 mat 1
+ltrspace 4609 nodes 4 1341 1377 2511 45 crossSect 1 mat 1
+ltrspace 4610 nodes 4 1341 15 2511 51 crossSect 1 mat 1
+ltrspace 4611 nodes 4 1377 1341 2511 51 crossSect 1 mat 1
+ltrspace 4623 nodes 4 576 1836 2025 360 crossSect 1 mat 1
+ltrspace 4624 nodes 4 630 576 2025 360 crossSect 1 mat 1
+ltrspace 4685 nodes 4 2781 513 1674 2430 crossSect 1 mat 1
+ltrspace 4686 nodes 4 2781 513 243 1674 crossSect 1 mat 1
+ltrspace 4687 nodes 4 513 2781 243 765 crossSect 1 mat 1
+ltrspace 4688 nodes 4 513 2781 1809 2430 crossSect 1 mat 1
+ltrspace 4689 nodes 4 513 2781 765 1809 crossSect 1 mat 1
+ltrspace 4690 nodes 4 243 1089 819 1674 crossSect 1 mat 1
+ltrspace 4691 nodes 4 1089 1458 819 1674 crossSect 1 mat 1
+ltrspace 4692 nodes 4 513 1089 243 1674 crossSect 1 mat 1
+ltrspace 4693 nodes 4 1089 1458 1674 2430 crossSect 1 mat 1
+ltrspace 4694 nodes 4 1089 180 1458 2430 crossSect 1 mat 1
+ltrspace 4695 nodes 4 1458 1089 819 156 crossSect 1 mat 1
+ltrspace 4696 nodes 4 180 1089 1458 156 crossSect 1 mat 1
+ltrspace 4697 nodes 4 513 1089 1674 2430 crossSect 1 mat 1
+ltrspace 4715 nodes 4 1674 1098 522 2430 crossSect 1 mat 1
+ltrspace 4716 nodes 4 1458 1098 1674 2430 crossSect 1 mat 1
+ltrspace 4717 nodes 4 186 1098 1458 2430 crossSect 1 mat 1
+ltrspace 4718 nodes 4 1098 252 1674 522 crossSect 1 mat 1
+ltrspace 4736 nodes 4 1476 198 972 138 crossSect 1 mat 1
+ltrspace 4737 nodes 4 198 1476 972 1494 crossSect 1 mat 1
+ltrspace 4742 nodes 4 180 144 1458 2430 crossSect 1 mat 1
+ltrspace 4743 nodes 4 144 1494 1458 2430 crossSect 1 mat 1
+ltrspace 4747 nodes 4 1089 144 180 2430 crossSect 1 mat 1
+ltrspace 4748 nodes 4 144 1089 513 2430 crossSect 1 mat 1
+ltrspaceboundaryplate 4758 nodes 5 1170 432 2673 51 2835 crossSect 1 mat 1 location 4 0 0 0 16
+ltrspace 4759 nodes 4 1170 1476 972 138 crossSect 1 mat 1
+ltrspace 5130 nodes 4 2079 315 57 585 crossSect 1 mat 1
+ltrspace 5131 nodes 4 1305 2079 57 585 crossSect 1 mat 1
+ltrspace 5132 nodes 4 1305 2079 315 57 crossSect 1 mat 1
+ltrspace 5133 nodes 4 2079 1305 1431 585 crossSect 1 mat 1
+ltrspace 5134 nodes 4 594 2079 1305 1431 crossSect 1 mat 1
+ltrspace 5135 nodes 4 2079 2295 2214 540 crossSect 1 mat 1
+ltrspace 5136 nodes 4 1323 2079 1431 585 crossSect 1 mat 1
+ltrspace 5137 nodes 4 1323 2079 594 1431 crossSect 1 mat 1
+ltrspace 5138 nodes 4 2079 594 1305 63 crossSect 1 mat 1
+ltrspace 5139 nodes 4 324 2079 1305 63 crossSect 1 mat 1
+ltrspace 5140 nodes 4 2079 324 594 63 crossSect 1 mat 1
+ltrspace 5141 nodes 4 999 2079 441 585 crossSect 1 mat 1
+ltrspace 5142 nodes 4 2079 999 441 2214 crossSect 1 mat 1
+ltrspace 5143 nodes 4 2079 1323 594 450 crossSect 1 mat 1
+ltrspace 5144 nodes 4 2079 1323 441 585 crossSect 1 mat 1
+ltrspaceboundaryplate 5156 nodes 5 1188 162 648 2727 2835 crossSect 1 mat 1 location 4 0 22 0 0
+ltrspaceboundaryplate 5157 nodes 5 162 1188 186 2727 2835 crossSect 1 mat 1 location 4 22 0 22 0
+ltrspaceboundaryplate 6965 nodes 5 1 1530 105 213 2835 crossSect 1 mat 1 location 4 22 22 0 22
+ltrspaceboundaryplate 6966 nodes 5 105 1530 315 1413 2835 crossSect 1 mat 1 location 4 0 22 0 0
+ltrspaceboundaryplate 6967 nodes 5 1530 105 213 1413 2835 crossSect 1 mat 1 location 4 22 0 22 0
+ltrspaceboundaryplate 6971 nodes 5 162 210 648 1512 2835 crossSect 1 mat 1 location 4 22 22 0 22
+ltrspace 6973 nodes 4 2295 1944 639 2727 crossSect 1 mat 1
+ltrspace 6974 nodes 4 1944 2295 648 2727 crossSect 1 mat 1
+ltrspaceboundaryplate 6975 nodes 5 1944 639 2727 1512 2835 crossSect 1 mat 1 location 4 0 0 0 22
+ltrspaceboundaryplate 6976 nodes 5 648 1944 2727 1512 2835 crossSect 1 mat 1 location 4 0 0 0 22
+ltrspace 6977 nodes 4 1944 1269 2295 639 crossSect 1 mat 1
+ltrspaceboundaryplate 6978 nodes 5 1944 1269 639 1512 2835 crossSect 1 mat 1 location 4 0 0 0 22
+ltrspace 6979 nodes 4 2079 1944 2295 540 crossSect 1 mat 1
+ltrspaceboundaryplate 6980 nodes 5 1269 1944 315 1512 2835 crossSect 1 mat 1 location 4 0 0 0 22
+ltrspaceboundaryplate 6981 nodes 5 1944 1530 315 1512 2835 crossSect 1 mat 1 location 4 0 22 0 22
+ltrspaceboundaryplate 6982 nodes 5 1530 1944 324 1512 2835 crossSect 1 mat 1 location 4 22 0 0 22
+ltrspace 6983 nodes 4 1944 2079 594 540 crossSect 1 mat 1
+ltrspace 6984 nodes 4 1944 2079 324 594 crossSect 1 mat 1
+ltrspaceboundaryplate 6985 nodes 5 1530 1944 315 1413 2835 crossSect 1 mat 1 location 4 22 0 0 0
+ltrspaceboundaryplate 6986 nodes 5 1944 1530 324 1413 2835 crossSect 1 mat 1 location 4 0 22 0 0
+ltrspace 6987 nodes 4 2079 1944 1305 315 crossSect 1 mat 1
+ltrspace 6988 nodes 4 2079 1944 324 1305 crossSect 1 mat 1
+ltrspace 6989 nodes 4 1944 1269 315 585 crossSect 1 mat 1
+ltrspace 6990 nodes 4 2079 1944 315 585 crossSect 1 mat 1
+ltrspace 6991 nodes 4 1944 1305 315 1413 crossSect 1 mat 1
+ltrspace 6992 nodes 4 1944 324 1305 1413 crossSect 1 mat 1
+ltrspace 6993 nodes 4 1566 396 792 1917 crossSect 1 mat 1
+ltrspace 6994 nodes 4 396 1566 2295 1917 crossSect 1 mat 1
+ltrspace 6995 nodes 4 396 1566 792 684 crossSect 1 mat 1
+ltrspace 6996 nodes 4 1566 396 1188 684 crossSect 1 mat 1
+ltrspace 6997 nodes 4 1566 396 2295 2727 crossSect 1 mat 1
+ltrspace 6998 nodes 4 396 1566 1188 2727 crossSect 1 mat 1
+ltrspace 7001 nodes 4 2295 396 648 2727 crossSect 1 mat 1
+ltrspace 7002 nodes 4 396 1188 648 2727 crossSect 1 mat 1
+ltrspace 7018 nodes 4 531 2079 999 585 crossSect 1 mat 1
+ltrspace 7019 nodes 4 1944 531 1269 585 crossSect 1 mat 1
+ltrspace 7020 nodes 4 531 1944 2079 585 crossSect 1 mat 1
+ltrspace 7024 nodes 4 531 1944 1269 2295 crossSect 1 mat 1
+ltrspace 7025 nodes 4 1944 531 2079 2295 crossSect 1 mat 1
+ltrspace 7026 nodes 4 999 531 2295 2214 crossSect 1 mat 1
+ltrspace 7027 nodes 4 531 2079 2295 2214 crossSect 1 mat 1
+ltrspace 7028 nodes 4 2079 531 999 2214 crossSect 1 mat 1
+ltrspace 7034 nodes 4 369 1251 1053 1755 crossSect 1 mat 1
+ltrspace 7037 nodes 4 1251 2025 1053 1755 crossSect 1 mat 1
+ltrspace 7038 nodes 4 621 1251 2025 1053 crossSect 1 mat 1
+ltrspace 7039 nodes 4 333 1251 369 1755 crossSect 1 mat 1
+ltrspace 7043 nodes 4 1251 2808 621 2025 crossSect 1 mat 1
+ltrspace 7044 nodes 4 2808 1251 621 891 crossSect 1 mat 1
+ltrspace 7045 nodes 4 2808 630 2025 1260 crossSect 1 mat 1
+ltrspace 7046 nodes 4 1251 2808 2025 1755 crossSect 1 mat 1
+ltrspace 7047 nodes 4 2025 2808 1260 1755 crossSect 1 mat 1
+ltrspace 7048 nodes 4 2808 990 342 1593 crossSect 1 mat 1
+ltrspace 7049 nodes 4 990 2808 342 1260 crossSect 1 mat 1
+ltrspace 7050 nodes 4 2808 342 1260 1755 crossSect 1 mat 1
+ltrspace 7051 nodes 4 2808 1251 333 1755 crossSect 1 mat 1
+ltrspace 7052 nodes 4 2808 981 891 1593 crossSect 1 mat 1
+ltrspace 7053 nodes 4 1251 2808 981 891 crossSect 1 mat 1
+ltrspace 7054 nodes 4 342 2808 2133 1755 crossSect 1 mat 1
+ltrspace 7055 nodes 4 2808 342 2133 1593 crossSect 1 mat 1
+ltrspace 7056 nodes 4 2808 333 2133 1755 crossSect 1 mat 1
+ltrspace 7057 nodes 4 333 2808 2133 1593 crossSect 1 mat 1
+ltrspace 7058 nodes 4 981 2808 333 1593 crossSect 1 mat 1
+ltrspace 7059 nodes 4 2808 1251 981 333 crossSect 1 mat 1
+ltrspaceboundaryplate 7061 nodes 5 1395 75 1152 2565 2835 crossSect 1 mat 1 location 4 16 16 0 0
+ltrspaceboundaryplate 7062 nodes 5 75 1395 1287 2565 2835 crossSect 1 mat 1 location 4 16 16 16 0
+ltrspaceboundaryplate 7064 nodes 5 75 1395 1152 15 2835 crossSect 1 mat 1 location 4 16 16 0 16
+ltrspaceboundaryplate 7073 nodes 5 432 1890 2673 15 2835 crossSect 1 mat 1 location 4 0 0 0 16
+ltrspaceboundaryplate 7074 nodes 5 1152 1890 432 15 2835 crossSect 1 mat 1 location 4 0 0 0 16
+ltrspaceboundaryplate 7075 nodes 5 1890 1341 2673 15 2835 crossSect 1 mat 1 location 4 0 16 0 16
+ltrspaceboundaryplate 7076 nodes 5 1890 1152 1341 15 2835 crossSect 1 mat 1 location 4 0 0 16 16
+ltrspace 7077 nodes 4 1890 720 1152 432 crossSect 1 mat 1
+ltrspaceboundaryplate 7078 nodes 5 1143 1890 1152 1341 2835 crossSect 1 mat 1 location 4 0 0 0 16
+ltrspace 7079 nodes 4 1890 720 432 1809 crossSect 1 mat 1
+ltrspaceboundaryplate 7080 nodes 5 9 1890 1341 2673 2835 crossSect 1 mat 1 location 4 16 0 16 0
+ltrspaceboundaryplate 7081 nodes 5 9 1890 1143 1341 2835 crossSect 1 mat 1 location 4 16 0 0 16
+ltrspace 7082 nodes 4 1143 1890 711 2241 crossSect 1 mat 1
+ltrspace 7083 nodes 4 720 1890 1152 2241 crossSect 1 mat 1
+ltrspace 7084 nodes 4 1890 1143 711 423 crossSect 1 mat 1
+ltrspaceboundaryplate 7085 nodes 5 9 1890 2673 423 2835 crossSect 1 mat 1 location 4 16 0 0 0
+ltrspaceboundaryplate 7086 nodes 5 1890 9 1143 423 2835 crossSect 1 mat 1 location 4 0 16 0 0
+ltrspace 7087 nodes 4 711 1890 423 1809 crossSect 1 mat 1
+ltrspace 7088 nodes 4 1890 711 2241 1809 crossSect 1 mat 1
+ltrspace 7089 nodes 4 720 1890 2241 1809 crossSect 1 mat 1
+ltrspace 7090 nodes 4 1890 1152 2241 2565 crossSect 1 mat 1
+ltrspace 7091 nodes 4 1143 1890 2241 2565 crossSect 1 mat 1
+ltrspace 7092 nodes 4 1890 1143 1152 2565 crossSect 1 mat 1
+ltrspace 7101 nodes 4 2349 603 2592 1593 crossSect 1 mat 1
+ltrspace 7102 nodes 4 414 2349 990 1593 crossSect 1 mat 1
+ltrspace 7103 nodes 4 2349 414 2241 1593 crossSect 1 mat 1
+ltrspace 7104 nodes 4 927 2349 405 603 crossSect 1 mat 1
+ltrspaceboundaryplate 7105 nodes 5 927 2349 1287 2565 2835 crossSect 1 mat 1 location 4 0 0 16 0
+ltrspaceboundaryplate 7106 nodes 5 603 2349 2592 81 2835 crossSect 1 mat 1 location 4 0 0 0 16
+ltrspaceboundaryplate 7107 nodes 5 927 2349 603 81 2835 crossSect 1 mat 1 location 4 0 0 0 16
+ltrspace 7108 nodes 4 405 2349 2241 1593 crossSect 1 mat 1
+ltrspace 7109 nodes 4 486 2349 2241 2565 crossSect 1 mat 1
+ltrspace 7110 nodes 4 2349 414 486 2241 crossSect 1 mat 1
+ltrspace 7111 nodes 4 2349 927 477 2565 crossSect 1 mat 1
+ltrspace 7112 nodes 4 2349 927 405 477 crossSect 1 mat 1
+ltrspace 7113 nodes 4 2349 981 603 1593 crossSect 1 mat 1
+ltrspace 7114 nodes 4 981 2349 405 1593 crossSect 1 mat 1
+ltrspace 7115 nodes 4 2349 981 405 603 crossSect 1 mat 1
+ltrspaceboundaryplate 7116 nodes 5 2349 927 1287 81 2835 crossSect 1 mat 1 location 4 0 0 16 16
+ltrspace 7117 nodes 4 2241 2349 477 2565 crossSect 1 mat 1
+ltrspace 7118 nodes 4 2349 405 2241 477 crossSect 1 mat 1
+ltrspaceboundaryplate 7119 nodes 5 2349 1359 2592 81 2835 crossSect 1 mat 1 location 4 0 16 0 16
+ltrspaceboundaryplate 7120 nodes 5 2349 1287 1359 81 2835 crossSect 1 mat 1 location 4 0 16 16 16
+ltrspace 7121 nodes 4 2592 612 342 1080 crossSect 1 mat 1
+ltrspace 7123 nodes 4 612 2592 342 1593 crossSect 1 mat 1
+ltrspace 7124 nodes 4 990 612 342 1593 crossSect 1 mat 1
+ltrspace 7127 nodes 4 612 2349 2592 1593 crossSect 1 mat 1
+ltrspace 7128 nodes 4 2349 612 990 1593 crossSect 1 mat 1
+ltrspace 7129 nodes 4 2349 612 414 990 crossSect 1 mat 1
+ltrspace 7172 nodes 4 945 441 351 1836 crossSect 1 mat 1
+ltrspace 7173 nodes 4 1197 945 2700 1998 crossSect 1 mat 1
+ltrspace 7174 nodes 4 945 1359 2700 1998 crossSect 1 mat 1
+ltrspace 7175 nodes 4 1359 945 1197 1998 crossSect 1 mat 1
+ltrspace 7178 nodes 4 1008 2214 450 360 crossSect 1 mat 1
+ltrspace 7179 nodes 4 1008 2214 360 1917 crossSect 1 mat 1
+ltrspace 7180 nodes 4 792 1008 360 1917 crossSect 1 mat 1
+ltrspace 7185 nodes 4 1008 2295 2214 1917 crossSect 1 mat 1
+ltrspace 7186 nodes 4 2295 1008 2214 540 crossSect 1 mat 1
+ltrspace 7187 nodes 4 2079 1008 2214 450 crossSect 1 mat 1
+ltrspace 7188 nodes 4 1008 2079 594 450 crossSect 1 mat 1
+ltrspace 7189 nodes 4 1008 2079 2214 540 crossSect 1 mat 1
+ltrspace 7190 nodes 4 2079 1008 594 540 crossSect 1 mat 1
+ltrspace 7191 nodes 4 396 1008 792 1917 crossSect 1 mat 1
+ltrspace 7194 nodes 4 1008 396 2295 1917 crossSect 1 mat 1
+ltrspace 7195 nodes 4 396 1008 2295 540 crossSect 1 mat 1
+ltrspace 7223 nodes 4 2619 378 1620 1755 crossSect 1 mat 1
+ltrspace 7227 nodes 4 378 2133 1620 1755 crossSect 1 mat 1
+ltrspace 7228 nodes 4 666 378 2133 1620 crossSect 1 mat 1
+ltrspace 7229 nodes 4 342 378 1260 1755 crossSect 1 mat 1
+ltrspace 7230 nodes 4 378 342 2133 1755 crossSect 1 mat 1
+ltrspace 7231 nodes 4 666 378 342 2133 crossSect 1 mat 1
+ltrspaceboundaryplate 7236 nodes 5 1134 39 2457 1080 2835 crossSect 1 mat 1 location 4 0 16 0 0
+ltrspaceboundaryplate 7237 nodes 5 39 99 2457 1080 2835 crossSect 1 mat 1 location 4 16 16 0 0
+ltrspace 7342 nodes 4 666 2268 1620 2403 crossSect 1 mat 1
+ltrspace 7343 nodes 4 558 2268 666 2403 crossSect 1 mat 1
+ltrspace 7344 nodes 4 2268 558 666 1620 crossSect 1 mat 1
+ltrspace 7345 nodes 4 2268 657 1620 2403 crossSect 1 mat 1
+ltrspace 7346 nodes 4 657 2268 549 2403 crossSect 1 mat 1
+ltrspace 7347 nodes 4 2268 657 549 1620 crossSect 1 mat 1
+ltrspace 7348 nodes 4 2268 261 549 2403 crossSect 1 mat 1
+ltrspace 7349 nodes 4 2268 549 1017 1620 crossSect 1 mat 1
+ltrspace 7350 nodes 4 1566 2268 1017 1620 crossSect 1 mat 1
+ltrspace 7352 nodes 4 558 1026 666 1620 crossSect 1 mat 1
+ltrspace 7353 nodes 4 2268 1026 558 1620 crossSect 1 mat 1
+ltrspace 7354 nodes 4 1026 2268 558 684 crossSect 1 mat 1
+ltrspace 7356 nodes 4 1026 378 666 1620 crossSect 1 mat 1
+ltrspace 7357 nodes 4 1026 2268 1566 1620 crossSect 1 mat 1
+ltrspace 7358 nodes 4 2268 1026 1566 684 crossSect 1 mat 1
+ltrspace 7362 nodes 4 1566 1026 792 684 crossSect 1 mat 1
+ltrspace 7363 nodes 4 378 1026 2619 1620 crossSect 1 mat 1
+ltrspace 7364 nodes 4 1026 378 2619 792 crossSect 1 mat 1
+ltrspace 7367 nodes 4 1026 1566 2619 1620 crossSect 1 mat 1
+ltrspace 7368 nodes 4 1566 1026 2619 792 crossSect 1 mat 1
+ltrspaceboundaryplate 7384 nodes 5 2187 1305 261 2403 2835 crossSect 1 mat 1 location 4 0 16 0 0
+ltrspace 7385 nodes 4 2268 2187 261 2403 crossSect 1 mat 1
+ltrspaceboundaryplate 7386 nodes 5 261 2187 909 57 2835 crossSect 1 mat 1 location 4 0 0 0 16
+ltrspaceboundaryplate 7387 nodes 5 1305 2187 261 57 2835 crossSect 1 mat 1 location 4 16 0 0 16
+ltrspaceboundaryplate 7388 nodes 5 63 2187 1413 918 2835 crossSect 1 mat 1 location 4 16 0 16 0
+ltrspaceboundaryplate 7389 nodes 5 63 2187 1305 1413 2835 crossSect 1 mat 1 location 4 16 0 16 16
+ltrspaceboundaryplate 7390 nodes 5 2187 1413 909 57 2835 crossSect 1 mat 1 location 4 0 16 0 16
+ltrspaceboundaryplate 7391 nodes 5 2187 1305 1413 57 2835 crossSect 1 mat 1 location 4 0 16 16 16
+ltrspace 7392 nodes 4 2187 261 909 549 crossSect 1 mat 1
+ltrspace 7393 nodes 4 2187 2268 261 549 crossSect 1 mat 1
+ltrspaceboundaryplate 7394 nodes 5 909 2187 192 1476 2835 crossSect 1 mat 1 location 4 0 0 22 22
+ltrspaceboundaryplate 7395 nodes 5 2187 138 918 1476 2835 crossSect 1 mat 1 location 4 0 22 0 22
+ltrspaceboundaryplate 7396 nodes 5 138 2187 1413 1476 2835 crossSect 1 mat 1 location 4 22 0 16 22
+ltrspaceboundaryplate 7397 nodes 5 909 2187 1476 132 2835 crossSect 1 mat 1 location 4 0 0 22 22
+ltrspaceboundaryplate 7398 nodes 5 2187 1413 1476 132 2835 crossSect 1 mat 1 location 4 0 16 22 22
+ltrspaceboundaryplate 7399 nodes 5 2187 1413 918 111 2835 crossSect 1 mat 1 location 4 0 16 0 16
+ltrspaceboundaryplate 7400 nodes 5 138 2187 918 111 2835 crossSect 1 mat 1 location 4 22 0 0 16
+ltrspaceboundaryplate 7401 nodes 5 2187 138 1413 111 2835 crossSect 1 mat 1 location 4 0 22 16 16
+ltrspaceboundaryplate 7404 nodes 5 1305 270 1431 2403 2835 crossSect 1 mat 1 location 4 16 0 16 0
+ltrspace 7405 nodes 4 1134 270 666 2403 crossSect 1 mat 1
+ltrspaceboundaryplate 7407 nodes 5 2187 270 1305 2403 2835 crossSect 1 mat 1 location 4 0 0 16 0
+ltrspaceboundaryplate 7408 nodes 5 270 2187 63 918 2835 crossSect 1 mat 1 location 4 0 0 16 0
+ltrspaceboundaryplate 7409 nodes 5 2187 270 63 1305 2835 crossSect 1 mat 1 location 4 0 0 16 16
+ltrspace 7410 nodes 4 270 558 666 2403 crossSect 1 mat 1
+ltrspace 7413 nodes 4 2187 270 558 918 crossSect 1 mat 1
+ltrspace 7418 nodes 4 270 2268 558 2403 crossSect 1 mat 1
+ltrspace 7419 nodes 4 270 2187 2268 2403 crossSect 1 mat 1
+ltrspace 7420 nodes 4 2187 270 2268 558 crossSect 1 mat 1
+ltrspace 7432 nodes 4 288 2484 504 1701 crossSect 1 mat 1
+ltrspace 7433 nodes 4 756 288 504 1701 crossSect 1 mat 1
+ltrspace 7434 nodes 4 2484 288 2646 1701 crossSect 1 mat 1
+ltrspace 7435 nodes 4 288 51 2646 1701 crossSect 1 mat 1
+ltrspace 7436 nodes 4 288 756 51 1701 crossSect 1 mat 1
+ltrspace 7437 nodes 4 51 288 2646 123 crossSect 1 mat 1
+ltrspace 7439 nodes 4 945 801 1197 2700 crossSect 1 mat 1
+ltrspace 7440 nodes 4 801 1197 2700 1998 crossSect 1 mat 1
+ltrspace 7441 nodes 4 2754 801 2700 1998 crossSect 1 mat 1
+ltrspace 7442 nodes 4 801 2754 1197 1998 crossSect 1 mat 1
+ltrspace 7444 nodes 4 2754 801 1197 297 crossSect 1 mat 1
+ltrspace 7445 nodes 4 1215 801 2754 297 crossSect 1 mat 1
+ltrspaceboundaryplate 7452 nodes 5 1179 639 156 2727 2835 crossSect 1 mat 1 location 4 0 0 22 0
+ltrspace 7455 nodes 4 1539 846 1044 2106 crossSect 1 mat 1
+ltrspace 7458 nodes 4 1539 846 864 504 crossSect 1 mat 1
+ltrspace 7459 nodes 4 846 1539 1044 504 crossSect 1 mat 1
+ltrspace 7460 nodes 4 1647 234 1116 738 crossSect 1 mat 1
+ltrspace 7461 nodes 4 1647 891 1107 729 crossSect 1 mat 1
+ltrspace 7462 nodes 4 1647 1782 738 1593 crossSect 1 mat 1
+ltrspace 7463 nodes 4 1782 1647 729 1593 crossSect 1 mat 1
+ltrspace 7464 nodes 4 1647 891 729 1593 crossSect 1 mat 1
+ltrspace 7465 nodes 4 1647 2808 891 1593 crossSect 1 mat 1
+ltrspace 7466 nodes 4 621 1647 891 1107 crossSect 1 mat 1
+ltrspace 7467 nodes 4 1647 2808 621 891 crossSect 1 mat 1
+ltrspace 7468 nodes 4 2808 1647 621 2025 crossSect 1 mat 1
+ltrspace 7469 nodes 4 1647 2808 630 2025 crossSect 1 mat 1
+ltrspaceboundaryplate 7514 nodes 5 1359 93 2592 81 2835 crossSect 1 mat 1 location 4 16 16 0 16
+ltrspaceboundaryplate 7515 nodes 5 93 1071 2592 81 2835 crossSect 1 mat 1 location 4 16 0 0 16
+ltrspaceboundaryplate 7521 nodes 5 1359 93 2457 2592 2835 crossSect 1 mat 1 location 4 16 16 0 0
+ltrspaceboundaryplate 7522 nodes 5 93 1071 2457 2592 2835 crossSect 1 mat 1 location 4 16 0 0 0
+ltrspaceboundaryplate 7730 nodes 5 5 123 138 213 2835 crossSect 1 mat 1 location 4 16 16 0 16
+ltrspaceboundaryplate 7755 nodes 5 45 1377 1161 2673 2835 crossSect 1 mat 1 location 4 16 16 0 0
+ltrspaceboundaryplate 7756 nodes 5 1377 132 1476 213 2835 crossSect 1 mat 1 location 4 16 0 0 16
+ltrspaceboundaryplate 7757 nodes 5 132 1377 1476 1161 2835 crossSect 1 mat 1 location 4 0 16 0 0
+ltrspaceboundaryplate 7761 nodes 5 1377 1476 138 213 2835 crossSect 1 mat 1 location 4 16 0 0 16
+ltrspaceboundaryplate 7762 nodes 5 1170 1377 1476 138 2835 crossSect 1 mat 1 location 4 0 16 0 0
+ltrspaceboundaryplate 7763 nodes 5 123 1377 138 213 2835 crossSect 1 mat 1 location 4 16 16 0 16
+ltrspaceboundaryplate 7764 nodes 5 123 1377 1170 138 2835 crossSect 1 mat 1 location 4 16 16 0 0
+ltrspaceboundaryplate 7765 nodes 5 1377 1170 2673 51 2835 crossSect 1 mat 1 location 4 16 0 0 16
+ltrspaceboundaryplate 7766 nodes 5 1377 123 1170 51 2835 crossSect 1 mat 1 location 4 16 16 0 16
+ltrspaceboundaryplate 7767 nodes 5 1341 1377 2673 51 2835 crossSect 1 mat 1 location 4 16 16 0 16
+ltrspaceboundaryplate 7768 nodes 5 1377 45 1341 2673 2835 crossSect 1 mat 1 location 4 16 16 16 0
+ltrspaceboundaryplate 7780 nodes 5 1377 117 45 1161 2835 crossSect 1 mat 1 location 4 16 16 16 0
+ltrspaceboundaryplate 7783 nodes 5 117 1377 132 1161 2835 crossSect 1 mat 1 location 4 16 16 0 0
+ltrspaceboundaryplate 7788 nodes 5 132 117 1 213 2835 crossSect 1 mat 1 location 4 0 16 16 16
+ltrspaceboundaryplate 7789 nodes 5 1377 117 132 213 2835 crossSect 1 mat 1 location 4 16 16 0 16
+ltrspace 8033 nodes 4 2376 1215 2754 297 crossSect 1 mat 1
+ltrspace 8034 nodes 4 2376 693 1215 297 crossSect 1 mat 1
+ltrspace 8035 nodes 4 846 2376 1044 2106 crossSect 1 mat 1
+ltrspace 8036 nodes 4 1539 2376 2106 837 crossSect 1 mat 1
+ltrspace 8037 nodes 4 2376 846 1539 2106 crossSect 1 mat 1
+ltrspace 8040 nodes 4 855 873 1539 837 crossSect 1 mat 1
+ltrspace 8041 nodes 4 495 855 1539 837 crossSect 1 mat 1
+ltrspace 8044 nodes 4 855 873 459 2160 crossSect 1 mat 1
+ltrspace 8045 nodes 4 873 855 1539 2160 crossSect 1 mat 1
+ltrspace 8048 nodes 4 855 495 2781 243 crossSect 1 mat 1
+ltrspace 8049 nodes 4 855 495 1539 2781 crossSect 1 mat 1
+ltrspace 8051 nodes 4 1539 855 2781 2160 crossSect 1 mat 1
+ltrspace 8053 nodes 4 2781 855 243 765 crossSect 1 mat 1
+ltrspace 8056 nodes 4 855 459 765 2160 crossSect 1 mat 1
+ltrspace 8057 nodes 4 2781 855 765 2160 crossSect 1 mat 1
+ltrspace 8058 nodes 4 1197 81 1998 297 crossSect 1 mat 1
+ltrspace 8059 nodes 4 81 1287 1998 297 crossSect 1 mat 1
+ltrspace 8060 nodes 4 1287 81 69 297 crossSect 1 mat 1
+ltrspace 8061 nodes 4 81 1359 1197 1998 crossSect 1 mat 1
+ltrspace 8062 nodes 4 1359 81 1287 1998 crossSect 1 mat 1
+ltrspace 8084 nodes 4 1395 702 15 75 crossSect 1 mat 1
+ltrspace 8085 nodes 4 1395 693 69 9 crossSect 1 mat 1
+ltrspace 8088 nodes 4 1395 1287 69 297 crossSect 1 mat 1
+ltrspace 8240 nodes 4 828 2484 1458 1674 crossSect 1 mat 1
+ltrspace 8241 nodes 4 1098 828 1458 1674 crossSect 1 mat 1
+ltrspace 8242 nodes 4 288 828 2484 2646 crossSect 1 mat 1
+ltrspace 8243 nodes 4 828 288 210 2646 crossSect 1 mat 1
+ltrspace 8244 nodes 4 2484 828 252 1674 crossSect 1 mat 1
+ltrspace 8245 nodes 4 828 1098 252 1674 crossSect 1 mat 1
+ltrspace 8246 nodes 4 828 2484 252 504 crossSect 1 mat 1
+ltrspace 8247 nodes 4 828 288 2484 504 crossSect 1 mat 1
+ltrspace 8248 nodes 4 168 1512 1530 2646 crossSect 1 mat 1
+ltrspace 8249 nodes 4 204 1512 168 2646 crossSect 1 mat 1
+ltrspace 8252 nodes 4 2484 1512 819 2646 crossSect 1 mat 1
+ltrspace 8253 nodes 4 1512 204 819 2646 crossSect 1 mat 1
+ltrspace 8254 nodes 4 828 1512 2484 2646 crossSect 1 mat 1
+ltrspace 8255 nodes 4 1512 828 210 2646 crossSect 1 mat 1
+ltrspace 8256 nodes 4 2484 1512 1458 819 crossSect 1 mat 1
+ltrspace 8257 nodes 4 1512 828 2484 1458 crossSect 1 mat 1
+ltrspace 8262 nodes 4 1512 1458 819 156 crossSect 1 mat 1
+ltrspace 8263 nodes 4 204 1512 819 156 crossSect 1 mat 1
+ltrspace 8280 nodes 4 1971 1170 432 2673 crossSect 1 mat 1
+ltrspace 8281 nodes 4 1971 1170 972 432 crossSect 1 mat 1
+ltrspace 8282 nodes 4 972 1971 522 2430 crossSect 1 mat 1
+ltrspace 8283 nodes 4 972 1971 432 522 crossSect 1 mat 1
+ltrspaceboundaryplate 8284 nodes 5 1377 1971 1161 2673 2835 crossSect 1 mat 1 location 4 16 0 0 0
+ltrspaceboundaryplate 8285 nodes 5 1971 1377 1170 2673 2835 crossSect 1 mat 1 location 4 0 16 0 0
+ltrspace 8286 nodes 4 1971 1170 1476 972 crossSect 1 mat 1
+ltrspace 8287 nodes 4 522 1971 1809 2430 crossSect 1 mat 1
+ltrspace 8288 nodes 4 1971 1890 432 1809 crossSect 1 mat 1
+ltrspace 8289 nodes 4 1890 1971 432 2673 crossSect 1 mat 1
+ltrspace 8290 nodes 4 1971 1161 2673 423 crossSect 1 mat 1
+ltrspaceboundaryplate 8291 nodes 5 1377 1971 1476 1161 2835 crossSect 1 mat 1 location 4 16 0 0 0
+ltrspaceboundaryplate 8292 nodes 5 1377 1971 1170 1476 2835 crossSect 1 mat 1 location 4 16 0 0 0
+ltrspace 8293 nodes 4 1971 513 1809 2430 crossSect 1 mat 1
+ltrspace 8294 nodes 4 1890 1971 423 1809 crossSect 1 mat 1
+ltrspace 8295 nodes 4 1890 1971 2673 423 crossSect 1 mat 1
+ltrspace 8296 nodes 4 1971 774 522 1809 crossSect 1 mat 1
+ltrspace 8297 nodes 4 1971 432 774 1809 crossSect 1 mat 1
+ltrspace 8298 nodes 4 432 1971 774 522 crossSect 1 mat 1
+ltrspace 8299 nodes 4 1971 972 1494 2430 crossSect 1 mat 1
+ltrspace 8300 nodes 4 1476 1971 972 1494 crossSect 1 mat 1
+ltrspace 8301 nodes 4 1971 765 423 1809 crossSect 1 mat 1
+ltrspace 8302 nodes 4 1971 513 765 1809 crossSect 1 mat 1
+ltrspace 8303 nodes 4 513 1971 765 423 crossSect 1 mat 1
+ltrspaceboundaryplate 8676 nodes 5 1458 162 186 2727 2835 crossSect 1 mat 1 location 4 22 22 22 0
+ltrspaceboundaryplate 8677 nodes 5 639 1458 2727 1512 2835 crossSect 1 mat 1 location 4 0 22 0 22
+ltrspaceboundaryplate 8678 nodes 5 1458 639 156 1512 2835 crossSect 1 mat 1 location 4 22 0 22 22
+ltrspaceboundaryplate 8679 nodes 5 639 1458 156 2727 2835 crossSect 1 mat 1 location 4 0 22 22 0
+ltrspaceboundaryplate 8680 nodes 5 1458 648 2727 1512 2835 crossSect 1 mat 1 location 4 22 0 0 22
+ltrspaceboundaryplate 8681 nodes 5 1458 162 648 1512 2835 crossSect 1 mat 1 location 4 22 22 0 22
+ltrspaceboundaryplate 8682 nodes 5 162 1458 648 2727 2835 crossSect 1 mat 1 location 4 22 22 0 0
+ltrspaceboundaryplate 10099 nodes 5 639 204 156 1512 2835 crossSect 1 mat 1 location 4 0 22 22 22
+ltrspaceboundaryplate 10101 nodes 5 1269 204 639 1512 2835 crossSect 1 mat 1 location 4 0 22 0 22
+ltrspaceboundaryplate 10103 nodes 5 204 1269 315 1512 2835 crossSect 1 mat 1 location 4 22 0 0 22
+ltrspaceboundaryplate 10107 nodes 5 174 1530 324 1512 2835 crossSect 1 mat 1 location 4 22 22 0 22
+ltrspaceboundaryplate 10108 nodes 5 210 174 324 1512 2835 crossSect 1 mat 1 location 4 22 22 0 22
+ltrspace 10113 nodes 4 1944 1278 2295 540 crossSect 1 mat 1
+ltrspace 10114 nodes 4 1278 1944 2295 648 crossSect 1 mat 1
+ltrspace 10115 nodes 4 1278 1944 594 540 crossSect 1 mat 1
+ltrspace 10116 nodes 4 1278 1944 324 594 crossSect 1 mat 1
+ltrspace 10121 nodes 4 1278 396 2295 540 crossSect 1 mat 1
+ltrspace 10122 nodes 4 396 1278 2295 648 crossSect 1 mat 1
+ltrspaceboundaryplate 10123 nodes 5 210 1278 648 1512 2835 crossSect 1 mat 1 location 4 22 0 0 22
+ltrspaceboundaryplate 10124 nodes 5 1278 1944 648 1512 2835 crossSect 1 mat 1 location 4 0 0 0 22
+ltrspaceboundaryplate 10125 nodes 5 1278 210 324 1512 2835 crossSect 1 mat 1 location 4 0 22 0 22
+ltrspaceboundaryplate 10126 nodes 5 1944 1278 324 1512 2835 crossSect 1 mat 1 location 4 0 0 0 22
+ltrspace 10139 nodes 4 2808 900 630 1260 crossSect 1 mat 1
+ltrspace 10140 nodes 4 900 2808 990 1260 crossSect 1 mat 1
+ltrspace 10143 nodes 4 1647 900 1116 630 crossSect 1 mat 1
+ltrspace 10144 nodes 4 900 1647 2808 630 crossSect 1 mat 1
+ltrspace 10147 nodes 4 900 1647 1116 738 crossSect 1 mat 1
+ltrspace 10148 nodes 4 2808 900 990 1593 crossSect 1 mat 1
+ltrspace 10153 nodes 4 900 1647 738 1593 crossSect 1 mat 1
+ltrspace 10154 nodes 4 1647 900 2808 1593 crossSect 1 mat 1
+ltrspace 10155 nodes 4 414 900 738 1593 crossSect 1 mat 1
+ltrspace 10156 nodes 4 900 414 990 1593 crossSect 1 mat 1
+ltrspaceboundaryplate 10159 nodes 5 99 87 2592 1080 2835 crossSect 1 mat 1 location 4 16 16 0 0
+ltrspaceboundaryplate 10160 nodes 5 87 612 2592 1080 2835 crossSect 1 mat 1 location 4 16 0 0 0
+ltrspaceboundaryplate 10161 nodes 5 99 87 1359 2592 2835 crossSect 1 mat 1 location 4 16 16 16 0
+ltrspaceboundaryplate 10162 nodes 5 87 2349 1359 2592 2835 crossSect 1 mat 1 location 4 16 0 16 0
+ltrspaceboundaryplate 10163 nodes 5 87 612 2349 2592 2835 crossSect 1 mat 1 location 4 16 0 0 0
+ltrspaceboundaryplate 10164 nodes 5 87 2349 1287 1359 2835 crossSect 1 mat 1 location 4 16 0 16 16
+ltrspace 10233 nodes 4 1035 495 747 2106 crossSect 1 mat 1
+ltrspace 10234 nodes 4 2376 1035 2106 837 crossSect 1 mat 1
+ltrspace 10235 nodes 4 1035 747 2511 2106 crossSect 1 mat 1
+ltrspace 10236 nodes 4 693 1035 747 2511 crossSect 1 mat 1
+ltrspace 10242 nodes 4 1035 1539 2106 837 crossSect 1 mat 1
+ltrspace 10243 nodes 4 1035 495 1539 837 crossSect 1 mat 1
+ltrspace 10244 nodes 4 495 1035 1539 2106 crossSect 1 mat 1
+ltrspace 10245 nodes 4 1035 2376 1215 837 crossSect 1 mat 1
+ltrspace 10246 nodes 4 1035 2376 693 1215 crossSect 1 mat 1
+ltrspace 10288 nodes 4 93 1359 945 1197 crossSect 1 mat 1
+ltrspace 10289 nodes 4 93 81 1359 1197 crossSect 1 mat 1
+ltrspace 10298 nodes 4 1359 2322 945 2700 crossSect 1 mat 1
+ltrspace 10299 nodes 4 93 2322 1359 1323 crossSect 1 mat 1
+ltrspace 10300 nodes 4 2322 93 1359 945 crossSect 1 mat 1
+ltrspace 10301 nodes 4 2322 945 2700 1836 crossSect 1 mat 1
+ltrspace 10302 nodes 4 945 2322 441 1836 crossSect 1 mat 1
+ltrspace 10303 nodes 4 2322 93 945 441 crossSect 1 mat 1
+ltrspace 10304 nodes 4 1323 2322 39 450 crossSect 1 mat 1
+ltrspace 10305 nodes 4 2079 2322 1323 450 crossSect 1 mat 1
+ltrspace 10306 nodes 4 2322 2079 1323 441 crossSect 1 mat 1
+ltrspace 10307 nodes 4 1323 2322 441 33 crossSect 1 mat 1
+ltrspace 10308 nodes 4 2322 93 441 33 crossSect 1 mat 1
+ltrspace 10309 nodes 4 93 2322 1323 33 crossSect 1 mat 1
+ltrspace 10310 nodes 4 2322 2214 1836 450 crossSect 1 mat 1
+ltrspace 10311 nodes 4 441 2322 2214 1836 crossSect 1 mat 1
+ltrspace 10312 nodes 4 2322 2079 2214 450 crossSect 1 mat 1
+ltrspace 10313 nodes 4 2322 2079 441 2214 crossSect 1 mat 1
+ltrspace 10332 nodes 4 27 1323 594 1431 crossSect 1 mat 1
+ltrspace 10337 nodes 4 27 1323 39 450 crossSect 1 mat 1
+ltrspace 10338 nodes 4 1323 27 594 450 crossSect 1 mat 1
+ltrspace 10339 nodes 4 27 594 1305 1431 crossSect 1 mat 1
+ltrspace 10340 nodes 4 594 27 1305 63 crossSect 1 mat 1
+ltrspace 10419 nodes 4 324 111 63 1413 crossSect 1 mat 1
+ltrspaceboundaryplate 10422 nodes 5 111 174 1530 324 2835 crossSect 1 mat 1 location 4 0 22 22 0
+ltrspaceboundaryplate 10423 nodes 5 111 174 5 1530 2835 crossSect 1 mat 1 location 4 0 22 22 22
+ltrspaceboundaryplate 10427 nodes 5 111 1530 213 1413 2835 crossSect 1 mat 1 location 4 0 22 22 0
+ltrspaceboundaryplate 10428 nodes 5 1530 111 324 1413 2835 crossSect 1 mat 1 location 4 22 0 0 0
+ltrspaceboundaryplate 10429 nodes 5 5 111 1530 213 2835 crossSect 1 mat 1 location 4 22 0 22 22
+ltrspace 10452 nodes 4 630 1062 2025 1260 crossSect 1 mat 1
+ltrspace 10454 nodes 4 1062 2025 1260 1755 crossSect 1 mat 1
+ltrspace 10455 nodes 4 378 1062 1260 1755 crossSect 1 mat 1
+ltrspace 10456 nodes 4 378 1062 2619 792 crossSect 1 mat 1
+ltrspace 10457 nodes 4 1062 630 2025 360 crossSect 1 mat 1
+ltrspace 10458 nodes 4 1062 2619 2025 1755 crossSect 1 mat 1
+ltrspace 10459 nodes 4 1062 378 2619 1755 crossSect 1 mat 1
+ltrspace 10460 nodes 4 2619 1062 2025 1917 crossSect 1 mat 1
+ltrspace 10461 nodes 4 1062 2619 792 1917 crossSect 1 mat 1
+ltrspace 10462 nodes 4 2025 1062 360 1917 crossSect 1 mat 1
+ltrspace 10463 nodes 4 1062 792 360 1917 crossSect 1 mat 1
+ltrspaceboundaryplate 10469 nodes 5 93 1323 1359 2457 2835 crossSect 1 mat 1 location 4 16 16 16 0
+ltrspaceboundaryplate 10471 nodes 5 1323 99 1359 2457 2835 crossSect 1 mat 1 location 4 16 16 16 0
+ltrspaceboundaryplate 10472 nodes 5 1323 39 99 2457 2835 crossSect 1 mat 1 location 4 16 16 16 0
+ltrspaceboundaryplate 10475 nodes 5 1323 1134 2457 1431 2835 crossSect 1 mat 1 location 4 16 0 0 16
+ltrspaceboundaryplate 10476 nodes 5 39 1323 1134 2457 2835 crossSect 1 mat 1 location 4 16 16 0 0
+ltrspaceboundaryplate 10477 nodes 5 1323 2457 1125 1431 2835 crossSect 1 mat 1 location 4 16 0 0 16
+ltrspaceboundaryplate 10478 nodes 5 21 1323 1125 1431 2835 crossSect 1 mat 1 location 4 16 16 0 16
+ltrspace 10595 nodes 4 675 2268 549 1017 crossSect 1 mat 1
+ltrspace 10596 nodes 4 2268 675 1566 1017 crossSect 1 mat 1
+ltrspace 10597 nodes 4 1566 675 783 1017 crossSect 1 mat 1
+ltrspace 10602 nodes 4 1179 675 1566 2727 crossSect 1 mat 1
+ltrspace 10603 nodes 4 2268 1242 558 684 crossSect 1 mat 1
+ltrspace 10604 nodes 4 1242 2187 2268 558 crossSect 1 mat 1
+ltrspace 10606 nodes 4 1242 2187 558 918 crossSect 1 mat 1
+ltrspaceboundaryplate 10610 nodes 5 2187 1242 1494 1476 2835 crossSect 1 mat 1 location 4 0 0 22 22
+ltrspaceboundaryplate 10622 nodes 5 270 27 1305 1431 2835 crossSect 1 mat 1 location 4 0 16 16 16
+ltrspaceboundaryplate 10623 nodes 5 270 27 63 1305 2835 crossSect 1 mat 1 location 4 0 16 16 16
+ltrspaceboundaryplate 10632 nodes 5 1323 27 1134 1431 2835 crossSect 1 mat 1 location 4 16 16 0 16
+ltrspaceboundaryplate 10633 nodes 5 1323 27 39 1134 2835 crossSect 1 mat 1 location 4 16 16 16 0
+ltrspaceboundaryplate 10634 nodes 5 27 1134 1431 2403 2835 crossSect 1 mat 1 location 4 16 0 16 0
+ltrspaceboundaryplate 10635 nodes 5 270 27 1431 2403 2835 crossSect 1 mat 1 location 4 0 16 16 0
+ltrspaceboundaryplate 10636 nodes 5 27 270 1134 2403 2835 crossSect 1 mat 1 location 4 16 0 0 0
+ltrspace 10670 nodes 4 801 225 1215 2754 crossSect 1 mat 1
+ltrspace 10671 nodes 4 2376 225 1215 837 crossSect 1 mat 1
+ltrspace 10672 nodes 4 225 2376 1215 2754 crossSect 1 mat 1
+ltrspace 10682 nodes 4 225 1647 1107 729 crossSect 1 mat 1
+ltrspace 10688 nodes 4 387 2295 639 2727 crossSect 1 mat 1
+ltrspace 10689 nodes 4 1179 387 639 2727 crossSect 1 mat 1
+ltrspace 10690 nodes 4 1269 387 2295 639 crossSect 1 mat 1
+ltrspace 10691 nodes 4 387 531 1269 2295 crossSect 1 mat 1
+ltrspace 10694 nodes 4 387 1566 2295 2727 crossSect 1 mat 1
+ltrspace 10695 nodes 4 387 1179 1566 2727 crossSect 1 mat 1
+ltrspace 10696 nodes 4 531 387 999 2295 crossSect 1 mat 1
+ltrspace 10698 nodes 4 387 1566 783 1917 crossSect 1 mat 1
+ltrspace 10699 nodes 4 1566 387 2295 1917 crossSect 1 mat 1
+ltrspace 10700 nodes 4 675 387 1566 783 crossSect 1 mat 1
+ltrspace 10701 nodes 4 675 387 1179 1566 crossSect 1 mat 1
+ltrspace 10706 nodes 4 999 387 783 1917 crossSect 1 mat 1
+ltrspace 10707 nodes 4 387 999 2295 1917 crossSect 1 mat 1
+ltrspace 10737 nodes 4 846 882 1539 864 crossSect 1 mat 1
+ltrspace 10742 nodes 4 1782 882 738 468 crossSect 1 mat 1
+ltrspace 10743 nodes 4 882 864 468 2160 crossSect 1 mat 1
+ltrspace 10744 nodes 4 882 1539 864 2160 crossSect 1 mat 1
+ltrspace 10745 nodes 4 1782 882 468 2160 crossSect 1 mat 1
+ltrspace 10746 nodes 4 1539 882 1782 2160 crossSect 1 mat 1
+ltrspace 10747 nodes 4 1728 873 1782 729 crossSect 1 mat 1
+ltrspace 10748 nodes 4 1647 1728 1782 729 crossSect 1 mat 1
+ltrspace 10749 nodes 4 1728 225 873 729 crossSect 1 mat 1
+ltrspace 10750 nodes 4 225 1728 1647 729 crossSect 1 mat 1
+ltrspace 10751 nodes 4 1728 873 1539 1782 crossSect 1 mat 1
+ltrspace 10752 nodes 4 882 1728 1539 1782 crossSect 1 mat 1
+ltrspace 10753 nodes 4 1728 1647 1782 738 crossSect 1 mat 1
+ltrspace 10754 nodes 4 882 1728 1782 738 crossSect 1 mat 1
+ltrspace 10755 nodes 4 1647 1728 234 738 crossSect 1 mat 1
+ltrspace 10756 nodes 4 1728 882 234 738 crossSect 1 mat 1
+ltrspace 10757 nodes 4 225 1728 873 837 crossSect 1 mat 1
+ltrspace 10758 nodes 4 1728 225 2376 837 crossSect 1 mat 1
+ltrspace 10759 nodes 4 2376 1728 234 2754 crossSect 1 mat 1
+ltrspace 10760 nodes 4 225 1728 2376 2754 crossSect 1 mat 1
+ltrspace 10761 nodes 4 2376 1728 846 234 crossSect 1 mat 1
+ltrspace 10762 nodes 4 1728 882 846 234 crossSect 1 mat 1
+ltrspace 10763 nodes 4 873 1728 1539 837 crossSect 1 mat 1
+ltrspace 10764 nodes 4 1728 2376 1539 837 crossSect 1 mat 1
+ltrspace 10765 nodes 4 1728 2376 846 1539 crossSect 1 mat 1
+ltrspace 10766 nodes 4 882 1728 846 1539 crossSect 1 mat 1
+ltrspace 10767 nodes 4 351 567 1836 2025 crossSect 1 mat 1
+ltrspace 10768 nodes 4 621 567 351 2025 crossSect 1 mat 1
+ltrspace 10770 nodes 4 567 945 351 1836 crossSect 1 mat 1
+ltrspace 10772 nodes 4 945 567 2700 1836 crossSect 1 mat 1
+ltrspace 10773 nodes 4 567 801 945 2700 crossSect 1 mat 1
+ltrspaceboundaryplate 10819 nodes 5 1323 33 21 1125 2835 crossSect 1 mat 1 location 4 16 16 16 0
+ltrspaceboundaryplate 10820 nodes 5 1071 33 2457 1125 2835 crossSect 1 mat 1 location 4 0 16 0 0
+ltrspaceboundaryplate 10821 nodes 5 33 1323 2457 1125 2835 crossSect 1 mat 1 location 4 16 16 0 0
+ltrspaceboundaryplate 10822 nodes 5 33 93 1071 2457 2835 crossSect 1 mat 1 location 4 16 16 0 0
+ltrspaceboundaryplate 10823 nodes 5 33 1323 93 2457 2835 crossSect 1 mat 1 location 4 16 16 16 0
+ltrspace 10946 nodes 4 1359 87 1206 1998 crossSect 1 mat 1
+ltrspace 10947 nodes 4 87 1359 1287 1998 crossSect 1 mat 1
+ltrspace 11357 nodes 4 174 5 1530 123 crossSect 1 mat 1
+ltrspace 11359 nodes 4 174 1530 2646 123 crossSect 1 mat 1
+ltrspace 11363 nodes 4 288 174 2646 123 crossSect 1 mat 1
+ltrspace 11367 nodes 4 288 174 210 2646 crossSect 1 mat 1
+ltrspace 11371 nodes 4 1512 174 1530 2646 crossSect 1 mat 1
+ltrspace 11372 nodes 4 174 1512 210 2646 crossSect 1 mat 1
+ltrspace 11416 nodes 4 702 1863 15 2511 crossSect 1 mat 1
+ltrspace 11417 nodes 4 1863 1395 702 15 crossSect 1 mat 1
+ltrspace 11418 nodes 4 693 1863 2511 9 crossSect 1 mat 1
+ltrspace 11419 nodes 4 1395 1863 693 9 crossSect 1 mat 1
+ltrspace 11420 nodes 4 1863 702 1044 2511 crossSect 1 mat 1
+ltrspace 11421 nodes 4 2376 1863 702 1044 crossSect 1 mat 1
+ltrspace 11422 nodes 4 1863 1035 693 2511 crossSect 1 mat 1
+ltrspace 11423 nodes 4 1863 1035 2376 693 crossSect 1 mat 1
+ltrspace 11424 nodes 4 1863 1341 15 2511 crossSect 1 mat 1
+ltrspace 11425 nodes 4 1395 1863 1341 15 crossSect 1 mat 1
+ltrspace 11426 nodes 4 1863 1341 2511 9 crossSect 1 mat 1
+ltrspace 11427 nodes 4 1863 1395 1341 9 crossSect 1 mat 1
+ltrspace 11428 nodes 4 2376 1863 693 297 crossSect 1 mat 1
+ltrspace 11429 nodes 4 1044 1863 2511 2106 crossSect 1 mat 1
+ltrspace 11430 nodes 4 2376 1863 1044 2106 crossSect 1 mat 1
+ltrspace 11431 nodes 4 1863 1035 2511 2106 crossSect 1 mat 1
+ltrspace 11432 nodes 4 1035 1863 2376 2106 crossSect 1 mat 1
+ltrspace 11433 nodes 4 693 1863 69 297 crossSect 1 mat 1
+ltrspace 11434 nodes 4 1863 1395 69 297 crossSect 1 mat 1
+ltrspace 11435 nodes 4 1863 1395 693 69 crossSect 1 mat 1
+ltrspace 11436 nodes 4 1863 2754 1998 297 crossSect 1 mat 1
+ltrspace 11437 nodes 4 1863 2376 2754 297 crossSect 1 mat 1
+ltrspace 11438 nodes 4 1287 1863 1998 297 crossSect 1 mat 1
+ltrspace 11439 nodes 4 1395 1863 1287 297 crossSect 1 mat 1
+ltrspace 11440 nodes 4 1395 1863 702 75 crossSect 1 mat 1
+ltrspace 11446 nodes 4 1836 954 450 360 crossSect 1 mat 1
+ltrspace 11447 nodes 4 576 954 1836 360 crossSect 1 mat 1
+ltrspace 11448 nodes 4 576 954 2700 1836 crossSect 1 mat 1
+ltrspace 11450 nodes 4 954 2322 1836 450 crossSect 1 mat 1
+ltrspace 11451 nodes 4 954 2322 2700 1836 crossSect 1 mat 1
+ltrspace 11455 nodes 4 954 2322 1359 2700 crossSect 1 mat 1
+ltrspace 11456 nodes 4 954 1206 2700 1998 crossSect 1 mat 1
+ltrspace 11457 nodes 4 1359 954 2700 1998 crossSect 1 mat 1
+ltrspace 11458 nodes 4 954 1359 1206 1998 crossSect 1 mat 1
+ltrspace 11463 nodes 4 1224 2376 234 2754 crossSect 1 mat 1
+ltrspace 11464 nodes 4 1224 2376 846 234 crossSect 1 mat 1
+ltrspace 11465 nodes 4 1224 2376 702 1044 crossSect 1 mat 1
+ltrspace 11466 nodes 4 2376 1224 846 1044 crossSect 1 mat 1
+ltrspace 11473 nodes 4 810 1224 234 2754 crossSect 1 mat 1
+ltrspace 11479 nodes 4 810 954 1206 2700 crossSect 1 mat 1
+ltrspace 11480 nodes 4 954 810 576 2700 crossSect 1 mat 1
+ltrspace 11481 nodes 4 1206 810 2700 1998 crossSect 1 mat 1
+ltrspace 11482 nodes 4 810 2754 2700 1998 crossSect 1 mat 1
+ltrspace 11483 nodes 4 2754 810 1206 1998 crossSect 1 mat 1
+ltrspace 11500 nodes 4 1971 963 1161 423 crossSect 1 mat 1
+ltrspace 11501 nodes 4 963 1971 513 423 crossSect 1 mat 1
+ltrspace 11503 nodes 4 1971 963 1476 1161 crossSect 1 mat 1
+ltrspace 11504 nodes 4 1971 963 513 2430 crossSect 1 mat 1
+ltrspace 11509 nodes 4 963 144 513 2430 crossSect 1 mat 1
+ltrspace 11511 nodes 4 963 132 1476 1161 crossSect 1 mat 1
+ltrspace 11512 nodes 4 192 963 132 1476 crossSect 1 mat 1
+ltrspace 11513 nodes 4 192 963 1476 1494 crossSect 1 mat 1
+ltrspace 11514 nodes 4 963 1971 1476 1494 crossSect 1 mat 1
+ltrspace 11515 nodes 4 963 1971 1494 2430 crossSect 1 mat 1
+ltrspace 11516 nodes 4 144 963 1494 2430 crossSect 1 mat 1
+ltrspace 11517 nodes 4 963 192 144 1494 crossSect 1 mat 1
+ltrspace 11540 nodes 4 150 1098 186 2430 crossSect 1 mat 1
+ltrspace 11545 nodes 4 1098 150 522 2430 crossSect 1 mat 1
+ltrspace 11546 nodes 4 150 972 522 2430 crossSect 1 mat 1
+ltrspace 11550 nodes 4 150 186 1458 2430 crossSect 1 mat 1
+ltrspace 11551 nodes 4 1494 150 1458 2430 crossSect 1 mat 1
+ltrspace 11552 nodes 4 972 150 1494 2430 crossSect 1 mat 1
+ltrspace 11553 nodes 4 150 198 972 1494 crossSect 1 mat 1
+ltrspace 11904 nodes 4 2322 99 1323 39 crossSect 1 mat 1
+ltrspace 11905 nodes 4 2322 99 1359 1323 crossSect 1 mat 1
+ltrspace 11908 nodes 4 99 954 2322 1359 crossSect 1 mat 1
+ltrspace 11909 nodes 4 87 99 1359 1206 crossSect 1 mat 1
+ltrspace 11910 nodes 4 99 954 1359 1206 crossSect 1 mat 1
+ltrspace 11913 nodes 4 2322 99 39 450 crossSect 1 mat 1
+ltrspace 11914 nodes 4 954 99 2322 450 crossSect 1 mat 1
+ltrspaceboundaryplate 13218 nodes 5 1530 168 315 1512 2835 crossSect 1 mat 1 location 4 22 22 0 22
+ltrspaceboundaryplate 13219 nodes 5 168 204 315 1512 2835 crossSect 1 mat 1 location 4 22 22 0 22
+ltrspaceboundaryplate 13222 nodes 5 1530 168 105 315 2835 crossSect 1 mat 1 location 4 22 22 0 0
+ltrspaceboundaryplate 13223 nodes 5 1530 168 1 105 2835 crossSect 1 mat 1 location 4 22 22 22 0
+ltrspaceboundaryplate 13228 nodes 5 936 75 1287 2565 2835 crossSect 1 mat 1 location 4 0 16 16 0
+ltrspaceboundaryplate 13229 nodes 5 87 936 75 1287 2835 crossSect 1 mat 1 location 4 16 0 16 16
+ltrspace 13230 nodes 4 936 2349 486 2565 crossSect 1 mat 1
+ltrspace 13232 nodes 4 1152 936 486 2565 crossSect 1 mat 1
+ltrspaceboundaryplate 13233 nodes 5 75 936 1152 2565 2835 crossSect 1 mat 1 location 4 16 0 0 0
+ltrspaceboundaryplate 13236 nodes 5 2349 936 1287 2565 2835 crossSect 1 mat 1 location 4 0 0 16 0
+ltrspaceboundaryplate 13237 nodes 5 936 87 2349 1287 2835 crossSect 1 mat 1 location 4 0 16 0 16
+ltrspaceboundaryplate 13238 nodes 5 936 87 612 2349 2835 crossSect 1 mat 1 location 4 0 16 0 0
+ltrspace 13240 nodes 4 936 2349 414 486 crossSect 1 mat 1
+ltrspace 13241 nodes 4 612 936 2349 414 crossSect 1 mat 1
+ltrspaceboundaryplate 13310 nodes 5 105 1413 132 213 2835 crossSect 1 mat 1 location 4 16 16 22 25
+ltrspaceboundaryplate 13312 nodes 5 1413 105 909 57 2835 crossSect 1 mat 1 location 4 16 16 0 16
+ltrspaceboundaryplate 13314 nodes 5 105 2187 909 132 2835 crossSect 1 mat 1 location 4 16 0 0 22
+ltrspaceboundaryplate 13315 nodes 5 2187 105 1413 132 2835 crossSect 1 mat 1 location 4 0 16 16 22
+ltrspaceboundaryplate 13316 nodes 5 105 2187 1413 909 2835 crossSect 1 mat 1 location 4 16 0 16 0
+ltrspaceboundaryplate 13350 nodes 5 144 1233 1494 192 2835 crossSect 1 mat 1 location 4 22 0 22 22
+ltrspace 13351 nodes 4 1233 675 2268 549 crossSect 1 mat 1
+ltrspaceboundaryplate 13352 nodes 5 2187 1233 909 192 2835 crossSect 1 mat 1 location 4 0 0 0 22
+ltrspace 13353 nodes 4 1233 2187 909 549 crossSect 1 mat 1
+ltrspace 13354 nodes 4 2187 1233 2268 549 crossSect 1 mat 1
+ltrspaceboundaryplate 13355 nodes 5 1233 1494 192 1476 2835 crossSect 1 mat 1 location 4 0 22 22 22
+ltrspaceboundaryplate 13356 nodes 5 2187 1233 192 1476 2835 crossSect 1 mat 1 location 4 0 0 22 22
+ltrspaceboundaryplate 13357 nodes 5 1233 2187 1494 1476 2835 crossSect 1 mat 1 location 4 0 0 22 22
+ltrspaceboundaryplate 13358 nodes 5 1242 198 1494 1476 2835 crossSect 1 mat 1 location 4 0 22 22 22
+ltrspaceboundaryplate 13359 nodes 5 1242 198 150 1494 2835 crossSect 1 mat 1 location 4 0 22 22 22
+ltrspaceboundaryplate 13362 nodes 5 138 198 918 1476 2835 crossSect 1 mat 1 location 4 22 22 0 22
+ltrspaceboundaryplate 13364 nodes 5 198 2187 918 1476 2835 crossSect 1 mat 1 location 4 22 0 0 22
+ltrspaceboundaryplate 13365 nodes 5 198 1242 2187 1476 2835 crossSect 1 mat 1 location 4 22 0 0 22
+ltrspaceboundaryplate 13366 nodes 5 1242 198 2187 918 2835 crossSect 1 mat 1 location 4 0 22 0 0
+ltrspace 13382 nodes 4 2052 225 801 2754 crossSect 1 mat 1
+ltrspace 13383 nodes 4 2052 1728 225 2754 crossSect 1 mat 1
+ltrspace 13384 nodes 4 1728 2052 225 1647 crossSect 1 mat 1
+ltrspace 13385 nodes 4 225 2052 801 1107 crossSect 1 mat 1
+ltrspace 13386 nodes 4 2052 225 1647 1107 crossSect 1 mat 1
+ltrspace 13387 nodes 4 801 2052 2754 2700 crossSect 1 mat 1
+ltrspace 13388 nodes 4 567 2052 801 2700 crossSect 1 mat 1
+ltrspace 13389 nodes 4 2052 567 801 1107 crossSect 1 mat 1
+ltrspace 13390 nodes 4 1728 2052 234 2754 crossSect 1 mat 1
+ltrspace 13391 nodes 4 1728 2052 1647 234 crossSect 1 mat 1
+ltrspace 13392 nodes 4 567 2052 2700 1836 crossSect 1 mat 1
+ltrspace 13393 nodes 4 567 2052 1836 2025 crossSect 1 mat 1
+ltrspace 13394 nodes 4 2052 1647 621 1107 crossSect 1 mat 1
+ltrspace 13395 nodes 4 567 2052 621 1107 crossSect 1 mat 1
+ltrspace 13396 nodes 4 2052 810 234 2754 crossSect 1 mat 1
+ltrspace 13397 nodes 4 2052 576 2700 1836 crossSect 1 mat 1
+ltrspace 13398 nodes 4 2052 576 1836 2025 crossSect 1 mat 1
+ltrspace 13399 nodes 4 1647 2052 621 2025 crossSect 1 mat 1
+ltrspace 13400 nodes 4 2052 567 621 2025 crossSect 1 mat 1
+ltrspace 13401 nodes 4 2052 1647 234 1116 crossSect 1 mat 1
+ltrspace 13402 nodes 4 810 2052 234 1116 crossSect 1 mat 1
+ltrspace 13403 nodes 4 2052 810 2754 2700 crossSect 1 mat 1
+ltrspace 13404 nodes 4 810 2052 576 2700 crossSect 1 mat 1
+ltrspace 13405 nodes 4 576 2052 630 2025 crossSect 1 mat 1
+ltrspace 13406 nodes 4 2052 1647 630 2025 crossSect 1 mat 1
+ltrspace 13407 nodes 4 2052 810 576 1116 crossSect 1 mat 1
+ltrspace 13408 nodes 4 576 2052 1116 630 crossSect 1 mat 1
+ltrspace 13409 nodes 4 2052 1647 1116 630 crossSect 1 mat 1
+ltrspaceboundaryplate 13445 nodes 5 180 1179 156 2727 2835 crossSect 1 mat 1 location 4 22 0 22 0
+ltrspaceboundaryplate 13446 nodes 5 1458 180 156 2727 2835 crossSect 1 mat 1 location 4 22 22 22 0
+ltrspace 13757 nodes 4 810 306 2754 1206 crossSect 1 mat 1
+ltrspace 13758 nodes 4 810 306 1224 2754 crossSect 1 mat 1
+ltrspace 13762 nodes 4 306 2754 1206 1998 crossSect 1 mat 1
+ltrspace 13766 nodes 4 306 1863 2754 1998 crossSect 1 mat 1
+ltrspace 13767 nodes 4 1863 306 1287 1998 crossSect 1 mat 1
+ltrspace 13768 nodes 4 1863 306 2376 702 crossSect 1 mat 1
+ltrspace 13769 nodes 4 306 1224 2376 702 crossSect 1 mat 1
+ltrspace 13770 nodes 4 87 306 1287 75 crossSect 1 mat 1
+ltrspace 13771 nodes 4 87 306 1206 1998 crossSect 1 mat 1
+ltrspace 13772 nodes 4 306 87 1287 1998 crossSect 1 mat 1
+ltrspace 13773 nodes 4 1863 306 702 75 crossSect 1 mat 1
+ltrspace 13774 nodes 4 306 1863 2376 2754 crossSect 1 mat 1
+ltrspace 13775 nodes 4 1224 306 2376 2754 crossSect 1 mat 1
+ltrspace 13776 nodes 4 306 1395 1287 75 crossSect 1 mat 1
+ltrspace 13777 nodes 4 306 1863 1395 75 crossSect 1 mat 1
+ltrspace 13778 nodes 4 1863 306 1395 1287 crossSect 1 mat 1
+ltrspaceboundaryplate 14519 nodes 5 1 105 132 213 2835 crossSect 1 mat 1 location 4 25 16 22 25
+ltrspaceboundaryplate 14524 nodes 5 1242 2538 2187 1494 2835 crossSect 1 mat 1 location 4 0 0 0 22
+ltrspace 14525 nodes 4 2538 1242 2187 2268 crossSect 1 mat 1
+ltrspaceboundaryplate 14526 nodes 5 2538 1233 2187 1494 2835 crossSect 1 mat 1 location 4 0 0 0 22
+ltrspace 14527 nodes 4 1233 2538 2187 2268 crossSect 1 mat 1
+ltrspace 14528 nodes 4 2538 1242 2268 684 crossSect 1 mat 1
+ltrspace 14529 nodes 4 2538 1233 675 2268 crossSect 1 mat 1
+ltrspaceboundaryplate 14530 nodes 5 1242 2538 150 684 2835 crossSect 1 mat 1 location 4 0 0 22 0
+ltrspaceboundaryplate 14531 nodes 5 2538 1242 150 1494 2835 crossSect 1 mat 1 location 4 0 0 22 22
+ltrspaceboundaryplate 14532 nodes 5 1233 2538 144 1494 2835 crossSect 1 mat 1 location 4 0 0 22 22
+ltrspaceboundaryplate 14533 nodes 5 1233 2538 675 144 2835 crossSect 1 mat 1 location 4 0 0 0 22
+ltrspace 14534 nodes 4 2538 2268 1566 684 crossSect 1 mat 1
+ltrspace 14535 nodes 4 675 2538 2268 1566 crossSect 1 mat 1
+ltrspace 14536 nodes 4 2538 1566 2727 684 crossSect 1 mat 1
+ltrspace 14537 nodes 4 675 2538 1566 2727 crossSect 1 mat 1
+ltrspaceboundaryplate 14538 nodes 5 150 2538 186 684 2835 crossSect 1 mat 1 location 4 22 0 22 0
+ltrspaceboundaryplate 14539 nodes 5 1458 2538 150 1494 2835 crossSect 1 mat 1 location 4 22 0 22 22
+ltrspaceboundaryplate 14540 nodes 5 144 2538 1458 1494 2835 crossSect 1 mat 1 location 4 22 0 22 22
+ltrspaceboundaryplate 14541 nodes 5 2538 180 675 144 2835 crossSect 1 mat 1 location 4 0 22 0 22
+ltrspace 14542 nodes 4 1188 2538 2727 684 crossSect 1 mat 1
+ltrspaceboundaryplate 14543 nodes 5 2538 1188 186 684 2835 crossSect 1 mat 1 location 4 0 0 22 0
+ltrspaceboundaryplate 14544 nodes 5 1188 2538 186 2727 2835 crossSect 1 mat 1 location 4 0 0 22 0
+ltrspaceboundaryplate 14545 nodes 5 2538 1458 186 2727 2835 crossSect 1 mat 1 location 4 0 22 22 0
+ltrspaceboundaryplate 14546 nodes 5 2538 1458 150 186 2835 crossSect 1 mat 1 location 4 0 22 22 22
+ltrspaceboundaryplate 14547 nodes 5 2538 180 1458 2727 2835 crossSect 1 mat 1 location 4 0 22 22 0
+ltrspaceboundaryplate 14548 nodes 5 2538 180 144 1458 2835 crossSect 1 mat 1 location 4 0 22 22 22
+ltrspace 14549 nodes 4 2538 675 1179 2727 crossSect 1 mat 1
+ltrspaceboundaryplate 14550 nodes 5 180 2538 1179 2727 2835 crossSect 1 mat 1 location 4 22 0 0 0
+ltrspaceboundaryplate 14551 nodes 5 180 2538 675 1179 2835 crossSect 1 mat 1 location 4 22 0 0 0
+ltrspace 14788 nodes 4 1098 162 186 1458 crossSect 1 mat 1
+ltrspace 14789 nodes 4 828 162 1098 1458 crossSect 1 mat 1
+ltrspace 14790 nodes 4 1512 162 828 1458 crossSect 1 mat 1
+ltrspace 14791 nodes 4 162 1512 828 210 crossSect 1 mat 1
+simplecs 1
+isole 1 talpha 0. d 0. e 30.e9 n 0.
+BoundaryCondition 1 loadTimeFunction 1 prescribedvalue 0.0
+BoundaryCondition 2 loadTimeFunction 1 dofs 10 31 38 39 32 37 35 43 44 49 50 values 10 0 0 0 0 0 0 0.5 -1 0 0 set 1
+ConstantFunction 1 f(t) 1.
+set 1 nodes 1 2835
+
+#%BEGIN_CHECK% tolerance 1e-1
+#REACTION tStep 1 number 2835 dof 43 value 5.76034039e+05
+#REACTION tStep 1 number 2835 dof 44 value -1.21625445e+06
+##TIME
+#%END_CHECK%
