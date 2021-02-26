@@ -2,14 +2,14 @@ nodes.dat
 domain 3d
 diam 0.02 maxiter 10000 ranint 0 perflag 3 0 0 0 ranflag 2
 nvertex 8 ncurve 12 nsurface 6 nregion 1 ninclusion 0 ncontrolvertex 3
-vertex 1 coords 3 -0.2 -0.05 -0.05 refine 1. radius 0.
-vertex 2 coords 3 0.2 -0.05 -0.05 refine 1. radius 0.
-vertex 3 coords 3 0.2 0.05 -0.05 refine 1. radius 0.
-vertex 4 coords 3 -0.2 0.05 -0.05 refine 1. radius 0.
-vertex 5 coords 3 -0.2 -0.05 0.05 refine 1. radius 0.
-vertex 6 coords 3 0.2 -0.05 0.05 refine 1. radius 0.
-vertex 7 coords 3 0.2 0.05 0.05 refine 1. radius 0.
-vertex 8 coords 3 -0.2 0.05 0.05 refine 1. radius 0.
+vertex 1 coords 3 -0.19 -0.19 -0.156 refine 1. radius 0.
+vertex 2 coords 3 0.19 -0.19 -0.156 refine 1. radius 0.
+vertex 3 coords 3 0.19 0.19 -0.156 refine 1. radius 0.
+vertex 4 coords 3 -0.19 0.19 -0.156 refine 1. radius 0.
+vertex 5 coords 3 -0.19 -0.19 0.156 refine 1. radius 0.
+vertex 6 coords 3 0.19 -0.19 0.156 refine 1. radius 0.
+vertex 7 coords 3 0.19 0.19 0.156 refine 1. radius 0.
+vertex 8 coords 3 -0.19 0.19 0.156 refine 1. radius 0.
 #control vertices
 controlvertex 1 coords 3 0.01 -0.015 -0.015 refine 1. radius 0
 controlvertex 2 coords 3 0.02 -0.015 -0.015 refine 1. radius 0
