@@ -8,3 +8,5 @@ All tests can be easily run with CTest. To configure cmake, the path to OOFEM ex
 The tests can then be run with from the current directory with
 
 `ctest`
+
+To pass all tests, OOFEM needs to be compiled with PETSc and Python support (USE_PETSC and USE_PYTHON_EXTENSION on).
