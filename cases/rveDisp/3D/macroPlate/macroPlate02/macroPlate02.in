@@ -1127,7 +1127,7 @@ ConstantFunction 1 f(t) 1.
 set 1 nodes 1 2835
 
 #%BEGIN_CHECK% tolerance 1e-1
-#REACTION tStep 1 number 2835 dof 43 value 5.76034039e+05
-#REACTION tStep 1 number 2835 dof 44 value -1.21625445e+06
+#REACTION tStep 1 number 2835 dof 43 value 5.76024251e+05
+#REACTION tStep 1 number 2835 dof 44 value -1.21626636e+06
 ##TIME
 #%END_CHECK%

@@ -2510,9 +2510,9 @@ set 16 nodes 2 6726 6744
 set 17 nodes 2 6781 6760
 
 
-#%BEGIN_CHECK% tolerance 1e-3
-#REACTION tStep 1 number 6799 dof 43 value 6.35960185e+01
-#REACTION tStep 2 number 6799 dof 43 value 1.26626386e+02
-#REACTION tStep 3 number 6799 dof 43 value 1.89527583e+02
+#%BEGIN_CHECK% tolerance 1e-1
+#REACTION tStep 1 number 6799 dof 43 value 6.35783562e+01
+#REACTION tStep 2 number 6799 dof 43 value 1.26627767e+02
+#REACTION tStep 3 number 6799 dof 43 value 1.89527206e+02
 ##TIME
 #%END_CHECK%

@@ -319,7 +319,7 @@ MisesMat 2 d 1.0 E 2e11 n 0.3 sig0 500e6 H 8.456659619e8 omega_crit 0 a 0 tAlpha
 bondceb 3 kn 6e12 ks 6.135e10 s1 0.001 s2 0.002 s3 0.0065 taumax 1.541e7 tauf 6.164e6
 bondceb 4 kn 6e12 ks 6.135e10 s1 0.001 s2 0.002 s3 0.004 taumax 1.541e7 tauf 6.164e6
 PrescribedDispSlipBCNeumannRC 1 loadTimeFunction 1 dofs 2 1 2 ccoord 3 0.0 0.0 0.0 dispGrad 2 2 {0.3e-9 0.4e-9; 0.4e-9 -0.5e-9} set 5
-PrescribedDispSlipBCDirichletRC 2 loadTimeFunction 1 dofs 3 1 2 6 ccoord 3 0.0 0.0 0.0 dispGrad 2 2 {0.3e-9 0.4e-9; 0.4e-9 -0.5e-9} set 6 conboundset 5 reinfxbound 8 reinfybound 7
+PrescribedDispSlipBCDirichletRC 2 loadTimeFunction 1 dofs 3 1 2 6 ccoord 3 0.0 0.0 0.0 dispGrad 2 2 {0.3e-9 0.4e-9; 0.4e-9 -0.5e-9} set 6 conboundset 5
 PeakFunction 1 t 1.0 f(t) 1.0
 
 #%BEGIN_CHECK% tolerance 1.e-6

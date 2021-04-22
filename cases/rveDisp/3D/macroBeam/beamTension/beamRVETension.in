@@ -1,4 +1,4 @@
-beamRVEBending.out
+beamRVETension.out
 Periodic reinforced concrete RVE in 3D - Euler-Bernoulli beam model
 StaticStructural nsteps 3 nmodules 1 initialguess 1 stiffmode 2 rtolf 1.e-3 maxiter 10000
 #vtkxmlperiodic tstep_all primvars 1 1 vars 2 4 1 stype 0 regionsets 1 1
