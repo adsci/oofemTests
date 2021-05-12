@@ -3,7 +3,7 @@ Prescribing strain, slip and slip gradient history as a fake FE^2 analysis - Dir
 StaticStructural nsteps 2 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-3 MaxIter 300 minIter  1 initialguess 1 nmodules 1 lstype 3 smtype 7
 #vtkxml tstep_all domain_all vars 2 1 4
 #vtkxml tstep_all domain_all vars 2 1 4 ipvars 2 1 4 
-#matlab tstep_all mesh data specials reactionforces integrationpoints internalvars 6 4 1 141 142 143 144
+#matlab tstep_all mesh data specials reactionforces integrationpoints internalvars 6 4 1 142 143 144 145
 errorcheck
 domain 2dplanestress
 OutputManager tstep_all dofman_all element_all
@@ -33,15 +33,15 @@ ConstantFunction 1 f(t) 1.0
 #ELEMENT tStep 2 number 2 gp 1 keyword 1 component 1 value 6.414222e+05
 #ELEMENT tStep 2 number 2 gp 1 keyword 1 component 2 value -1.245701e+04
 #ELEMENT tStep 2 number 2 gp 1 keyword 1 component 6 value -3.029932e+04
-#ELEMENT tStep 2 number 2 gp 1 keyword 141 component 1 value 2.647493e-08
-#ELEMENT tStep 2 number 2 gp 1 keyword 141 component 2 value 5.602018e-07
-#ELEMENT tStep 2 number 2 gp 1 keyword 142 component 1 value 2.210223e+03
-#ELEMENT tStep 2 number 2 gp 1 keyword 142 component 2 value 1.470029e+04
-#ELEMENT tStep 2 number 2 gp 1 keyword 143 component 1 value -4.842061e-08
-#ELEMENT tStep 2 number 2 gp 1 keyword 143 component 2 value  2.183488e-07
-#ELEMENT tStep 2 number 2 gp 1 keyword 143 component 3 value -2.624711e-08
-#ELEMENT tStep 2 number 2 gp 1 keyword 143 component 4 value 1.099520e-07
-#ELEMENT tStep 2 number 2 gp 1 keyword 144 component 1 value 2.891187e+04
-#ELEMENT tStep 2 number 2 gp 1 keyword 144 component 2 value -9.303901e+02
+#ELEMENT tStep 2 number 2 gp 1 keyword 142 component 1 value 2.647493e-08
+#ELEMENT tStep 2 number 2 gp 1 keyword 142 component 2 value 5.602018e-07
+#ELEMENT tStep 2 number 2 gp 1 keyword 143 component 1 value 2.210223e+03
+#ELEMENT tStep 2 number 2 gp 1 keyword 143 component 2 value 1.470029e+04
+#ELEMENT tStep 2 number 2 gp 1 keyword 144 component 1 value -4.842061e-08
+#ELEMENT tStep 2 number 2 gp 1 keyword 144 component 2 value  2.183488e-07
+#ELEMENT tStep 2 number 2 gp 1 keyword 144 component 3 value -2.624711e-08
+#ELEMENT tStep 2 number 2 gp 1 keyword 144 component 4 value 1.099520e-07
+#ELEMENT tStep 2 number 2 gp 1 keyword 145 component 1 value 2.891187e+04
+#ELEMENT tStep 2 number 2 gp 1 keyword 145 component 2 value -9.303901e+02
 #%END_CHECK%
 

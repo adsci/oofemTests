@@ -3,8 +3,8 @@ FE2 analysis of a reinforced concrete deep beam with independent macroscopic sli
 StaticStructural nsteps 2 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-3 MaxIter 20 minIter 1 initialguess 1 nmodules 1
 errorcheck
 #vtkxml tstep_all domain_all primvars 2 1 17
-#vtkxml tstep_all domain_all vars 8 12 4 1 5 141 142 143 144 ipvars 6 4 1 141 142 143 144 stype 2
-#matlab tstep_all mesh data specials reactionforces integrationpoints internalvars 6 4 1 141 142 143 144
+#vtkxml tstep_all domain_all vars 8 12 4 1 5 142 143 144 145 ipvars 6 4 1 142 143 144 145 stype 2
+#matlab tstep_all mesh data specials reactionforces integrationpoints internalvars 6 4 1 142 143 144 145
 domain 2dplanestress
 OutputManager tstep_all dofman_all element_all
 ndofman 58 nelem 23 ncrosssect 1 nmat 1 nbc 3 nic 0 nltf 2 nset 4

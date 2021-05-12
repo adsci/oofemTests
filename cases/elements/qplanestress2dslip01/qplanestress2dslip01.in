@@ -3,8 +3,8 @@ Test case for QPlaneStress2dSlip element
 StaticStructural nsteps 1 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-5 MaxIter 10 minIter 1 initialguess 1 nmodules 1
 errorcheck
 #vtkxml tstep_all domain_all primvars 2 1 17
-#vtkxml tstep_all domain_all vars 6 4 1 141 142 143 144 ipvars 6 4 1 141 142 143 144 stype 1
-#matlab tstep_all mesh data specials reactionforces integrationpoints internalvars 6 4 1 141 142 143 144
+#vtkxml tstep_all domain_all vars 6 4 1 141 142 143 144 ipvars 6 4 1 142 143 144 145 stype 1
+#matlab tstep_all mesh data specials reactionforces integrationpoints internalvars 6 4 1 142 143 144 145
 domain 2dplanestress
 OutputManager tstep_all dofman_all element_all
 ndofman 8 nelem 1 ncrosssect 1 nmat 1 nbc 3 nic 0 nltf 1 nset 3
@@ -26,7 +26,6 @@ structslipfe2material 1 d 1.0 filename rvedispslipdd.in.rve use_ext_stiffness dS
 BoundaryCondition 1 loadTimeFunction 1 dofs 4 1 2 51 52 values 4 0.0 0.0 0.0 0.0 set 1
 BoundaryCondition 2 loadTimeFunction 1 dofs 3 1 51 52 values 3 0.0 0.0 0.0 set 2
 Boundarycondition 3 loadTimeFunction 1 dofs 4 1 2 51 52 values 4 1e-4 -2e-4 1e-5 3e-5 set 3
-
 ConstantFunction 1 f(t) 1.0
 
 #%BEGIN_CHECK% tolerance 1.e-3
@@ -34,10 +33,10 @@ ConstantFunction 1 f(t) 1.0
 #REACTION tStep 1 number 1 dof 52 value -2.76057675e+02
 #REACTION tStep 1 number 3 dof 1 value -1.78022811e+05
 #REACTION tStep 1 number 3 dof 51 value -6.39000517e+03
-#ELEMENT tStep 1 number 1 gp 1 keyword 142 component 1 value -4.67572651e+04
-#ELEMENT tStep 1 number 1 gp 1 keyword 142 component 2 value -9.07808236e+03
-#ELEMENT tStep 1 number 1 gp 1 keyword 144 component 1 value -1.42788019e+05
-#ELEMENT tStep 1 number 1 gp 1 keyword 144 component 2 value 1.06172543e+04
-#ELEMENT tStep 1 number 1 gp 1 keyword 144 component 3 value 0.0
-#ELEMENT tStep 1 number 1 gp 1 keyword 144 component 4 value 0.0
+#ELEMENT tStep 1 number 1 gp 1 keyword 143 component 1 value -4.67572651e+04
+#ELEMENT tStep 1 number 1 gp 1 keyword 143 component 2 value -9.07808236e+03
+#ELEMENT tStep 1 number 1 gp 1 keyword 145 component 1 value -1.42788019e+05
+#ELEMENT tStep 1 number 1 gp 1 keyword 145 component 2 value 1.06172543e+04
+#ELEMENT tStep 1 number 1 gp 1 keyword 145 component 3 value 0.0
+#ELEMENT tStep 1 number 1 gp 1 keyword 145 component 4 value 0.0
 #%END_CHECK%
