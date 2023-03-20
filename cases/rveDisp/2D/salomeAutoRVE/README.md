@@ -5,7 +5,7 @@ Geometry (rve size, number of elements per side and spacing of reinforcement in 
 Additional data (material parameters, cross section geometry etc.) can be modified either in the scripts or after the input file is generated.
 By default Concrete3, MisesMat and bondceb material models are used for the concrete, steel and interface, respectively.
 
-Tested on 22 Apr 2012, SALOME 9.6.0 on Windows 10
+Tested on 22 Apr 2021, SALOME 9.6.0 on Windows 10
 
 1. Enter RVE geometry on lines 7-10 in `salomeRVEmesh.py`
 2. Run the script in SALOME. Open SALOME, click File->Load Script and select the script `salomeRVEmesh.py`. SALOME will save a `rvemesh.unv` file in it's default directory (e.g. C:\SALOME-9.6.0). Copy that file to your working directory.
