@@ -1,6 +1,6 @@
 fakefe2disp.out
 Prescribing strain history via a fake FE2 analysis
-StaticStructural nsteps 5 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-3 MaxIter 300 minIter  1 initialguess 1 nmodules 1 lstype 3 smtype 7
+StaticStructural nsteps 5 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-3 MaxIter 300 minIter  1 initialguess 1 nmodules 1
 #vtkxml tstep_all domain_all vars 2 1 4
 #vtkxml tstep_all domain_all vars 2 1 4 ipvars 2 1 4 
 #matlab tstep_all mesh data specials reactionforces integrationpoints internalvars 2 1 4

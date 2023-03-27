@@ -1,6 +1,6 @@
 RVE11ddbc.out
 1x1 RVE - nonlinear structural analysis of the RVE - Dirichlet-Dirichlet BC
-StaticStructural nsteps 1 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-3 MaxIter 300 minIter 1 stiffmode 1 initialguess 1 nmodules 0 lstype 3 smtype 7 suppress_output
+StaticStructural nsteps 1 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-3 MaxIter 300 minIter 1 stiffmode 1 initialguess 1 nmodules 0 suppress_output
 #Concrete3 model
 #vtkxml tstep_all domain_all vars 4 1 4 5 12 ipvars 7 1 4 5 12 59 60 61 cellvars 3 59 60 61 stype 1 regionsets 1 1
 #Mazars model

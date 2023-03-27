@@ -1,6 +1,6 @@
 deepbeamFE2dispslip02.out
 FE2 analysis of a reinforced concrete deep beam/prescribing effective slip in RVE volume/qplanestress2dslip macroelements
-StaticStructural nsteps 2 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-2 MaxIter 100 minIter 1 initialguess 1 nmodules 1 lstype 3 smtype 7 
+StaticStructural nsteps 2 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-2 MaxIter 100 minIter 1 initialguess 1 nmodules 1  
 errorcheck
 #vtkxml tstep_all domain_all primvars 2 1 17 
 #vtkxml tstep_all domain_all vars 8 12 4 1 5 142 143 144 145 ipvars 6 4 1 142 143 144 145 stype 0

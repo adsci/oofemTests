@@ -1,6 +1,6 @@
 rvedd.out
 Reinforced concrete RVE - Dirichlet-Dirichelt BCs
-StaticStructural nsteps 1 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-3 MaxIter 100 minIter 1 stiffmode 2 initialguess 1 nmodules 0 lstype 3 smtype 7 suppress_output
+StaticStructural nsteps 1 deltat 1.0 constrainednrminiter 5 rtolf 1.0e-3 MaxIter 100 minIter 1 stiffmode 2 initialguess 1 nmodules 0  suppress_output
 #vtkxml tstep_all domain_all vars 5 1 4 5 12 52 ipvars 6 1 4 5 12 52 90 stype 1 regionsets 1 1
 #vtkxml tstep_all domain_all vars 1 12 ipvars 3 7 8 81 stype 1 regionsets 2 9 10
 #vtkxml tstep_all domain_all vars 2 98 99 stype 0 regionsets 2 11 12
