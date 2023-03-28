@@ -1,0 +1,75 @@
+%% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'ltrspaceboundary.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{407.51813776bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.41628673)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{ltrspaceboundary.pdf}}%
+    \put(0.87290448,0.05709147){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.04471933\unitlength}\raggedright \end{minipage}}}%
+    \put(0.73519954,0.1008937){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{3.75}\smash{\begin{tabular}[t]{l}$i^\prime$\end{tabular}}}}%
+    \put(0.87362345,0.13302299){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{3.75}\smash{\begin{tabular}[t]{l}$j^\prime$\end{tabular}}}}%
+    \put(0.82576094,0.26850711){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{3.75}\smash{\begin{tabular}[t]{l}$k^\prime$\end{tabular}}}}%
+    \put(0.45190048,0.11804166){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{3.75}\smash{\begin{tabular}[t]{l}$i$\end{tabular}}}}%
+    \put(0.51603775,0.097524){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{3.75}\smash{\begin{tabular}[t]{l}$j$\end{tabular}}}}%
+    \put(0.46547822,0.24404188){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{3.75}\smash{\begin{tabular}[t]{l}$k$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{ltrspaceboundary.pdf}}%
+    \put(0.89974205,0.36896238){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{3.75}\smash{\begin{tabular}[t]{l}image boundary\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{ltrspaceboundary.pdf}}%
+    \put(0.1,0.29026044){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{3.75}\smash{\begin{tabular}[t]{l}mirror boundary\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{ltrspaceboundary.pdf}}%
+    \put(0.31216921,0.05713179){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{3.75}\smash{\begin{tabular}[t]{l}$x$\end{tabular}}}}%
+    \put(0.27703443,0.10280703){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{3.75}\smash{\begin{tabular}[t]{l}$y$\end{tabular}}}}%
+    \put(0.2257376,0.14707689){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{3.75}\smash{\begin{tabular}[t]{l}$z$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{ltrspaceboundary.pdf}}%
+    \put(0.73423596,0.23151157){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{3.75}\smash{\begin{tabular}[t]{l}$l^\prime$\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

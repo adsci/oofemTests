@@ -11,3 +11,4 @@ CTestTestfile.cmake
 Makefile
 Testing/
 cmake_install.cmake
+doc/build/

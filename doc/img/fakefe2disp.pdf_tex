@@ -1,0 +1,88 @@
+%% Creator: Inkscape 1.2.2 (b0a8486541, 2022-12-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'fakefe2disp.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{302.90251724bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.40023049)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{fakefe2disp.pdf}}%
+    \put(0.09127289,0.04309549){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$x$\end{tabular}}}}%
+    \put(0.02186508,0.11437924){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$y$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{fakefe2disp.pdf}}%
+    \put(0.16455291,0.38419966){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\texttt{trplanestress2d}\\element\end{tabular}}}}%
+    \put(0.51362535,0.06112605){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$(1,0)$\end{tabular}}}}%
+    \put(0.51362535,0.39271323){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$(1,1)$\end{tabular}}}}%
+    \put(0.36976972,0.17131392){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}GP\end{tabular}}}}%
+    \put(0.12141478,0.06112605){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$(0,0)$\end{tabular}}}}%
+    \put(0.16036251,0.00114889){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$1$\end{tabular}}}}%
+    \put(0.49185539,0.00114889){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0.5122288,0.35087501){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$3$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{fakefe2disp.pdf}}%
+    \put(0.65718814,0.06112605){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$(0,0)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{fakefe2disp.pdf}}%
+    \put(0.96097765,0.06112605){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$(1,0)$\end{tabular}}}}%
+    \put(0.96097765,0.39271323){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$(1,1)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{fakefe2disp.pdf}}%
+    \put(0.81824558,0.17131392){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}GP 1\end{tabular}}}}%
+    \put(0.60771483,0.00114889){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$1$\end{tabular}}}}%
+    \put(0.93920769,0.00114889){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
+    \put(0.95958111,0.35087501){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$3$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{fakefe2disp.pdf}}%
+    \put(0.95958111,0.17236376){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$5$\end{tabular}}}}%
+    \put(0.74162533,0.22045188){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$6$\end{tabular}}}}%
+    \put(0.80604188,0.06112605){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$(0.5,0)$\end{tabular}}}}%
+    \put(0.96097765,0.21641346){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$(1,0.5)$\end{tabular}}}}%
+    \put(0.64654698,0.18595644){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$(0.5,0.5)$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{fakefe2disp.pdf}}%
+    \put(0.78960092,0.00114889){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0.62500167}\smash{\begin{tabular}[t]{l}$4$\end{tabular}}}}%
+    \put(0.63662195,0.38419966){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\texttt{qtrplstrslip}\\element\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
